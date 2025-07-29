@@ -185,15 +185,10 @@ async def advanced_search_twitter(llm_text: str) -> str:
     data = await make_twitter_endpoint_request("advanced_search", {"queryType": "Top", "query": formatted_query})
 
     if not data:
-        return "❌ Failed to fetch tweets. Check API key or network."
+        return structured_response([],"❌ Failed to fetch tweets. Check API key or network.", "error")
     tweets = extract_tweets(data)
     tweets = simple_tweet_fields(tweets)
-
-    return {
-        "status": "success",
-        "msg": f"advanced_search {len(tweets)} tweets in thread for {formatted_query}",
-        "tweets": tweets
-    }
+    return structured_response(tweets, f"advanced_search {len(tweets)} tweets in thread for {formatted_query}")
 
 ### User Endpoint
 @mcp.tool()
@@ -204,24 +199,16 @@ async def get_batch_user_info_by_ids(userIds: list) -> dict:
         "userIds": ",".join(str(uid) for uid in userIds)
     })
     users = data.get("users", [])
-    return {
-        "status": "success",
-        "msg": "fetched user batch info",
-        "users": users
-    }
+    return structured_response(users, f"get_batch_user_info_by_ids")
 
 @mcp.tool()
 async def get_info_by_username(userName: str) -> dict:
     """Get user info by userName"""  #martinshkreli 
     data = await make_twitter_endpoint_request("user/info", {"userName": userName})
     if not data:
-        return "❌ Failed to fetch user info."
+        return structured_response({}, "❌ Failed to fetch user info.", "error")
     user_info = data.get("data")
-    return {
-        "status": "success",
-        "msg": "fetched user batch info",
-        "user_info": user_info
-    }
+    return structured_response(user_info, f"fetched user batch inf")
 
 @mcp.tool()
 async def get_user_last_tweets(userId: str) -> dict:
@@ -230,12 +217,9 @@ async def get_user_last_tweets(userId: str) -> dict:
     tweets = extract_tweets(data)
     sim_tweets = simple_tweet_fields(tweets)
     if not tweets:
-        return f"🔍 No tweets found for user: {userId}"
-    return {
-        "status": "success",
-        "msg": "get_user_last_tweets",
-        "tweets": sim_tweets
-    }
+        return structured_response([], f"🔍 No tweets found for user: {userId}", "error")
+    return structured_response(sim_tweets, f"get_user_last_tweets: {len(sim_tweets)}")
+
  #"\n---\n".join(format_tweet(t, {}) for t in tweets)
 
 @mcp.tool()
