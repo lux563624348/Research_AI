@@ -16,6 +16,7 @@ from langchain_mcp_adapters.client import MultiServerMCPClient
 async def upsert_memory(
     content: str,
     context: str,
+    llm_text: Optional[str] = None,  # 👈 add this
     *,
     memory_id: Optional[uuid.UUID] = None,
     config: Annotated[RunnableConfig, InjectedToolArg],
@@ -27,7 +28,7 @@ async def upsert_memory(
     await store.aput(
         ("memories", user_id),
         key=str(mem_id),
-        value={"content": content, "context": context},
+        value={"content": content, "context": context, "llm_text": llm_text},
     )
     return f"Stored memory {mem_id}"
 

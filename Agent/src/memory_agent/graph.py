@@ -46,8 +46,8 @@ async def call_model(state: State, config: RunnableConfig, *, store: BaseStore) 
 
     # Invoke the language model with the prepared prompt and tools
     # "bind_tools" gives the LLM the JSON schema for all tools in the list so it knows how
-    # to use them.
-    msg = await llm.bind_tools([tools.upsert_memory, *mcptools]).ainvoke(
+    # to use them.           #tools.upsert_memory, 
+    msg = await llm.bind_tools([*mcptools]).ainvoke(
         [{"role": "system", "content": sys}, *state.messages],
         {"configurable": utils.split_model_and_provider(configurable.model)},
     )
