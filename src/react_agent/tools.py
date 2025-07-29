@@ -30,7 +30,7 @@ client = MultiServerMCPClient(
         "twitter": {
             "command": "uv",
             # Replace with absolute path to your math_server.py file
-            "args": ["run", "servers/twitter_server_lite.py"],
+            "args": ["run", "servers/twitter_server.py"],
             "transport": "stdio",
         },
         "research": {
