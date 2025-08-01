@@ -176,13 +176,13 @@ def format_user(u: dict) -> str:
 
 
 @mcp.tool()
-async def advanced_search_twitter(llm_text: str) -> str:
+async def advanced_search_twitter(llm_text: str) -> dict:
     """Search latest Twitter using advanced search operators based on LLM-extracted query.
     Args:
         query: Natural language or Twitter search query (supports operators like from:, to:, #hashtag, etc.)
     """
     formatted_query = await extract_search_query_from_llm_text(llm_text)
-    data = await make_twitter_endpoint_request("advanced_search", {"queryType": "Top", "query": formatted_query})
+    data = await make_twitter_endpoint_request("tweet/advanced_search", {"queryType": "Top", "query": formatted_query})
 
     if not data:
         return structured_response([],"❌ Failed to fetch tweets. Check API key or network.", "error")
@@ -252,7 +252,7 @@ async def get_user_mentions(userName: str) -> dict:
     return structured_response(tweets, f"Found {len(tweets)} mentions for {userName}") # "\n---\n".join(format_tweet(t, {}) for t in tweets)
 
 @mcp.tool()
-async def check_follow_relationship(sourceUserName: str, targetUserName: str) -> str:
+async def check_follow_relationship(sourceUserName: str, targetUserName: str) -> dict:
     """
     Check whether one user follows another and vice versa.
 
@@ -277,7 +277,7 @@ async def check_follow_relationship(sourceUserName: str, targetUserName: str) ->
     return structured_response(result, f"Relationship fetched for {sourceUserName} ↔ {targetUserName}") # "\n".join(result_lines)
 
 @mcp.tool()
-async def search_user_by_keyword(keyword: str) -> str:
+async def search_user_by_keyword(keyword: str) -> dict:
     """Search users by keyword (e.g. name, bio, etc.)."""
     data = await make_twitter_endpoint_request("user/search", {"query": keyword})
     users = data.get("users", [])
@@ -288,7 +288,7 @@ async def search_user_by_keyword(keyword: str) -> str:
 ### Tweet Endpoint
 
 @mcp.tool()
-async def get_tweets_by_IDs(tweetIds: list[str]) -> str:
+async def get_tweets_by_IDs(tweetIds: list[str]) -> dict:
     """Fetch tweet details by a list of tweet IDs."""
     data = await make_twitter_endpoint_request("tweets", {
         "tweet_ids": ",".join(str(tid) for tid in tweetIds)
@@ -301,7 +301,7 @@ async def get_tweets_by_IDs(tweetIds: list[str]) -> str:
     return structured_response(tweets, f"Found {len(tweets)} tweets")
 
 @mcp.tool()
-async def get_tweet_replies(tweetId: str) -> str:
+async def get_tweet_replies(tweetId: str) -> dict:
     """Get replies to a specific tweet.  Must be an original tweet (not a reply to another tweet) and should be the first tweet in a thread"""
     data = await make_twitter_endpoint_request("tweet/replies", {"tweetId": tweetId})
     tweets = extract_tweets(data)
@@ -311,7 +311,7 @@ async def get_tweet_replies(tweetId: str) -> str:
     return structured_response(tweets, f"Found {len(tweets)} replies") 
 
 @mcp.tool()
-async def get_tweet_quotations(tweetId: str) -> str:
+async def get_tweet_quotations(tweetId: str) -> dict:
     """Get quote tweets referencing a specific tweet."""
     data = await make_twitter_endpoint_request("tweet/quotes", {"tweetId": tweetId})
     tweets = extract_tweets(data)
@@ -321,7 +321,7 @@ async def get_tweet_quotations(tweetId: str) -> str:
     return structured_response(tweets, f"Found {len(tweets)} quotations")
 
 @mcp.tool()
-async def get_tweet_retweeters(tweetId: str) -> str:
+async def get_tweet_retweeters(tweetId: str) -> dict:
     """Get users who retweeted a given tweet."""
     data = await make_twitter_endpoint_request("tweet/retweeters", {"tweetId": tweetId})
     users = data.get("users", [])

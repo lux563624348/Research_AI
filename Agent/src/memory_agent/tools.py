@@ -3,36 +3,9 @@
 import uuid
 import asyncio
 import traceback
-from typing import Annotated, Optional, List, Union
+from typing import List
 
-from langchain_core.runnables import RunnableConfig
-from langchain_core.tools import InjectedToolArg, tool
-from langgraph.store.base import BaseStore
-
-from memory_agent.configuration import Configuration
 from langchain_mcp_adapters.client import MultiServerMCPClient
-
-# === Memory tool ===
-@tool
-async def upsert_memory(
-    content: str,
-    context: str,
-    llm_text: Optional[str] = None,  # 👈 add this
-    *,
-    memory_id: Optional[uuid.UUID] = None,
-    config: Annotated[RunnableConfig, InjectedToolArg],
-    store: Annotated[BaseStore, InjectedToolArg],
-):
-    """Upsert a memory in the database."""
-    mem_id = memory_id or uuid.uuid4()
-    user_id = Configuration.from_runnable_config(config).user_id
-    await store.aput(
-        ("memories", user_id),
-        key=str(mem_id),
-        value={"content": content, "context": context, "llm_text": llm_text},
-    )
-    return f"Stored memory {mem_id}"
-
 
 # === Load MCP tools ===
 def load_mcptools() -> List:
@@ -42,7 +15,7 @@ def load_mcptools() -> List:
             {
                 "twitter": {
                     "command": "python",
-                    "args": ["./servers/twitter_server_lite.py"],
+                    "args": ["./servers/twitter_server.py"],
                     "transport": "stdio",
                 },
                 "research": {

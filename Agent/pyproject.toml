@@ -3,7 +3,7 @@ name = "memory-agent"
 version = "0.0.1"
 description = "An agent with a tool to save long-term memory."
 authors = [
-    { name = "William Fu-Hinthorn", email = "13333726+hinthornw@users.noreply.github.com" },
+    { name = "Xiang Li", email = "xl7@psc.edu" },
 ]
 readme = "README.md"
 license = { text = "MIT" }
