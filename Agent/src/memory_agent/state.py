@@ -1,22 +1,9 @@
 """Define the shared values."""
-
-from __future__ import annotations
-
 from dataclasses import dataclass
-
-from langchain_core.messages import AnyMessage
-from langgraph.graph import add_messages
-from typing_extensions import Annotated
-
+from langgraph.graph import MessagesState
+from typing import List
 
 @dataclass(kw_only=True)
-class State:
-    """Main graph state."""
-
-    messages: Annotated[list[AnyMessage], add_messages]
-    """The messages in the conversation."""
-
-
-__all__ = [
-    "State",
-]
+class State(MessagesState):
+    # add memories that will be retrieved based on the conversation context
+    recall_memories: List[str]
