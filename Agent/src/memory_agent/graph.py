@@ -13,10 +13,12 @@ from memory_agent import configuration, tools, utils
 from memory_agent.tools import mcptools
 from memory_agent.state import State
 
+logging.basicConfig(level=logging.DEBUG)  # or DEBUG for more detail
 logger = logging.getLogger(__name__)
 
+
 # Initialize the language model to be used for memory extraction
-llm = init_chat_model()
+llm = init_chat_model("anthropic:claude-3-5-sonnet-latest", temperature=0)
 
 
 async def call_model(state: State, config: RunnableConfig, *, store: BaseStore) -> dict:
@@ -47,12 +49,26 @@ async def call_model(state: State, config: RunnableConfig, *, store: BaseStore) 
     # Invoke the language model with the prepared prompt and tools
     # "bind_tools" gives the LLM the JSON schema for all tools in the list so it knows how
     # to use them.           #tools.upsert_memory, 
-    msg = await llm.bind_tools([*mcptools]).ainvoke(
+    msg = await llm.bind_tools([tools.upsert_memory, *mcptools]).ainvoke(
         [{"role": "system", "content": sys}, *state.messages],
         {"configurable": utils.split_model_and_provider(configurable.model)},
     )
-    return {"messages": [msg]}
 
+    # === ✨ Extract tool call results and upsert memory ===
+    tool_messages = msg.tool_calls
+    
+    for tool_call in tool_messages:
+        tool_id = tool_call["id"]
+        result = msg.tool_call_outputs.get(tool_id) if hasattr(msg, "tool_call_outputs") else None
+
+        if isinstance(result, dict) and "content" in result and "context" in result:
+            await tools.upsert_memory(
+                content=result["content"],
+                context=result["context"],
+                config=config,
+                store=store,
+            )
+    return {"messages": [msg]}
 
 async def store_memory(state: State, config: RunnableConfig, *, store: BaseStore):
     # Extract tool calls from the last message
@@ -76,6 +92,33 @@ async def store_memory(state: State, config: RunnableConfig, *, store: BaseStore
         }
         for tc, mem in zip(tool_calls, saved_memories)
     ]
+    return {"messages": results}
+
+async def store_memory(state: State, config: RunnableConfig, *, store: BaseStore):
+    # Extract tool calls from the last message
+    tool_calls = state.messages[-1].tool_calls
+    print("XIANG: ", state.messages[-1].tool_calls)
+
+    results = []
+
+    for tc in tool_calls:
+        tool_name = tc.get("name")
+        args = tc.get("args", {})
+        # Assume this tool just ran and returned its result
+        # Check if the result has content/context and store as memory
+        if tool_name == "upsert_memory":
+            if "content" in args and "context" in args:
+                result = await tools.upsert_memory(**args, config=config, store=store)
+            else:
+                result = f"Skipped upsert_memory: missing fields in {tc['id']}"
+        else:
+            result = f"Tool {tool_name} called; no memory saved."
+
+        results.append({
+            "role": "tool",
+            "tool_call_id": tc["id"],
+            "content": result,
+        })
     return {"messages": results}
 
 

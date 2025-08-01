@@ -8,7 +8,7 @@
               "--rm",
               "--mount", "type=bind,src=/home/xli_p14/github/Research_AI/papers,dst=/projects/Research_AI/papers,ro",
               "mcp/filesystem",
-              "/projects"
+              "/history"
             ]
           },
         "research": {
@@ -17,7 +17,7 @@
         },
         "twittter": {
             "command": "uv",
-            "args": ["run", "./servers/twitter_server_lite.py"]
+            "args": ["run", "./servers/twitter_server.py"]
         },
         "database": {
             "command": "uv",

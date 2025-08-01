@@ -12,17 +12,16 @@ load_dotenv()
 mcp = FastMCP(name="twitter-server")
 model = "claude-3-7-sonnet-20250219"
 
-
-async def make_twitter_request(query: str, ctx: Context | None = None) -> list[dict[str, Any]] | None:
+async def make_twitter_endpoint_request(endpoint: str, query_param: dict(), ctx: Context | None = None) -> str:
     """
-    Query Twitter API via api.twitterapi.io and return formatted tweet texts.
+    Query Twitter API via api.twitterapi.io and return.
 
     Args:
         query (str): A Twitter search query (e.g., "from:elonmusk #AI").
         ctx (Optional[Context]): FastMCP context object for tracing/logging.
 
     Returns:
-        Optional[list[str]]: List of formatted tweet strings, or None on failure.
+        
     """
     api_key = os.getenv("TWITTER_API_KEY")
     if not api_key:
@@ -32,17 +31,18 @@ async def make_twitter_request(query: str, ctx: Context | None = None) -> list[d
 
     try:
         async with httpx.AsyncClient() as client:
-            url = "https://api.twitterapi.io/twitter/tweet/advanced_search"
             headers = {"X-API-Key": api_key}
-            params = {"queryType": "Top", "query": query}
-            response = await client.get(url, headers=headers, params=params)
+            base_url = "https://api.twitterapi.io/twitter"
+            #endpoint = 
+            url = f"{base_url}/{endpoint}"
+            
+            response = await client.get(url, headers=headers, params=query_param) 
             response.raise_for_status()
             return response.json()
     except Exception as e:
         if ctx:
             await ctx.error(f"❌ Twitter API request failed: {e}")
         return None
-
 
 async def _extract_with_anthropic(llm_text: str, api_key: str, ctx: Context | None = None) -> str:
     client = AsyncAnthropic(api_key=api_key)
@@ -64,7 +64,6 @@ async def _extract_with_anthropic(llm_text: str, api_key: str, ctx: Context | No
             await ctx.error(f"Anthropic extraction failed: {e}")
         raise
 
-
 async def extract_search_query_from_llm_text(llm_text: str, ctx: Context | None = None) -> str:
     llm_key = os.getenv("ANTHROPIC_API_KEY")
 
@@ -78,8 +77,25 @@ async def extract_search_query_from_llm_text(llm_text: str, ctx: Context | None 
     # Fallback
     return llm_text.strip() if "from:" in llm_text else f"'{llm_text.strip()}'"
 
+def structured_response(data=None, message="success", status="success"):
+    """
+    Create a consistent response format for MCP tools.
 
-def format_tweet(tweet: dict, users: dict = None) -> str:
+    Args:
+        data (Any): The actual data payload (list, dict, str, etc.)
+        message (str): A short message about the result.
+        status (str): Either 'success' or 'error'.
+
+    Returns:
+        dict: Standardized response object.
+    """
+    return {
+        "status": status,
+        "context": message,
+        "content": data if data is not None else [],
+    }
+
+def format_tweet_str(tweet: dict, users: dict = None) -> str:
     author = tweet.get("author", {})
     author_id = author.get("id")
     username = author.get("username", "unknown")
@@ -100,36 +116,79 @@ def format_tweet(tweet: dict, users: dict = None) -> str:
 
     return f"""@{username} ({name})\nPosted: {created_at}\n{text}\nLikes: {likes} | Retweets: {retweets} | Replies: {replies}\n"""
 
+def extract_tweets(data: dict) -> list:
+    """
+    Safely extract a list of tweets from the response data,
+    whether it's in data["tweets"] or data["data"]["tweets"].
+    """
+    if "tweets" in data and isinstance(data["tweets"], list):
+        return data["tweets"]
+    elif "data" in data and isinstance(data["data"], dict):
+        return data["data"].get("tweets", [])
+    else:
+        return []
+
+def simple_tweet_fields(tweets: list) -> list:
+    """
+    Convert a list of full tweet objects into a simplified format to save tokens.
+    """
+    def simplify(tweet: dict) -> dict:
+        return {
+            "id": tweet.get("id"),
+            "text": tweet.get("text"),
+            "createdAt": tweet.get("createdAt"),
+            "author": {
+                "userName": tweet.get("author", {}).get("userName"),
+                "id": tweet.get("author", {}).get("id"),
+            },
+            "quoted_tweet": tweet.get("quoted_tweet", {}),
+            "retweeted_tweet": tweet.get("retweeted_tweet", {})
+        }
+
+    return [simplify(tweet) for tweet in tweets]
+
+def format_user(u: dict) -> str:
+    """
+    Format a user dictionary from TwitterAPI.io into a readable string.
+    """
+    name = u.get("name", "N/A")
+    username = u.get("screen_name", "N/A")
+    bio = u.get("description", "")
+    followers = u.get("followers_count", 0)
+    following = u.get("friends_count", 0)
+    location = u.get("location", "")
+    verified = u.get("verified", False)
+    created = u.get("created_at", "")
+
+    verified_badge = "✅" if verified else ""
+
+    return (
+        f"👤 @{username} {verified_badge}\n"
+        f"Name: {name}\n"
+        f"Bio: {bio or '—'}\n"
+        f"Followers: {followers:,} | Following: {following:,}\n"
+        f"Location: {location or '—'}\n"
+        f"Created: {created}"
+    )
 
 @mcp.tool()
-async def search_latest_twitter(llm_text: str, ctx: Context) -> str:
-    """Search latest Twitter using advanced search operators based on LLM-extracted query.
-    Args:
-        query: Natural language or Twitter search query (supports operators like from:, to:, #hashtag, etc.)
-    """
-    formatted_query = await extract_search_query_from_llm_text(llm_text, ctx)
-    
-    await ctx.info(f"📡 Querying Twitter with: {formatted_query}")
-
-    data = await make_twitter_request(formatted_query, ctx)
-    if not data:
-        return "❌ Failed to fetch tweets. Check API key or network."
-
-    tweets = data.get("tweets", [])
+async def get_user_last_tweets(userId: str) -> dict:
+    """Fetch last tweets of a specified userId."""  #martinshkreli #312653402  1859681514415607930
+    data = await make_twitter_endpoint_request("user/last_tweets", {"userId": userId})
+    tweets = extract_tweets(data)
+    sim_tweets = simple_tweet_fields(tweets)
     if not tweets:
-        return f"🔍 No tweets found for: {llm_text}"
+        return structured_response([], f"🔍 No tweets found for user: {userId}", "error")
+    return structured_response(sim_tweets, f"get_user_last_tweets: {len(sim_tweets)}")
 
-    users_by_id = {}
-    for tweet in tweets:
-        author = tweet.get("author", {})
-        author_id = author.get("id")
-        if author_id:
-            users_by_id[author_id] = author
-
-    results = [format_tweet(tweet, users_by_id) for tweet in tweets]
-    await ctx.info(f"✅ Retrieved {len(results)} tweets.")
-    return "\n---\n".join(results)
-
+@mcp.tool()
+async def get_info_by_username(userName: str) -> dict:
+    """Get user info by userName"""  #martinshkreli 
+    data = await make_twitter_endpoint_request("user/info", {"userName": userName})
+    if not data:
+        return structured_response({}, "❌ Failed to fetch user info.", "error")
+    user_info = data.get("data")
+    return structured_response(user_info, f"fetched user batch inf")
 
 if __name__ == "__main__":
     mcp.run(transport="stdio")

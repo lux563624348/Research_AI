@@ -7,6 +7,7 @@ from datetime import datetime, UTC
 import json, os, re
 import asyncio
 import nest_asyncio
+import shlex
 
 nest_asyncio.apply()
 
@@ -39,7 +40,7 @@ def extract_top_words(query: str, max_len: int = 32) -> str:
     Falls back to a short hash if nothing valid is found.
     """
     words = re.findall(r'\b\w+\b', query.lower())
-    topic = "_".join(words[:2])
+    topic = "_".join(words[:4])
     topic = topic[:max_len]  # truncate if too long
     return topic
 
@@ -148,7 +149,7 @@ class MCP_ChatBot:
             self.token_usage["input_tokens"] += input_tokens
             self.token_usage["output_tokens"] += output_tokens
             self.token_usage["cost"] += cost
-            print(f"This query costs: ${cost:.5f}")
+            #print(f"This query costs: ${cost:.5f}")
             assistant_content = []
             has_tool_use = False
             
@@ -306,7 +307,8 @@ class MCP_ChatBot:
                 
                 # Check for /command syntax
                 if query.startswith('/'):
-                    parts = query.split()
+                    #parts = query.split()
+                    parts = shlex.split(query)
                     command = parts[0].lower()
                     if command == '/prompts':
                         await self.list_prompts()
@@ -323,7 +325,7 @@ class MCP_ChatBot:
                             if '=' in arg:
                                 key, value = arg.split('=', 1)
                                 args[key] = value
-                        
+                        print (args)
                         await self.execute_prompt(prompt_name, args)
                     else:
                         print(f"Unknown command: {command}")
@@ -336,10 +338,10 @@ class MCP_ChatBot:
     
     async def cleanup(self): # new
         """Cleanly close all resources using AsyncExitStack."""
-        print("---- Token Usage Summary ----")
-        print(f"Input Tokens   : {self.token_usage['input_tokens']}")
-        print(f"Output Tokens  : {self.token_usage['output_tokens']}")
-        print(f"Total Cost     : ${self.token_usage['cost']:.5f}")
+        #print("---- Token Usage Summary ----")
+        #print(f"Input Tokens   : {self.token_usage['input_tokens']}")
+        #print(f"Output Tokens  : {self.token_usage['output_tokens']}")
+        #print(f"Total Cost     : ${self.token_usage['cost']:.5f}")
         await self.exit_stack.aclose()
 
 

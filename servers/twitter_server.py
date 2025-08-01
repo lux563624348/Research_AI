@@ -487,7 +487,7 @@ async def get_trends(woeid: int = 1) -> dict:
     ]
     return structured_response(valid_trends, f"Found {len(valid_trends)} trending topics for WOEID {woeid}")
 
-@mcp.prompt()
+
 def deep_search(topic: str) -> str:
     """
     Prompt template for analyzing a user query using KOL opinions, FRED data, archives, and economic reasoning and return in Chinese.

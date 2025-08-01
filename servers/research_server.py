@@ -162,13 +162,23 @@ def get_topic_papers(topic: str) -> str:
         return f"# Error reading papers data for {topic}\n\nThe papers data file is corrupted."
 
 @mcp.prompt()
-def generate_search_prompt(topic: str, num_papers: int = 3) -> str:
+def search_people(name: str, num_papers: int = 3) -> str:
+    """Generate a prompt for LLM to find and discuss academic papers on a specific researcher."""
+    return f"""'{name}' Search for {num_papers} academic papers about '{name}' using the search_papers tool.
+
+1. search for Twitter information related to this individual.
+2. search for academic papers on arXiv authored by keywords
+"""
+
+@mcp.prompt()
+def search_topic(topic: str, num_papers: int = 3) -> str:
     """Generate a prompt for Claude to find and discuss academic papers on a specific topic."""
-    return f"""Search for {num_papers} academic papers about '{topic}' using the search_papers tool. 
+    return f"""'{topic}' Search for {num_papers} academic papers about '{topic}' using the search_papers tool. 
 
 Follow these instructions:
-1. First, search for papers using search_papers(topic='{topic}', max_results={num_papers})
-2. For each paper found, extract and organize the following information:
+1. Search for tweets within 1 year for '{topic}', sort by timeline. 
+2. summarize tweets and generate query to search for papers using search_papers(topic=query, max_results={num_papers})
+3. For each paper found, extract and organize the following information:
    - Paper title
    - Authors
    - Publication date
@@ -177,15 +187,16 @@ Follow these instructions:
    - Methodologies used
    - Relevance to the topic '{topic}'
 
-3. Provide a comprehensive summary that includes:
+4. Provide a comprehensive summary that includes:
    - Overview of the current state of research in '{topic}'
    - Common themes and trends across the papers
    - Key research gaps or areas for future investigation
    - Most impactful or influential papers in this area
 
-4. Organize your findings in a clear, structured format with headings and bullet points for easy readability.
+5. Organize your findings in a clear, structured format with headings and bullet points for easy readability.
 
 Please present both detailed information about each paper and a high-level synthesis of the research landscape in {topic}."""
+
 
 if __name__ == "__main__":
     # Initialize and run the server

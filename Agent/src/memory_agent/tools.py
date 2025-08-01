@@ -6,13 +6,14 @@ import traceback
 from typing import Annotated, Optional, List, Union
 
 from langchain_core.runnables import RunnableConfig
-from langchain_core.tools import InjectedToolArg
+from langchain_core.tools import InjectedToolArg, tool
 from langgraph.store.base import BaseStore
 
 from memory_agent.configuration import Configuration
 from langchain_mcp_adapters.client import MultiServerMCPClient
 
 # === Memory tool ===
+@tool
 async def upsert_memory(
     content: str,
     context: str,
