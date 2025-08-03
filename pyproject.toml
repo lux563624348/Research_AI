@@ -64,6 +64,12 @@ lint.ignore = [
 [tool.ruff.lint.pydocstyle]
 convention = "google"
 
+[tool.uv.workspace]
+members = [
+    "servers/cellxgene",
+    "servers/cellxgenes",
+]
+
 [dependency-groups]
 dev = [
     "langgraph-cli[inmem]>=0.1.71",

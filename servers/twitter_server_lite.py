@@ -1,6 +1,5 @@
-import os
+import os,json
 import httpx
-from typing import Any
 from dotenv import load_dotenv
 from fastmcp import FastMCP, Context
 from anthropic import AsyncAnthropic
@@ -11,6 +10,8 @@ load_dotenv()
 # Initialize FastMCP
 mcp = FastMCP(name="twitter-server")
 model = "claude-3-7-sonnet-20250219"
+
+History_DIR = "history"
 
 async def make_twitter_endpoint_request(endpoint: str, query_param: dict(), ctx: Context | None = None) -> str:
     """
@@ -182,6 +183,21 @@ async def get_user_last_tweets(userId: str) -> dict:
     return structured_response(sim_tweets, f"get_user_last_tweets: {len(sim_tweets)}")
 
 @mcp.tool()
+async def advanced_search_twitter(llm_text: str) -> dict:
+    """Search latest Twitter using advanced search operators based on LLM-extracted query.
+    Args:
+        query: Natural language or Twitter search query (supports operators like from:, to:, #hashtag, etc.)
+    """
+    formatted_query = await extract_search_query_from_llm_text(llm_text)
+    data = await make_twitter_endpoint_request("tweet/advanced_search", {"queryType": "Top", "query": formatted_query})
+
+    if not data:
+        return structured_response([],"❌ Failed to fetch tweets. Check API key or network.", "error")
+    tweets = extract_tweets(data)
+    tweets = simple_tweet_fields(tweets)
+    return structured_response(tweets, f"advanced_search {len(tweets)} tweets in thread for {formatted_query}")
+
+@mcp.tool()
 async def get_info_by_username(userName: str) -> dict:
     """Get user info by userName"""  #martinshkreli 
     data = await make_twitter_endpoint_request("user/info", {"userName": userName})
@@ -189,6 +205,71 @@ async def get_info_by_username(userName: str) -> dict:
         return structured_response({}, "❌ Failed to fetch user info.", "error")
     user_info = data.get("data")
     return structured_response(user_info, f"fetched user batch inf")
+
+
+@mcp.resource("history://history")
+def get_available_history() -> str:
+    """
+    List all available topic folders in the history directory.
+    
+    This resource provides a simple list of all available history topic folders.
+    """
+    folders = []
+
+    # Get all topic directories
+    if os.path.exists(History_DIR):
+        for topic_dir in os.listdir(History_DIR):
+            topic_path = os.path.join(History_DIR, topic_dir)
+            if os.path.isdir(topic_path):
+                history_file = os.path.join(topic_path, "history_info.json")
+                if os.path.exists(history_file):
+                    folders.append(topic_dir)
+
+    # Create a simple markdown list
+    content = "# Available Topics\n\n"
+    if folders:
+        for folder in folders:
+            content += f"- {folder}\n"
+        content += f"\nUse @{folder} to access history in that topic.\n"
+    else:
+        content += "No topics found.\n"
+
+    return content
+
+@mcp.resource("history://{topic}")
+def get_topic_history(topic: str) -> str:
+    """
+    Get detailed information about query/response history on a specific topic.
+
+    Args:
+        topic: The topic to retrieve history for
+    """
+    topic_dir = topic.lower().replace(" ", "_")
+    history_file = os.path.join(History_DIR, topic_dir, "history_info.json")
+
+    if not os.path.exists(history_file):
+        return f"# No history found for topic: {topic}\n\nTry submitting a query in this topic first."
+
+    try:
+        with open(history_file, 'r') as f:
+            history_data = json.load(f)
+
+        # Create markdown content with history details
+        content = f"# History for {topic.replace('_', ' ').title()}\n\n"
+        content += f"Total entries: {len(history_data)}\n\n"
+
+        for entry_time, record in history_data.items():
+            content += f"## {entry_time}\n"
+            content += f"- **Query**: {record.get('query', 'N/A')}"
+            content += f"- **Tool**: {record.get('Tool', 'N/A')} {record.get('Tool_input', 'N/A')} \n"
+            content += f"- **Result**:\n```\n{record.get('result', '')[:1000]}\n```\n"
+            content += "---\n"
+
+        return content
+    except json.JSONDecodeError:
+        return f"# Error reading history data for {topic}\n\nThe history data file is corrupted."
+
+
 
 if __name__ == "__main__":
     mcp.run(transport="stdio")

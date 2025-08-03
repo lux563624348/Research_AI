@@ -34,7 +34,7 @@ def serialize_response(response):
     else:
         return repr(response)  # fallback for debugging
 
-def extract_top_words(query: str, max_len: int = 32) -> str:
+def extract_top_words(query: str, max_len: int = 66) -> str:
     """
     Extracts the first 2 alphanumeric words from the query, lowercase and joined by underscores.
     Falls back to a short hash if nothing valid is found.
@@ -279,7 +279,7 @@ class MCP_ChatBot:
             print(f"Error: {e}")
 
     async def chat_loop(self):
-        print("\n🚀 MCP Agent for Investment Started!")
+        print("\n🚀 MCP Agent for Bioinformatics Research AI Started!")
         print("💬 Type your queries or 'quit' to exit.")
         print("📚 Use @history to see available topics")
         print("🔍 Use @<topic> to search history in that topic")

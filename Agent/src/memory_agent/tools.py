@@ -58,7 +58,12 @@ def load_mcptools() -> List:
     """Load MCP tools from configured FastMCP servers."""
     try:
         client = MultiServerMCPClient(
-            {
+            {   
+                "cellxgene": {
+                    "command": "python",
+                    "args": ["./servers/cellxgene_server.py"],
+                    "transport": "stdio",
+                },
                 "twitter": {
                     "command": "python",
                     "args": ["./servers/twitter_server.py"],
@@ -83,3 +88,5 @@ def load_mcptools() -> List:
 mcptools = load_mcptools()
 
 all_tools = [*mcptools, save_recall_memory, search_recall_memories, search]
+
+

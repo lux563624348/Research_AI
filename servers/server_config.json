@@ -1,23 +1,16 @@
 {
     "mcpServers": {
-        "filesystem": {
-            "command": "docker",
-            "args": [
-              "run",
-              "-i",
-              "--rm",
-              "--mount", "type=bind,src=/home/xli_p14/github/Research_AI/papers,dst=/projects/Research_AI/papers,ro",
-              "mcp/filesystem",
-              "/history"
-            ]
-          },
+        "cellxgene": {
+            "command": "uv",
+            "args": ["run", "./servers/cellxgene_server.py"]
+        },
         "research": {
             "command": "uv",
             "args": ["run", "./servers/research_server.py"]
         },
         "twittter": {
             "command": "uv",
-            "args": ["run", "./servers/twitter_server.py"]
+            "args": ["run", "./servers/twitter_server_lite.py"]
         },
         "database": {
             "command": "uv",
