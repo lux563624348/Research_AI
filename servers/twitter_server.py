@@ -15,6 +15,8 @@ model = os.getenv("LLM_MODEL")
 #"claude-3-5-haiku-20241022"
 #"claude-3-7-sonnet-20250219"
 
+simplify_tweet_flag = False
+
 async def make_twitter_endpoint_request(endpoint: str, query_param: dict(), ctx: Context | None = None) -> str:
     """
     Query Twitter API via api.twitterapi.io and return.
@@ -136,17 +138,19 @@ def simple_tweet_fields(tweets: list) -> list:
     Convert a list of full tweet objects into a simplified format to save tokens.
     """
     def simplify(tweet: dict) -> dict:
-        return {
-            "id": tweet.get("id"),
-            "text": tweet.get("text"),
-            "createdAt": tweet.get("createdAt"),
-            "author": {
-                "userName": tweet.get("author", {}).get("userName"),
-                "id": tweet.get("author", {}).get("id"),
-            },
-            "quoted_tweet": tweet.get("quoted_tweet", {}),
-            "retweeted_tweet": tweet.get("retweeted_tweet", {})
-        }
+        if (simplify_tweet_flag) == True:
+            return {
+                "id": tweet.get("id"),
+                "text": tweet.get("text"),
+                "createdAt": tweet.get("createdAt"),
+                "author": {
+                    "userName": tweet.get("author", {}).get("userName"),
+                    "id": tweet.get("author", {}).get("id"),
+                },
+                "quoted_tweet": tweet.get("quoted_tweet", {}),
+                "retweeted_tweet": tweet.get("retweeted_tweet", {})
+            }
+        else: return tweet
 
     return [simplify(tweet) for tweet in tweets]
 
@@ -288,11 +292,11 @@ async def search_user_by_keyword(keyword: str) -> dict:
 ### Tweet Endpoint
 
 @mcp.tool()
-async def get_tweets_by_IDs(tweetIds: list[str]) -> dict:
+async def get_tweets_by_IDs(tweetIds: list) -> dict:
     """Fetch tweet details by a list of tweet IDs."""
     data = await make_twitter_endpoint_request("tweets", {
-        "tweet_ids": ",".join(str(tid) for tid in tweetIds)
-    })
+        "tweet_ids": ",".join(str(tid) for tid in tweetIds)}
+    )
     tweets = extract_tweets(data)
     tweets = simple_tweet_fields(tweets)
 

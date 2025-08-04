@@ -1,5 +1,9 @@
 {
     "mcpServers": {
+        "hubmap": {
+            "command": "uv",
+            "args": ["run", "./servers/hubmap_server.py"]
+        },
         "cellxgene": {
             "command": "uv",
             "args": ["run", "./servers/cellxgene_server.py"]

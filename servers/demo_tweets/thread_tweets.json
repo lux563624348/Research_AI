@@ -1,0 +1,358 @@
+{
+    "status": "success",
+    "message": "Found 17 tweets in thread for 1859681514415607930",
+    "data": {
+      "data": [
+        {
+          "type": "tweet",
+          "id": "1859681514415607930\n1859681516026200286",
+          "url": "https://twitter.com/MartinShkreli/status/1859681514415607930",
+          "text": "I've written a 38 page paper on why Cassava Sciences' ($SAVA) simufilam does not work for Alzheimer's disease. This is a work-in-progress. But, I don't *think* it doesn't work. It is impossible for it to work.\n\nLong thread (1/7)\n\nFirst, the site is https://t.co/0GCkfZDssF. On this site, you'll be able to download the paper and see updates as I put them out. I think $SAVA is an \"easy\" short that will trade toward the company's cash value of $2 or $3 per share. (2/7)",
+          "createdAt": "Thu Nov 21 19:33:18 +0000 2024",
+          "lang": "en",
+          "bookmarkCount": 1261,
+          "isReply": false,
+          "inReplyToId": null,
+          "conversationId": "1859681514415607930",
+          "inReplyToUserId": null,
+          "inReplyToUsername": null,
+          "author": {
+            "type": "user",
+            "userName": "MartinShkreli",
+            "url": "https://x.com/MartinShkreli",
+            "twitterUrl": "https://twitter.com/MartinShkreli",
+            "id": "312653402",
+            "name": "Martin Shkreli",
+            "isVerified": false,
+            "isBlueVerified": true,
+            "profilePicture": "https://pbs.twimg.com/profile_images/1904997844748005376/wFfbBUBD_normal.jpg",
+            "coverPicture": "https://pbs.twimg.com/profile_banners/312653402/1729090001",
+            "description": "https://t.co/vJE5wyFDrX\nhttps://t.co/GUy99qMi2O - join our Discord!\ne/acc",
+            "location": "NYC",
+            "followers": 308894,
+            "following": 7393,
+            "status": "",
+            "canDm": true,
+            "canMediaTag": false,
+            "createdAt": "Tue Jun 07 13:22:18 +0000 2011",
+            "entities": {
+              "description": {
+                "hashtags": [],
+                "symbols": [],
+                "urls": [
+                  {
+                    "display_url": "godelterminal.com",
+                    "expanded_url": "https://godelterminal.com",
+                    "indices": [
+                      0,
+                      23
+                    ],
+                    "url": "https://t.co/vJE5wyFDrX"
+                  },
+                  {
+                    "display_url": "linktr.ee/mshkreli",
+                    "expanded_url": "https://linktr.ee/mshkreli",
+                    "indices": [
+                      24,
+                      47
+                    ],
+                    "url": "https://t.co/GUy99qMi2O"
+                  }
+                ],
+                "user_mentions": []
+              }
+            },
+            "fastFollowersCount": 0,
+            "favouritesCount": 38704,
+            "hasCustomTimelines": true,
+            "isTranslator": false,
+            "mediaCount": 850,
+            "statusesCount": 32907,
+            "protected": false,
+            "withheldInCountries": [],
+            "affiliatesHighlightedLabel": {},
+            "possiblySensitive": false,
+            "pinnedTweetIds": [
+              "1859681514415607930"
+            ],
+            "profile_bio": "https://t.co/vJE5wyFDrX\nhttps://t.co/GUy99qMi2O - join our Discord!\ne/acc"
+          },
+          "extendedEntities": {},
+          "card": null,
+          "place": {},
+          "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "urls": [],
+            "user_mentions": []
+          },
+          "quoted_tweet": null,
+          "retweeted_tweet": null
+        }
+      ]
+    }
+  }
+
+
+# thread for ["1859681514415607930", "1859681516026200286"]
+  {
+    "status": "success",
+    "message": "Found 2 tweets",
+    "data": [
+      {
+        "type": "tweet",
+        "id": "1859681514415607930",
+        "url": "https://x.com/MartinShkreli/status/1859681514415607930",
+        "twitterUrl": "https://twitter.com/MartinShkreli/status/1859681514415607930",
+        "text": "I've written a 38 page paper on why Cassava Sciences' ($SAVA) simufilam does not work for Alzheimer's disease. This is a work-in-progress. But, I don't *think* it doesn't work. It is impossible for it to work.\n\nLong thread (1/7)",
+        "source": "",
+        "retweetCount": 194,
+        "replyCount": 284,
+        "likeCount": 3617,
+        "quoteCount": 134,
+        "viewCount": 2364309,
+        "createdAt": "Thu Nov 21 19:33:18 +0000 2024",
+        "lang": "en",
+        "bookmarkCount": 1261,
+        "isReply": false,
+        "inReplyToId": "",
+        "conversationId": "1859681514415607930",
+        "inReplyToUserId": "",
+        "inReplyToUsername": "",
+        "isPinned": false,
+        "author": {
+          "type": "user",
+          "userName": "MartinShkreli",
+          "url": "https://x.com/MartinShkreli",
+          "twitterUrl": "https://twitter.com/MartinShkreli",
+          "id": "312653402",
+          "name": "Martin Shkreli",
+          "isVerified": false,
+          "isBlueVerified": true,
+          "profilePicture": "https://pbs.twimg.com/profile_images/1904997844748005376/wFfbBUBD_normal.jpg",
+          "coverPicture": "https://pbs.twimg.com/profile_banners/312653402/1729090001",
+          "description": "https://t.co/vJE5wyFDrX\nhttps://t.co/GUy99qMi2O - join our Discord!\ne/acc",
+          "location": "NYC",
+          "followers": 308894,
+          "following": 7393,
+          "status": "",
+          "canDm": true,
+          "canMediaTag": false,
+          "createdAt": "Tue Jun 07 13:22:18 +0000 2011",
+          "entities": {
+            "description": {
+              "urls": [
+                {
+                  "display_url": "godelterminal.com",
+                  "expanded_url": "https://godelterminal.com",
+                  "indices": [
+                    0,
+                    23
+                  ],
+                  "url": "https://t.co/vJE5wyFDrX"
+                },
+                {
+                  "display_url": "linktr.ee/mshkreli",
+                  "expanded_url": "https://linktr.ee/mshkreli",
+                  "indices": [
+                    24,
+                    47
+                  ],
+                  "url": "https://t.co/GUy99qMi2O"
+                }
+              ]
+            }
+          },
+          "fastFollowersCount": 0,
+          "favouritesCount": 0,
+          "hasCustomTimelines": true,
+          "isTranslator": false,
+          "mediaCount": 851,
+          "statusesCount": 32908,
+          "withheldInCountries": [],
+          "affiliatesHighlightedLabel": {},
+          "possiblySensitive": false,
+          "pinnedTweetIds": [
+            "1859681514415607930"
+          ],
+          "profile_bio": {
+            "description": "https://t.co/vJE5wyFDrX\nhttps://t.co/GUy99qMi2O - join our Discord!\ne/acc",
+            "entities": {
+              "description": {
+                "urls": [
+                  {
+                    "display_url": "godelterminal.com",
+                    "expanded_url": "https://godelterminal.com",
+                    "indices": [
+                      0,
+                      23
+                    ],
+                    "url": "https://t.co/vJE5wyFDrX"
+                  },
+                  {
+                    "display_url": "linktr.ee/mshkreli",
+                    "expanded_url": "https://linktr.ee/mshkreli",
+                    "indices": [
+                      24,
+                      47
+                    ],
+                    "url": "https://t.co/GUy99qMi2O"
+                  }
+                ]
+              }
+            },
+            "withheld_in_countries": []
+          },
+          "isAutomated": false,
+          "automatedBy": null
+        },
+        "extendedEntities": {},
+        "card": {},
+        "place": {},
+        "entities": {},
+        "isRetweet": false,
+        "isQuote": false,
+        "isConversationControlled": false,
+        "quoted_tweet": null,
+        "retweeted_tweet": null
+      },
+      {
+        "type": "tweet",
+        "id": "1859681516026200286",
+        "url": "https://x.com/MartinShkreli/status/1859681516026200286",
+        "twitterUrl": "https://twitter.com/MartinShkreli/status/1859681516026200286",
+        "text": "First, the site is https://t.co/0GCkfZDssF. On this site, you'll be able to download the paper and see updates as I put them out. I think $SAVA is an \"easy\" short that will trade toward the company's cash value of $2 or $3 per share. (2/7)",
+        "source": "",
+        "retweetCount": 9,
+        "replyCount": 18,
+        "likeCount": 238,
+        "quoteCount": 5,
+        "viewCount": 88876,
+        "createdAt": "Thu Nov 21 19:33:19 +0000 2024",
+        "lang": "en",
+        "bookmarkCount": 44,
+        "isReply": true,
+        "inReplyToId": "1859681514415607930",
+        "conversationId": "1859681514415607930",
+        "inReplyToUserId": "312653402",
+        "inReplyToUsername": "MartinShkreli",
+        "isPinned": false,
+        "author": {
+          "type": "user",
+          "userName": "MartinShkreli",
+          "url": "https://x.com/MartinShkreli",
+          "twitterUrl": "https://twitter.com/MartinShkreli",
+          "id": "312653402",
+          "name": "Martin Shkreli",
+          "isVerified": false,
+          "isBlueVerified": true,
+          "profilePicture": "https://pbs.twimg.com/profile_images/1904997844748005376/wFfbBUBD_normal.jpg",
+          "coverPicture": "https://pbs.twimg.com/profile_banners/312653402/1729090001",
+          "description": "https://t.co/vJE5wyFDrX\nhttps://t.co/GUy99qMi2O - join our Discord!\ne/acc",
+          "location": "NYC",
+          "followers": 308894,
+          "following": 7393,
+          "status": "",
+          "canDm": true,
+          "canMediaTag": false,
+          "createdAt": "Tue Jun 07 13:22:18 +0000 2011",
+          "entities": {
+            "description": {
+              "urls": [
+                {
+                  "display_url": "godelterminal.com",
+                  "expanded_url": "https://godelterminal.com",
+                  "indices": [
+                    0,
+                    23
+                  ],
+                  "url": "https://t.co/vJE5wyFDrX"
+                },
+                {
+                  "display_url": "linktr.ee/mshkreli",
+                  "expanded_url": "https://linktr.ee/mshkreli",
+                  "indices": [
+                    24,
+                    47
+                  ],
+                  "url": "https://t.co/GUy99qMi2O"
+                }
+              ]
+            }
+          },
+          "fastFollowersCount": 0,
+          "favouritesCount": 0,
+          "hasCustomTimelines": true,
+          "isTranslator": false,
+          "mediaCount": 851,
+          "statusesCount": 32908,
+          "withheldInCountries": [],
+          "affiliatesHighlightedLabel": {},
+          "possiblySensitive": false,
+          "pinnedTweetIds": [
+            "1859681514415607930"
+          ],
+          "profile_bio": {
+            "description": "https://t.co/vJE5wyFDrX\nhttps://t.co/GUy99qMi2O - join our Discord!\ne/acc",
+            "entities": {
+              "description": {
+                "urls": [
+                  {
+                    "display_url": "godelterminal.com",
+                    "expanded_url": "https://godelterminal.com",
+                    "indices": [
+                      0,
+                      23
+                    ],
+                    "url": "https://t.co/vJE5wyFDrX"
+                  },
+                  {
+                    "display_url": "linktr.ee/mshkreli",
+                    "expanded_url": "https://linktr.ee/mshkreli",
+                    "indices": [
+                      24,
+                      47
+                    ],
+                    "url": "https://t.co/GUy99qMi2O"
+                  }
+                ]
+              }
+            },
+            "withheld_in_countries": []
+          },
+          "isAutomated": false,
+          "automatedBy": null
+        },
+        "extendedEntities": {},
+        "card": {},
+        "place": {},
+        "entities": {
+          "symbols": [
+            {
+              "indices": [
+                138,
+                143
+              ],
+              "text": "SAVA"
+            }
+          ],
+          "urls": [
+            {
+              "display_url": "ontheimpossible.vercel.app",
+              "expanded_url": "https://ontheimpossible.vercel.app/",
+              "indices": [
+                19,
+                42
+              ],
+              "url": "https://t.co/0GCkfZDssF"
+            }
+          ]
+        },
+        "isRetweet": false,
+        "isQuote": false,
+        "isConversationControlled": false,
+        "quoted_tweet": null,
+        "retweeted_tweet": null
+      }
+    ]
+  }

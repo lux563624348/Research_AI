@@ -13,7 +13,7 @@ model = "claude-3-7-sonnet-20250219"
 
 History_DIR = "history"
 
-async def make_twitter_endpoint_request(endpoint: str, query_param: dict(), ctx: Context | None = None) -> str:
+async def make_twitter_endpoint_request_tbd(endpoint: str, query_param: dict(), ctx: Context | None = None) -> Optional[dict]:
     """
     Query Twitter API via api.twitterapi.io and return.
 
@@ -43,6 +43,34 @@ async def make_twitter_endpoint_request(endpoint: str, query_param: dict(), ctx:
     except Exception as e:
         if ctx:
             await ctx.error(f"❌ Twitter API request failed: {e}")
+        return None
+
+async def make_twitter_endpoint_request(endpoint: str, query_param: dict) -> Optional[dict]:
+    """
+    Query Twitter API via api.twitterapi.io and return JSON response.
+
+    Args:
+        endpoint (str): Twitter API endpoint (e.g., "search", "user", etc.).
+        query_param (dict): Dictionary of query parameters.
+
+    Returns:
+        Optional[dict]: Parsed JSON response from the Twitter API, or None if an error occurred.
+    """
+    api_key = os.getenv("TWITTER_API_KEY")
+    if not api_key:
+        print("❌ Missing TWITTER_API_KEY in environment.")
+        return None
+
+    try:
+        async with httpx.AsyncClient() as client:
+            headers = {"X-API-Key": api_key}
+            base_url = "https://api.twitterapi.io/twitter"
+            url = f"{base_url}/{endpoint}"
+            response = await client.get(url, headers=headers, params=query_param)
+            response.raise_for_status()
+            return response.json()
+    except Exception as e:
+        print(f"❌ Twitter API request failed: {e}")
         return None
 
 async def _extract_with_anthropic(llm_text: str, api_key: str, ctx: Context | None = None) -> str:

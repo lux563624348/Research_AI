@@ -52,7 +52,7 @@ async def get_dataset_h5ad_uri(dataset_id: str = "cb5efdb0-f91c-4cbd-9ad4-9d4fa4
         return structured_response([], str(e))
 
 @mcp.tool()
-async def list_datasets(
+async def cellxgene_dataset_summary(
     tissue: Optional[str] = None,
     max_rows: int = 3
 ) -> List[Dict[str, Any]]:

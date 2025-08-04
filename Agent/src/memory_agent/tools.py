@@ -59,6 +59,11 @@ def load_mcptools() -> List:
     try:
         client = MultiServerMCPClient(
             {   
+                "hubmap": {
+                    "command": "python",
+                    "args": ["./servers/hubmap_server.py"],
+                    "transport": "stdio",
+                },
                 "cellxgene": {
                     "command": "python",
                     "args": ["./servers/cellxgene_server.py"],
