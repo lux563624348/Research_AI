@@ -1,0 +1,58 @@
+{
+  "2403.06792v1": {
+    "title": "Study of the mechanism of electroacupuncture regulating ferroptosis, inhibiting bladder neck fibrosis, and improving bladder urination function after suprasacral spinal cord injury using proteomics",
+    "authors": [
+      "Jin-Can Liu",
+      "Li-Ya Tang",
+      "Xiao-Ying Sun",
+      "Qi-Rui Qu",
+      "Qiong Liu",
+      "Lu Zhou",
+      "Hong Zhang",
+      "Bruce Song",
+      "Ming Xu",
+      "Kun Ai"
+    ],
+    "summary": "Purpose The aim of this study was to explore whether electroacupuncture\nregulates phenotypic transformation of smooth muscle cells by inhibiting\nferroptosis and inhibiting fibrosis, thereby improving bladder urination\nfunction after suprasacral spinal cord injury (SSCI). Methods The experiment\nwas divided into sham, model, and electroacupuncture group. After 10 days of\nelectroacupuncture intervention, urodynamic examination was performed, and\nbladder neck was taken for HE staining, tandem mass tag (TMT)-based\nquantitative proteomics analysis, Western blot(WB) detection, ferrous ion\nconcentration detection and Masson staining. Conclusion Electroacupuncture may\nprevent the phenotype of bladder neck smooth muscle cells from transforming\nfrom contraction type to synthesis type by inhibiting ferroptosis, inhibit\nbladder neck fibrosis, improve bladder neck compliance, and thus improve\nbladder urination function after SSCI.",
+    "pdf_url": "http://arxiv.org/pdf/2403.06792v1",
+    "published": "2024-03-11"
+  },
+  "2405.04790v1": {
+    "title": "Quantifying Smooth Muscles Regional Organization in the Rat Bladder Using Immunohistochemistry, Multiphoton Microscopy and Machine Learning",
+    "authors": [
+      "Alireza Asadbeygi",
+      "Yasutaka Tobe",
+      "Naoki Yoshimura",
+      "Sean D. Stocker",
+      "Simon Watkins",
+      "Paul Watton",
+      "Anne M. Robertson"
+    ],
+    "summary": "The smooth muscle bundles (SMBs) in the bladder act as contractile elements\nwhich enable the bladder to void effectively. In contrast to skeletal muscles,\nthese bundles are not highly aligned, rather they are oriented more\nheterogeneously throughout the bladder wall. In this work, for the first time,\nthis regional orientation of the SMBs is quantified across the whole bladder,\nwithout the need for optical clearing or cryosectioning. Immunohistochemistry\nstaining was utilized to visualize smooth muscle cell actin in multiphoton\nmicroscopy (MPM) images of bladder smooth muscle bundles (SMBs). Feature\nvectors for each pixel were generated using a range of filters, including\nGaussian blur, Gaussian gradient magnitude, Laplacian of Gaussian, Hessian\neigenvalues, structure tensor eigenvalues, Gabor, and Sobel gradients. A Random\nForest classifier was subsequently trained to automate the segmentation of SMBs\nin the MPM images. Finally, the orientation of SMBs in each bladder region was\nquantified using the CT-FIRE package. This information is essential for\nbiomechanical models of the bladder that include contractile elements.",
+    "pdf_url": "http://arxiv.org/pdf/2405.04790v1",
+    "published": "2024-05-08"
+  },
+  "2011.10372v4": {
+    "title": "Transcriptome profiling research in urothelial cell carcinoma",
+    "authors": [
+      "Umar Ahmad",
+      "Buhari Ibrahim",
+      "Mustapha Mohammed",
+      "Ahmed Faris Aldoghachi",
+      "Mahmood Usman",
+      "Abdulbasit Haliru Yakubu",
+      "Abubakar Sadiq Tanko",
+      "Khadijat Abubakar Bobbo",
+      "Usman Adamu Garkuwa",
+      "Abdullahi Adamu Faggo",
+      "Sagir Mustapha",
+      "Mahmoud Al-Masaeed",
+      "Syahril Abdullah",
+      "Yong Yoke Keong",
+      "Abhi Veerakumarasivam"
+    ],
+    "summary": "Urothelial cell carcinoma (UCC) is the ninth most common cancer that accounts\nfor 4.7% of all the new cancer cases globally. UCC development and progression\nare due to complex and stochastic genetic programmes. To study the cascades of\nmolecular events underlying the poor prognosis that may lead to limited\ntreatment options for advanced disease and resistance to conventional therapies\nin UCC, transcriptomics technology (RNA-Seq), a method of analysing the RNA\ncontent of a sample using modern high-throughput sequencing platforms has been\nemployed. Here we review the principles of RNA-Seq technology and summarize\nrecent studies on human bladder cancer that employed this technique to unravel\nthe pathogenesis of the disease, identify biomarkers, discover pathways and\nclassify the disease state. We list the commonly used computational platforms\nand software that are publicly available for RNA-Seq analysis. Moreover, we\ndiscussed the future perspectives for RNA-Seq studies on bladder cancer and\nrecommend the application of new technology called single cell sequencing\n(scRNA-Seq) to further understand the disease. Keywords: Transcriptome\nprofiling, RNA-sequencing, genomics, bioinformatics, bladder cancer",
+    "pdf_url": "http://arxiv.org/pdf/2011.10372v4",
+    "published": "2020-11-20"
+  }
+}

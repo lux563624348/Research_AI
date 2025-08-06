@@ -1,0 +1,27 @@
+{
+  "2110.03193v2": {
+    "title": "Robust Segmentation of Cell Nuclei in 3-D Microscopy Images",
+    "authors": [
+      "Sundaresh Ram",
+      "Jeffrey J. Rodriguez"
+    ],
+    "summary": "Accurate segmentation of 3-D cell nuclei in microscopy images is essential\nfor the study of nuclear organization, gene expression, and cell\nmorphodynamics. Current image segmentation methods are challenged by the\ncomplexity and variability of microscopy images and often over-segment or\nunder-segment the cell nuclei. Thus, there is a need to improve segmentation\naccuracy and reliability, as well as the level of automation. In this paper, we\npropose a new automated algorithm for robust segmentation of 3-D cell nuclei\nusing the concepts of random walk, graph theory, and mathematical morphology as\nthe foundation. Like other segmentation algorithms, we first use a seed\ndetection/marker extraction algorithm to find a seed voxel for each individual\ncell nucleus. Next, using the concept of random walk on a graph we find the\nprobability of all the pixels in the 3-D image to reach the seed pixels of each\nnucleus identified by the seed detection algorithm. We then generate a 3-D\nresponse image by combining these probabilities for each voxel and use the\nmarker controlled watershed transform on this response image to obtain an\ninitial segmentation of the cell nuclei. Finally, we apply local region-based\nactive contours to obtain final segmentation of the cell nuclei. The advantage\nof using such an approach is that it is capable of accurately segmenting highly\ntextured cells having inhomogeneous intensities and varying shapes and sizes.\nThe proposed algorithm was compared with three other automated nucleus\nsegmentation algorithms for segmentation accuracy using overlap measure,\nTanimoto index, Rand index, F-score, and Hausdorff distance measure.\nQuantitative and qualitative results show that our algorithm provides improved\nsegmentation accuracy compared to existing algorithms.",
+    "pdf_url": "http://arxiv.org/pdf/2110.03193v2",
+    "published": "2021-10-07"
+  },
+  "2310.14226v1": {
+    "title": "Multi-stream Cell Segmentation with Low-level Cues for Multi-modality Images",
+    "authors": [
+      "Wei Lou",
+      "Xinyi Yu",
+      "Chenyu Liu",
+      "Xiang Wan",
+      "Guanbin Li",
+      "Siqi Liu",
+      "Haofeng Li"
+    ],
+    "summary": "Cell segmentation for multi-modal microscopy images remains a challenge due\nto the complex textures, patterns, and cell shapes in these images. To tackle\nthe problem, we first develop an automatic cell classification pipeline to\nlabel the microscopy images based on their low-level image characteristics, and\nthen train a classification model based on the category labels. Afterward, we\ntrain a separate segmentation model for each category using the images in the\ncorresponding category. Besides, we further deploy two types of segmentation\nmodels to segment cells with roundish and irregular shapes respectively.\nMoreover, an efficient and powerful backbone model is utilized to enhance the\nefficiency of our segmentation model. Evaluated on the Tuning Set of NeurIPS\n2022 Cell Segmentation Challenge, our method achieves an F1-score of 0.8795 and\nthe running time for all cases is within the time tolerance.",
+    "pdf_url": "http://arxiv.org/pdf/2310.14226v1",
+    "published": "2023-10-22"
+  }
+}

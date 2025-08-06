@@ -1,0 +1,82 @@
+{
+  "2007.13115v1": {
+    "title": "Challenges in constructing genetic instruments for pharmacologic therapies",
+    "authors": [
+      "B. A. Ference",
+      "G. Davey Smith",
+      "M. V. Holmes",
+      "A. L. Catapano",
+      "K. K. Ray",
+      "S. J. Nicholls"
+    ],
+    "summary": "The genes that encode the targets of most therapies do not have rare variants\nwith large-effect or common variants with moderate effects on the biomarker\nreflecting the pharmacologic action of the corresponding therapy. Therefore,\nproviding genetic target validation for most therapies is challenging. Novel\nmethods are being developed to combine multiple variants in the gene encoding\nthe target of a therapy that are weakly associated with the biomarker\nreflecting the pharmacologic action of that therapy into a genetic score that\ncan be used as an adequate instrumental variable. We describe one approach to\nsolve this important problem.",
+    "pdf_url": "http://arxiv.org/pdf/2007.13115v1",
+    "published": "2020-07-26"
+  },
+  "0810.0239v1": {
+    "title": "Stochastic models and numerical algorithms for a class of regulatory gene networks",
+    "authors": [
+      "Thomas Fournier",
+      "Jean-Pierre Gabriel",
+      "Christian Mazza",
+      "Jerome Pasquier",
+      "Jose Galbete",
+      "Nicolas Mermod"
+    ],
+    "summary": "Regulatory gene networks contain generic modules like those involving\nfeedback loops, which are essential for the regulation of many biological\nfunctions. We consider a class of self-regulated genes which are the building\nblocks of many regulatory gene networks, and study the steady state\ndistributions of the associated Gillespie algorithm by providing efficient\nnumerical algorithms. We also study a regulatory gene network of interest in\nsynthetic biology and in gene therapy, using mean-field models with time\ndelays. Convergence of the related time-nonhomogeneous Markov chain is\nestablished for a class of linear catalytic networks with feedback loops",
+    "pdf_url": "http://arxiv.org/pdf/0810.0239v1",
+    "published": "2008-10-01"
+  },
+  "1902.00728v1": {
+    "title": "New combinational therapies for cancer using modern statistical mechanics",
+    "authors": [
+      "Jorge A. Gonz\u00e1lez",
+      "M. Acanda",
+      "Z. Akhtar",
+      "D. Andrews",
+      "J. I. Azqueta",
+      "E. Bass",
+      "A. Bellor\u00edn",
+      "J. Couso",
+      "M\u00f3nica A. Garc\u00eda-\u00d1ustes",
+      "Y. Infante",
+      "S. Jim\u00e9nez",
+      "L. Lester",
+      "L. Maldonado",
+      "Juan F. Mar\u00edn",
+      "L. Pineda",
+      "I. Rodr\u00edguez",
+      "C. C. Tamayo",
+      "D. Valdes",
+      "L. V\u00e1zquez"
+    ],
+    "summary": "We investigate a new dynamical system that describes tumor-host interaction.\nThe equation that describes the untreated tumor growth is based on\nnon-extensive statistical mechanics. Recently, this model has been shown to fit\nsuccessfully exponential, Gompertz, logistic, and power-law tumor growths. We\nhave been able to include as many hallmarks of cancer as possible. We study\nalso the dynamic response of cancer under therapy. Using our model, we can make\npredictions about the different outcomes when we change the parameters, and/or\nthe initial conditions. We can determine the importance of different factors to\ninfluence tumor growth. We discover synergistic therapeutic effects of\ndifferent treatments and drugs. Cancer is generally untreatable using\nconventional monotherapy. We consider conventional therapies, oncogene-targeted\ntherapies, tumor-suppressors gene-targeted therapies, immunotherapies,\nanti-angiogenesis therapies, virotherapy, among others. We need therapies with\nthe potential to target both tumor cells and the tumors' microenvironment.\nDrugs that target oncogenes and tumor-suppressor genes can be effective in the\ntreatment of some cancers. However, most tumors do reoccur. We have found that\nthe success of the new therapeutic agents can be seen when used in combination\nwith other cancer-cell-killing therapies. Our results have allowed us to design\na combinational therapy that can lead to the complete eradication of cancer.",
+    "pdf_url": "http://arxiv.org/pdf/1902.00728v1",
+    "published": "2019-02-02"
+  },
+  "q-bio/0511020v1": {
+    "title": "Induction in myeloid leukemic cells of genes that are expressed in different normal tissues",
+    "authors": [
+      "Joseph Lotem",
+      "Hila Benjamin",
+      "Dvir Netaneli",
+      "Eytan Domany",
+      "Leo Sachs"
+    ],
+    "summary": "Using DNA microarray and cluster analysis of expressed genes in a cloned line\n(M1-t-p53) of myeloid leukemic cells, we have analyzed the expression of genes\nthat are preferentially expressed in different normal tissues. Clustering of\n547 highly expressed genes in these leukemic cells showed 38 genes\npreferentially expressed in normal hematopoietic tissues and 122 other genes\npreferentially expressed in different normal non-hematopoietic tissues\nincluding neuronal tissues, muscle, liver and testis. We have also analyzed the\ngenes whose expression in the leukemic cells changed after activation of\nwild-type p53 and treatment with the cytokine interleukin 6 (IL-6) or the\ncalcium mobilizer thapsigargin (TG). Out of 620 such genes in the leukemic\ncells that were differentially expressed in normal tissues, clustering showed\n80 genes that were preferentially expressed in hematopoietic tissues and 132\ngenes in different normal non-hematopietic tissues that also included neuronal\ntissues, muscle, liver and testis. Activation of p53 and treatment with IL-6 or\nTG induced different changes in the genes preferentially expressed in these\nnormal tissues. These myeloid leukemic cells thus express genes that are\nexpressed in normal non-hematopoietic tissues, and various treatments can\nreprogram these cells to induce other such non-hematopoietic genes. The results\nindicate that these leukemic cells share with normal hematopoietic stem cells\nthe plasticity of differentiation to different cell types. It is suggested that\nthis reprogramming to induce in malignant cells genes that are expressed in\ndifferent normal tissues may be of clinical value in therapy.",
+    "pdf_url": "http://arxiv.org/pdf/q-bio/0511020v1",
+    "published": "2005-11-15"
+  },
+  "2403.01927v1": {
+    "title": "Advancing Gene Selection in Oncology: A Fusion of Deep Learning and Sparsity for Precision Gene Selection",
+    "authors": [
+      "Akhila Krishna",
+      "Ravi Kant Gupta",
+      "Pranav Jeevan",
+      "Amit Sethi"
+    ],
+    "summary": "Gene selection plays a pivotal role in oncology research for improving\noutcome prediction accuracy and facilitating cost-effective genomic profiling\nfor cancer patients. This paper introduces two gene selection strategies for\ndeep learning-based survival prediction models. The first strategy uses a\nsparsity-inducing method while the second one uses importance based gene\nselection for identifying relevant genes. Our overall approach leverages the\npower of deep learning to model complex biological data structures, while\nsparsity-inducing methods ensure the selection process focuses on the most\ninformative genes, minimizing noise and redundancy. Through comprehensive\nexperimentation on diverse genomic and survival datasets, we demonstrate that\nour strategy not only identifies gene signatures with high predictive power for\nsurvival outcomes but can also streamlines the process for low-cost genomic\nprofiling. The implications of this research are profound as it offers a\nscalable and effective tool for advancing personalized medicine and targeted\ncancer therapies. By pushing the boundaries of gene selection methodologies,\nour work contributes significantly to the ongoing efforts in cancer genomics,\npromising improved diagnostic and prognostic capabilities in clinical settings.",
+    "pdf_url": "http://arxiv.org/pdf/2403.01927v1",
+    "published": "2024-03-04"
+  }
+}

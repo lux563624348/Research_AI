@@ -1,0 +1,50 @@
+{
+  "2506.21719v1": {
+    "title": "A new algorithm for sampling parameters in a structured correlation matrix with application to estimating optimal combinations of muscles to quantify progression in Duchenne muscular dystrophy",
+    "authors": [
+      "Michael K. Kim",
+      "Michael J. Daniels",
+      "William D. Rooney",
+      "Rebecca J. Willcocks",
+      "Glenn A. Walter",
+      "Krista H. Vandenborne"
+    ],
+    "summary": "The goal of this paper is to estimate an optimal combination of biomarkers\nfor individuals with Duchenne muscular dystrophy (DMD), which provides the most\nsensitive combinations of biomarkers to assess disease progression (in this\ncase, optimal with respect to standardized response mean (SRM) for 4 muscle\nbiomarkers). The biomarker data is an incomplete (missing and irregular)\nmultivariate longitudinal data. We propose a normal model with structured\ncovariance designed for our setting. To sample from the posterior distribution\nof parameters, we develop a Markov Chain Monte Carlo (MCMC) algorithm to\naddress the positive definiteness constraint on the structured correlation\nmatrix. In particular, we propose a novel approach to compute the support of\nthe parameters in the structured correlation matrix; we modify the approach\nfrom \\cite{Barnard} on the set of largest possible submatrices of the\ncorrelation matrix, where the correlation parameter is a unique element. For\neach posterior sample, we compute the optimal weights of our construct. We\nconduct data analysis and simulation studies to evaluate the algorithm and the\nfrequentist properties of the posteriors of correlations and weights. We found\nthat the lower extremities are the most responsive muscles at the early and\nlate ambulatory disease stages and the biceps brachii is the most responsive at\nthe non-ambulatory disease stage.",
+    "pdf_url": "http://arxiv.org/pdf/2506.21719v1",
+    "published": "2025-06-26"
+  },
+  "2504.03986v2": {
+    "title": "Harnessing Fast Fourier Transform for Rapid Community Travel Distance and Step Estimation in Children with Duchenne Muscular Dystrophy",
+    "authors": [
+      "Erik K. Henricson",
+      "Albara Ah Ramli"
+    ],
+    "summary": "Accurate estimation of gait characteristics, including step length, step\nvelocity, and travel distance, is critical for assessing mobility in toddlers,\nchildren and teens with Duchenne muscular dystrophy (DMD) and typically\ndeveloping (TD) peers. This study introduces a novel method leveraging Fast\nFourier Transform (FFT)-derived step frequency from a single waist-worn\nconsumer-grade accelerometer to predict gait parameters efficiently. The\nproposed FFT-based step frequency detection approach, combined with\nregression-derived stride length estimation, enables precise measurement of\ntemporospatial gait features across various walking and running speeds. Our\nmodel, developed from a diverse cohort of children aged 3-16, demonstrated high\naccuracy in step length estimation (R^2=0.92, RMSE = 0.06) using only step\nfrequency and height as inputs. Comparative analysis with ground-truth\nobservations and AI-driven Walk4Me models validated the FFT-based method,\nshowing strong agreement across step count, step frequency, step length, step\nvelocity, and travel distance metrics. The results highlight the feasibility of\nusing widely available mobile devices for gait assessment in real-world\nsettings, offering a scalable solution for monitoring disease progression and\nmobility changes in individuals with DMD. Future work will focus on refining\nmodel performance and expanding applicability to additional movement disorders.",
+    "pdf_url": "http://arxiv.org/pdf/2504.03986v2",
+    "published": "2025-04-04"
+  },
+  "2105.06295v3": {
+    "title": "Gait Characterization in Duchenne Muscular Dystrophy (DMD) Using a Single-Sensor Accelerometer: Classical Machine Learning and Deep Learning Approaches",
+    "authors": [
+      "Albara Ah Ramli",
+      "Xin Liu",
+      "Kelly Berndt",
+      "Erica Goude",
+      "Jiahui Hou",
+      "Lynea B. Kaethler",
+      "Rex Liu",
+      "Amanda Lopez",
+      "Alina Nicorici",
+      "Corey Owens",
+      "David Rodriguez",
+      "Jane Wang",
+      "Huanle Zhang",
+      "Daniel Aranki",
+      "Craig M. McDonald",
+      "Erik K. Henricson"
+    ],
+    "summary": "Differences in gait patterns of children with Duchenne muscular dystrophy\n(DMD) and typically-developing (TD) peers are visible to the eye, but\nquantifications of those differences outside of the gait laboratory have been\nelusive. In this work, we measured vertical, mediolateral, and anteroposterior\nacceleration using a waist-worn iPhone accelerometer during ambulation across a\ntypical range of velocities. Fifteen TD and fifteen DMD children from 3-16\nyears of age underwent eight walking/running activities, including five 25\nmeters walk/run speed-calibration tests at a slow walk to running speeds (SC-L1\nto SC-L5), a 6-minute walk test (6MWT), a 100 meters fast-walk/jog/run\n(100MRW), and a free walk (FW). For clinical anchoring purposes, participants\ncompleted a Northstar Ambulatory Assessment (NSAA). We extracted temporospatial\ngait clinical features (CFs) and applied multiple machine learning (ML)\napproaches to differentiate between DMD and TD children using extracted\ntemporospatial gait CFs and raw data. Extracted temporospatial gait CFs showed\nreduced step length and a greater mediolateral component of total power (TP)\nconsistent with shorter strides and Trendelenberg-like gait commonly observed\nin DMD. ML approaches using temporospatial gait CFs and raw data varied in\neffectiveness at differentiating between DMD and TD controls at different\nspeeds, with an accuracy of up to 100%. We demonstrate that by using ML with\naccelerometer data from a consumer-grade smartphone, we can capture\nDMD-associated gait characteristics in toddlers to teens.",
+    "pdf_url": "http://arxiv.org/pdf/2105.06295v3",
+    "published": "2021-05-12"
+  }
+}

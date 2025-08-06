@@ -1,0 +1,46 @@
+{
+  "2505.07865v1": {
+    "title": "CellVerse: Do Large Language Models Really Understand Cell Biology?",
+    "authors": [
+      "Fan Zhang",
+      "Tianyu Liu",
+      "Zhihong Zhu",
+      "Hao Wu",
+      "Haixin Wang",
+      "Donghao Zhou",
+      "Yefeng Zheng",
+      "Kun Wang",
+      "Xian Wu",
+      "Pheng-Ann Heng"
+    ],
+    "summary": "Recent studies have demonstrated the feasibility of modeling single-cell data\nas natural languages and the potential of leveraging powerful large language\nmodels (LLMs) for understanding cell biology. However, a comprehensive\nevaluation of LLMs' performance on language-driven single-cell analysis tasks\nstill remains unexplored. Motivated by this challenge, we introduce CellVerse,\na unified language-centric question-answering benchmark that integrates four\ntypes of single-cell multi-omics data and encompasses three hierarchical levels\nof single-cell analysis tasks: cell type annotation (cell-level), drug response\nprediction (drug-level), and perturbation analysis (gene-level). Going beyond\nthis, we systematically evaluate the performance across 14 open-source and\nclosed-source LLMs ranging from 160M to 671B on CellVerse. Remarkably, the\nexperimental results reveal: (1) Existing specialist models (C2S-Pythia) fail\nto make reasonable decisions across all sub-tasks within CellVerse, while\ngeneralist models such as Qwen, Llama, GPT, and DeepSeek family models exhibit\npreliminary understanding capabilities within the realm of cell biology. (2)\nThe performance of current LLMs falls short of expectations and has substantial\nroom for improvement. Notably, in the widely studied drug response prediction\ntask, none of the evaluated LLMs demonstrate significant performance\nimprovement over random guessing. CellVerse offers the first large-scale\nempirical demonstration that significant challenges still remain in applying\nLLMs to cell biology. By introducing CellVerse, we lay the foundation for\nadvancing cell biology through natural languages and hope this paradigm could\nfacilitate next-generation single-cell analysis.",
+    "pdf_url": "http://arxiv.org/pdf/2505.07865v1",
+    "published": "2025-05-09"
+  },
+  "1707.02930v1": {
+    "title": "Exploring the underlying mechanisms of Xenopus laevis embryonic cell cycle",
+    "authors": [
+      "Kun Zhang",
+      "Jin Wang"
+    ],
+    "summary": "Cell cycle is an indispensable process in the proliferation and development.\nDespite significant efforts, global quantification and physical understanding\nare still challenging. In this study, we explored the mechanisms of Xenopus\nlaevis embryonic cell cycle by quantifying the underlying landscape and flux.\nWe uncovered the irregular Mexican hat landscape of the Xenopus laevis\nembryonic cell cycle with several local basins and barriers on the oscillation\npath. The local basins characterize the different phases of Xenopus laevis\nembryonic cell cycle and the local barriers represent the checkpoints. The\ncheckpoint mechanism of cell cycle is revealed by the landscape basins and\nbarriers. While landscape shape determines the stabilities of the states on the\noscillation path, the curl flux force determines the stability of the cell\ncycle flow. Replication is fundamental for biology of living. From our\nquantitative study here, we see that replication can not proceed without energy\ninput. In fact, the curl flux originated from energy or nutrition supply\ndetermines the speed of the cell cycle and guarantees the progression. Speed of\ncell cycle is a hallmark of cancer. Through landscape and flux analysis, one\ncan identify the key elements for controlling the speed. This can help to\ndesign effective strategy for drug discovery against cancer.",
+    "pdf_url": "http://arxiv.org/pdf/1707.02930v1",
+    "published": "2017-06-30"
+  },
+  "1707.00854v1": {
+    "title": "The emergence of the two cell fates and their associated switching for a negative auto-regulating gene",
+    "authors": [
+      "Zhenlong Jiang",
+      "Li Tian",
+      "Xiaona Fang",
+      "Kun Zhang",
+      "Qiong Liu",
+      "Qingzhe Dong",
+      "Erkang Wang",
+      "Jin Wang"
+    ],
+    "summary": "Decisions in the cell that lead to its ultimate fate are important for\ncellular functions such as proliferation, growth, differentiation, development\nand death. Understanding this decision process is imperative for advancements\nin the treatment of diseases such as cancer. It is clear that underlying gene\nregulatory networks and surrounding environments of the cells are crucial for\nfunction. The self-repressor is a very abundant gene regulatory motif, and is\noften believed to have only one cell fate. In this study, we elucidate the\neffects of microenvironments mimicking the epigenetic effects on cell fates\nthrough the introduction of inducers capable of binding to a self-repressing\ngene product (protein), thus regulating the associated gene. This alters the\neffective regulatory binding speed of the self-repressor regulatory protein to\nits destination DNA without changing the gene itself. The steady state\nobservations and real time monitoring of the self-repressor expression dynamics\nreveal the emergence of the two cell fates, The simulations are consistent with\nthe experimental findings. We provide physical and quantitative explanations\nfor the origin of the two phenotypic cell fates. We find that two cell fates,\nrather than a single fate, and their associated switching dynamics emerge from\na change in effective gene regulation strengths. The switching time scale is\nquantified. Our results reveal a new mechanism for the emergence of multiple\ncell fates. This provides an origin for the heterogeneity often observed among\ncell states, while illustrating the influence of microenvironments on cell\nfates and their decision-making processes without genetic changes",
+    "pdf_url": "http://arxiv.org/pdf/1707.00854v1",
+    "published": "2017-07-04"
+  }
+}

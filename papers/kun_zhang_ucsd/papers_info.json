@@ -1,0 +1,31 @@
+{
+  "0810.3967v1": {
+    "title": "Hyperbolic structures on closed spacelike manifolds",
+    "authors": [
+      "Kun Zhang"
+    ],
+    "summary": "In this paper, we study the intrinsic mean curvature flow on certain closed\nspacelike manifolds, and prove the existence of hyperbolic structures on them.",
+    "pdf_url": "http://arxiv.org/pdf/0810.3967v1",
+    "published": "2008-10-22"
+  },
+  "2303.15723v1": {
+    "title": "Redeeming Falsifiability?",
+    "authors": [
+      "Mark Whitmeyer",
+      "Kun Zhang"
+    ],
+    "summary": "We revisit Popper's falsifiability criterion. A tester hires a potential\nexpert to produce a theory, offering payments contingent on the observed\nperformance of the theory. We argue that if the informed expert can acquire\nadditional information, falsifiability does have the power to identify\nworthless theories.",
+    "pdf_url": "http://arxiv.org/pdf/2303.15723v1",
+    "published": "2023-03-28"
+  },
+  "1511.04537v1": {
+    "title": "Euler characteristic numbers of space-like manifolds",
+    "authors": [
+      "Bing-Long Chen",
+      "Kun Zhang"
+    ],
+    "summary": "In this note, we prove that if a compact even dimensional manifold $M^{n}$\nwith negative sectional curvature is homotopic to some compact space-like\nmanifold $N^{n}$, then the Euler characteristic number of $M^{n}$ satisfies\n$(-1)^{\\frac{n}{2}}\\chi(M^{n})>0$. We also show that the minimal volume\nconjecture of Gromov is true for all compact even dimensional space-like\nmanifolds.",
+    "pdf_url": "http://arxiv.org/pdf/1511.04537v1",
+    "published": "2015-11-14"
+  }
+}

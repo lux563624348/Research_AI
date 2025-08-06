@@ -1,0 +1,28 @@
+{
+  "1505.05601v1": {
+    "title": "Unsupervised Segmentation of Overlapping Cervical Cell Cytoplasm",
+    "authors": [
+      "S L Happy",
+      "Swarnadip Chatterjee",
+      "Debdoot Sheet"
+    ],
+    "summary": "Overlapping of cervical cells and poor contrast of cell cytoplasm are the\nmajor issues in accurate detection and segmentation of cervical cells. An\nunsupervised cell segmentation approach is presented here. Cell clump\nsegmentation was carried out using the extended depth of field (EDF) image\ncreated from the images of different focal planes. A modified Otsu method with\nprior class weights is proposed for accurate segmentation of nuclei from the\ncell clumps. The cell cytoplasm was further segmented from cell clump depending\nupon the number of nucleus detected in that cell clump. Level set model was\nused for cytoplasm segmentation.",
+    "pdf_url": "http://arxiv.org/pdf/1505.05601v1",
+    "published": "2015-05-21"
+  },
+  "1505.00325v1": {
+    "title": "Two-dimensional segmentation of small convective patterns in radiation hydrodynamics simulations",
+    "authors": [
+      "B. Lemmerer",
+      "D. Utz",
+      "A. Hanslmeier",
+      "A. Veronig",
+      "S. Thonhofer",
+      "H. Grimm-Strele",
+      "R. Kariyappa"
+    ],
+    "summary": "Recent results from high-resolution solar granulation observations indicate\nthe existence of a population of small granular cells that are smaller than 600\nkm in diameter. These small convective cells strongly contribute to the total\narea of granules and are located in the intergranular lanes, where they form\nclusters and chains. We study high-resolution radiation hydrodynamics\nsimulations of the upper convection zone and photosphere to detect small\ngranular cells, define their spatial alignment, and analyze their physical\nproperties. We developed an automated image-segmentation algorithm specifically\nadapted to high-resolution simulations to identify granules. The resulting\nsegmentation masks were applied to physical quantities, such as intensity and\nvertical velocity profiles, provided by the simulation. A new clustering\nalgorithm was developed to study the alignment of small granular cells. This\nstudy shows that small granules make a distinct contribution to the total area\nof granules and form clusters of chain-like alignments. The simulation profiles\ndemonstrate a different nature for small granular cells because they exhibit on\naverage lower intensities, lower horizontal velocities, and are located deeper\ninside of convective layers than regular granules. Their intensity distribution\ndeviates from a normal distribution as known for larger granules, and follows a\nWeibull distribution.",
+    "pdf_url": "http://arxiv.org/pdf/1505.00325v1",
+    "published": "2015-05-02"
+  }
+}

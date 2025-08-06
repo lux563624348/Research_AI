@@ -1,0 +1,34 @@
+{
+  "2111.11880v1": {
+    "title": "CRISPR SWAPnDROP -- A multifunctional system for genome editing and large-scale interspecies gene transfer",
+    "authors": [
+      "Marc Teufel",
+      "Carlo A. Klein",
+      "Maurice Mager",
+      "Patrick Sobetzko"
+    ],
+    "summary": "The need for diverse chromosomal modifications in biotechnology, synthetic\nbiology and basic research requires the development of new technologies. With\nCRISPR SWAPnDROP, we extend the limits of genome editing to large-scale in-vivo\nDNA transfer between bacterial species. Its modular platform approach\nfacilitates species specific adaptation to confer genome editing in various\nspecies. In this study, we show the implementation of the CRISPR SWAPnDROP\nconcept for the model organism Escherichia coli and the currently fastest\ngrowing and biotechnologically relevant organism Vibrio natriegens. We\ndemonstrate the excision, transfer and integration of 151kb chromosomal DNA\nbetween E. coli strains and from E. coli to V. natriegens without size-limiting\nintermediate DNA extraction. With the transfer of the E. coli MG1655 wild type\nlac operon, we establish a functional lactose and galactose degradation pathway\nin V. natriegens to extend its biotechnological spectrum. We also transfer the\nE. coli DH5alpha lac operon and make V. natriegens capable of\nalpha-complementation - a step towards an ultra-fast cloning strain.\nFurthermore, CRISPR SWAPnDROP is designed to be the swiss army knife of genome\nengineering. Its spectrum of application comprises scarless, marker-free,\niterative and parallel insertions and deletions, genome rearrangements, as well\nas gene transfer between strains and across species. The modular character\nfacilitates DNA library applications and the recycling of standardized parts.\nIts novel multi-color scarless co-selection system significantly improves\nediting efficiency to 92% for single edits and 83% for quadruple edits and\nprovides visual quality controls throughout the assembly and editing process.",
+    "pdf_url": "http://arxiv.org/pdf/2111.11880v1",
+    "published": "2021-11-23"
+  },
+  "2305.06769v1": {
+    "title": "Comparative Analysis of Machine Learning Algorithms for Predicting On-Target and Off-Target Effects of CRISPR-Cas13d for gene editing",
+    "authors": [
+      "Jingze Liu",
+      "Jiahao Ma"
+    ],
+    "summary": "CRISPR-Cas13 is a system that utilizes single stranded RNAs for RNA editing.\nPrediction of on-target and off-target effects for the CRISPR-Cas13d dependency\nenables us to design specific single guide RNAs (sgRNAs) that help locate the\ndesired RNA target positions. In this study, we compared the performance of\nmultiple machine learning algorithms in predicting these effects using a\nreported dataset. Our results show that Catboost is the most accurate model\nwith high sensitivity. This finding represents a significant advancement in our\nunderstanding of how to chose modeling methods to deal with RNA sequence\nfeaatures effictivelys. Furthermore, our approach can potentially be applied to\nother CRISPR systems and genetic engineering techniques. Overall, this work has\nimportant implications for developing safer and more effective gene therapies\nand biotechnological applications.",
+    "pdf_url": "http://arxiv.org/pdf/2305.06769v1",
+    "published": "2023-05-11"
+  },
+  "1712.09865v2": {
+    "title": "The physicist's guide to one of biotechnology's hottest new topics: CRISPR-Cas",
+    "authors": [
+      "Melia E. Bonomo",
+      "Michael W. Deem"
+    ],
+    "summary": "Clustered regularly interspaced short palindromic repeats (CRISPR) and\nCRISPR-associated proteins (Cas) constitute a multi-functional, constantly\nevolving immune system in bacteria and archaea cells. A heritable, molecular\nmemory is generated of phage, plasmids, or other mobile genetic elements that\nattempt to attack the cell. This memory is used to recognize and interfere with\nsubsequent invasions from the same genetic elements. This versatile prokaryotic\ntool has also been used to advance applications in biotechnology. Here we\nreview a large body of CRISPR-Cas research to explore themes of evolution and\nselection, population dynamics, horizontal gene transfer, specific and\ncross-reactive interactions, cost and regulation, non-immunological CRISPR\nfunctions that boost host cell robustness, as well as applicable mechanisms for\nefficient and specific genetic engineering. We offer future directions that can\nbe addressed by the physics community. Physical understanding of the CRISPR-Cas\nsystem will advance uses in biotechnology, such as developing cell lines and\nanimal models, cell labeling and information storage, combatting antibiotic\nresistance, and human therapeutics.",
+    "pdf_url": "http://arxiv.org/pdf/1712.09865v2",
+    "published": "2017-12-28"
+  }
+}

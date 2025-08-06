@@ -1,0 +1,39 @@
+{
+  "2408.11844v2": {
+    "title": "Portable-CELLxGENE: standalone executables of CELLxGENE for easy installation",
+    "authors": [
+      "George T. Hall"
+    ],
+    "summary": "Biologists who want to analyse their single-cell transcriptomics dataset must\ninstall and use specialist software via the command line. This is often\nimpractical for non-bioinformaticians. Whilst the popular CELLxGENE software\nprovides an intuitive graphical interface to facilitate analysis outside the\ncommand line, its server-side installation and execution remain complex. A\nversion that is easier to install and run would allow non-bioinformaticians to\ntake advantage of this valuable tool without needing to use the command line.\nPortable-CELLxGENE is a standalone distribution of CELLxGENE that can be\ninstalled via a graphical interface. It contains an easy-to-use extension of\nthe CELLxGENE-Gateway Python package to allow the analysis of multiple\ndatasets.\n  Availability and implementation: Versions of Portable-CELLxGENE for Windows\nand MacOS, along with its source code, are available at\ngithub.com/george-hall-ucl/portable-cellxgene. It is licensed under the GNU\nGeneral Public License v3.",
+    "pdf_url": "http://arxiv.org/pdf/2408.11844v2",
+    "published": "2024-08-07"
+  },
+  "2212.00519v1": {
+    "title": "Corvo: Visualizing CellxGene Single-Cell Datasets in Virtual Reality",
+    "authors": [
+      "Luke Hyman",
+      "Ivo F. Sbalzarini",
+      "Stephen Quake",
+      "Ulrik G\u00fcnther"
+    ],
+    "summary": "The CellxGene project has enabled access to single-cell data in the\nscientific community, providing tools for browsed-based no-code analysis of\nmore than 500 annotated datasets. However, single-cell data requires\ndimensional reduction to visualize, and 2D embedding does not take full\nadvantage of three-dimensional human spatial understanding and cognition.\nCompared to a 2D visualization that could potentially hide gene expression\npatterns, 3D Virtual Reality may enable researchers to make better use of the\ninformation contained within the datasets. For this purpose, we present\n\\emph{Corvo}, a fully free and open-source software tool that takes the\nvisualization and analysis of CellxGene single-cell datasets to 3D Virtual\nReality. Similar to CellxGene, Corvo takes a no-code approach for the end user,\nbut also offers multimodal user input to facilitate fast navigation and\nanalysis, and is interoperable with the existing Python data science ecosystem.\nIn this paper, we explain the design goals of Corvo, detail its approach to the\nVirtual Reality visualization and analysis of single-cell data, and briefly\ndiscuss limitations and future extensions.",
+    "pdf_url": "http://arxiv.org/pdf/2212.00519v1",
+    "published": "2022-12-01"
+  },
+  "2408.12373v2": {
+    "title": "Cell-ontology guided transcriptome foundation model",
+    "authors": [
+      "Xinyu Yuan",
+      "Zhihao Zhan",
+      "Zuobai Zhang",
+      "Manqi Zhou",
+      "Jianan Zhao",
+      "Boyu Han",
+      "Yue Li",
+      "Jian Tang"
+    ],
+    "summary": "Transcriptome foundation models TFMs hold great promises of deciphering the\ntranscriptomic language that dictate diverse cell functions by self-supervised\nlearning on large-scale single-cell gene expression data, and ultimately\nunraveling the complex mechanisms of human diseases. However, current TFMs\ntreat cells as independent samples and ignore the taxonomic relationships\nbetween cell types, which are available in cell ontology graphs. We argue that\neffectively leveraging this ontology information during the TFM pre-training\ncan improve learning biologically meaningful gene co-expression patterns while\npreserving TFM as a general purpose foundation model for downstream zero-shot\nand fine-tuning tasks. To this end, we present single cell, Cell-ontology\nguided TFM scCello. We introduce cell-type coherence loss and ontology\nalignment loss, which are minimized along with the masked gene expression\nprediction loss during the pre-training. The novel loss component guide scCello\nto learn the cell-type-specific representation and the structural relation\nbetween cell types from the cell ontology graph, respectively. We pre-trained\nscCello on 22 million cells from CellxGene database leveraging their cell-type\nlabels mapped to the cell ontology graph from Open Biological and Biomedical\nOntology Foundry. Our TFM demonstrates competitive generalization and\ntransferability performance over the existing TFMs on biologically important\ntasks including identifying novel cell types of unseen cells, prediction of\ncell-type-specific marker genes, and cancer drug responses.",
+    "pdf_url": "http://arxiv.org/pdf/2408.12373v2",
+    "published": "2024-08-22"
+  }
+}

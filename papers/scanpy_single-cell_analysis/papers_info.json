@@ -1,0 +1,32 @@
+{
+  "astro-ph/0509131v1": {
+    "title": "The far-infrared properties of the most isolated galaxies",
+    "authors": [
+      "U. Lisenfeld",
+      "L. Verdes-Montenegro",
+      "S. Leon",
+      "J. Sulentic"
+    ],
+    "summary": "Although it is widely accepted that galaxy interactions stimulate secular\nevolutionary effects (e.g. enhanced star formation) the amplitude of this\neffect and the processes for accomplishing them, are not well quantified. The\ngoal of the project AMIGA (Analysis of the Interstellar Medium of Isolated\nGalaxies) is to provide a sizable reference sample (n=1050) of the most\nisolated galaxies as a basis for the study of the influence of the environment\non galaxy properties. Here, we present the far-infrared (FIR) properties of\n1030 galaxies of the sample for which IRAS data are available. We improved the\ndetection rate and accuracy of the IRAS data with respect to the Point Source\nand Faint Source Catalog by redoing the data reduction with the IPAC utility\nADDSCAN/SCANPI. Comparing the FIR to the blue luminosities, we find a slightly\nnon-linear relation. Furthermore, we find that interacting galaxies tend to\nhave an enhanced FIR emission.",
+    "pdf_url": "http://arxiv.org/pdf/astro-ph/0509131v1",
+    "published": "2005-09-06"
+  },
+  "2111.03831v2": {
+    "title": "A search for Planet 9 in the IRAS data",
+    "authors": [
+      "Michael Rowan-Robinson"
+    ],
+    "summary": "I have carried out a search for Planet 9 in the IRAS data. At the distance\nrange proposed for Planet 9, the signature would be a 60 micron unidentified\nIRAS point source with an associated nearby source from the IRAS Reject File of\nsources which received only a single hours-confirmed (HCON) detection. The\nconfirmed source should be detected on the first two HCON passes, but not on\nthe third, while the single HCON should be detected only on the third HCON. I\nhave examined the unidentified sources in three IRAS 60micron catalogues: some\ncan be identified with 2MASS galaxies, Galactic sources or as cirrus. The\nremaining unidentified sources have been examined with the IRSA Scanpi tool to\ncheck for the signature missing HCONs, and for association with IRAS Reject\nFile single HCONs. No matches of interest survive.\n  For a lower mass planet (< 5 earth masses) in the distance range 200-400 AU,\nwe expect a pair or triplet of single HCONs with separations 2-35 arcmin.\nSeveral hundred candidate associations are found and have been examined with\nScanpi. A single candidate for Planet 9 survives which satisfies the\nrequirements for detected and non-detected HCON passes. A fitted orbit suggest\na distance of 225+-15 AU and a mass of 3-5 earth masses. Dynamical simulations\nare needed to explore whether the candidate is consistent with existing planet\nephemerides. If so, a search in an annulus of radius 2.5-4 deg centred on the\n1983 position at visible and near infrared wavelengths would be worthwhile.",
+    "pdf_url": "http://arxiv.org/pdf/2111.03831v2",
+    "published": "2021-11-06"
+  },
+  "astro-ph/0004216v1": {
+    "title": "Local Luminosity Function at 15$\u03bcm$ and Galaxy Evolution Seen by ISOCAM 15$\u03bcm$ Surveys",
+    "authors": [
+      "Cong Xu"
+    ],
+    "summary": "A local luminosity function at 15$\\mu m$ is derived using the bivariate\n(15$\\mu m$ vs. 60$\\mu m$ luminosity) method, based on the newly published\nISOCAM LW3-band (15$\\mu m$) survey of the very deep IRAS 60$\\mu m$ sample in\nthe north ecliptic pole region (NEPR). New IRAS 60$\\mu m$ fluxes are obtained\nusing the SCANPI/SUPERSCANPI software at the new ISOCAM positions of the\nsources in the sample. It is found to be in excellent agreement with the 15$\\mu\nm$ local luminosity function published by Xu et al (1998), which is derived\nfrom the {\\it predicted} 15$\\mu m$ luminosities of a sample of IRAS 25$\\mu m$\nselected galaxies. Model predictions of number counts and redshift\ndistributions based on the local luminosity function and assumptions of its\nevolution with the redshift are calculated and compared with the data of ISOCAM\n15$\\mu m$ surveys. Strong luminosity evolution on the order of $L\\propto\n(1+z)^{4.5}$ is suggested in these comparisons, while pure density evolution\ncan be ruled out with high confidence. The sharp peak at about 0.4mJy in the\nEuclidean normalized differential counts at 15$\\mu m$ can be explained by the\neffects of MIR broadband emission features, eliminating the need for any\nhypothesis for a 'new population'. It is found that the contribution from the\npopulation represented by ISOCAM 15$\\mu m$ sources can account for the entire\nIR/submm background, leaving little room for any missing 'new population' which\ncan be significant energy sources of the IR/submm sky.",
+    "pdf_url": "http://arxiv.org/pdf/astro-ph/0004216v1",
+    "published": "2000-04-15"
+  }
+}

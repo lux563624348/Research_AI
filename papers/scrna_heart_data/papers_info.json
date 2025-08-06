@@ -1,0 +1,38 @@
+{
+  "2404.06153v1": {
+    "title": "scRDiT: Generating single-cell RNA-seq data by diffusion transformers and accelerating sampling",
+    "authors": [
+      "Shengze Dong",
+      "Zhuorui Cui",
+      "Ding Liu",
+      "Jinzhi Lei"
+    ],
+    "summary": "Motivation: Single-cell RNA sequencing (scRNA-seq) is a groundbreaking\ntechnology extensively utilized in biological research, facilitating the\nexamination of gene expression at the individual cell level within a given\ntissue sample. While numerous tools have been developed for scRNA-seq data\nanalysis, the challenge persists in capturing the distinct features of such\ndata and replicating virtual datasets that share analogous statistical\nproperties. Results: Our study introduces a generative approach termed\nscRNA-seq Diffusion Transformer (scRDiT). This method generates virtual\nscRNA-seq data by leveraging a real dataset. The method is a neural network\nconstructed based on Denoising Diffusion Probabilistic Models (DDPMs) and\nDiffusion Transformers (DiTs). This involves subjecting Gaussian noises to the\nreal dataset through iterative noise-adding steps and ultimately restoring the\nnoises to form scRNA-seq samples. This scheme allows us to learn data features\nfrom actual scRNA-seq samples during model training. Our experiments, conducted\non two distinct scRNA-seq datasets, demonstrate superior performance.\nAdditionally, the model sampling process is expedited by incorporating\nDenoising Diffusion Implicit Models (DDIM). scRDiT presents a unified\nmethodology empowering users to train neural network models with their unique\nscRNA-seq datasets, enabling the generation of numerous high-quality scRNA-seq\nsamples. Availability and implementation: https://github.com/DongShengze/scRDiT",
+    "pdf_url": "http://arxiv.org/pdf/2404.06153v1",
+    "published": "2024-04-09"
+  },
+  "2312.14220v1": {
+    "title": "Single-Cell RNA-seq Synthesis with Latent Diffusion Model",
+    "authors": [
+      "Yixuan Wang",
+      "Shuangyin Li",
+      "Shimin DI",
+      "Lei Chen"
+    ],
+    "summary": "The single-cell RNA sequencing (scRNA-seq) technology enables researchers to\nstudy complex biological systems and diseases with high resolution. The central\nchallenge is synthesizing enough scRNA-seq samples; insufficient samples can\nimpede downstream analysis and reproducibility. While various methods have been\nattempted in past research, the resulting scRNA-seq samples were often of poor\nquality or limited in terms of useful specific cell subpopulations. To address\nthese issues, we propose a novel method called Single-Cell Latent Diffusion\n(SCLD) based on the Diffusion Model. This method is capable of synthesizing\nlarge-scale, high-quality scRNA-seq samples, including both 'holistic' or\ntargeted specific cellular subpopulations within a unified framework. A\npre-guidance mechanism is designed for synthesizing specific cellular\nsubpopulations, while a post-guidance mechanism aims to enhance the quality of\nscRNA-seq samples. The SCLD can synthesize large-scale and high-quality\nscRNA-seq samples for various downstream tasks. Our experimental results\ndemonstrate state-of-the-art performance in cell classification and data\ndistribution distances when evaluated on two scRNA-seq benchmarks.\nAdditionally, visualization experiments show the SCLD's capability in\nsynthesizing specific cellular subpopulations.",
+    "pdf_url": "http://arxiv.org/pdf/2312.14220v1",
+    "published": "2023-12-21"
+  },
+  "2406.05258v1": {
+    "title": "Advances in Machine Learning, Statistical Methods, and AI for Single-Cell RNA Annotation Using Raw Count Matrices in scRNA-seq Data",
+    "authors": [
+      "Megha Patel",
+      "Nimish Magre",
+      "Himanshi Motwani",
+      "Nik Bear Brown"
+    ],
+    "summary": "Single-cell RNA sequencing (scRNA-seq) has revolutionized our ability to\nanalyze gene expression at the resolution of individual cells, providing\nunprecedented insights into cellular heterogeneity and complex biological\nsystems. This paper reviews various advanced computational and machine learning\ntechniques tailored for the analysis of scRNA-seq data, emphasizing their roles\nin different stages of the data processing pipeline.",
+    "pdf_url": "http://arxiv.org/pdf/2406.05258v1",
+    "published": "2024-06-07"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "1107.2275v1": {
+    "title": "The Independency of Stellar Mass Loss Rates on stellar X-ray Luminosity and Activity Level based on Solar X-ray flux and Solar Wind Observations",
+    "authors": [
+      "Ofer Cohen"
+    ],
+    "summary": "Stellar mass loss rates are an important input ingredient for stellar\nevolution models since they determine stellar evolution parameters such as\nstellar spin-down and increase in stellar luminosity through the lifetime of a\nstar. Due to the lack of direct observations of stellar winds from Sun-like\nstars stellar X-ray luminosity and stellar level of activity are commonly used\nas a proxy for estimating stellar mass loss rates. However, such an intuitive\nactivity --- mass loss rate relation is not well defined. In this paper, I\nstudy the mass loss rate of the Sun as a function of its activity level. I\ncompare in-situ solar wind measurements with the solar activity level\nrepresented by the solar X-ray flux. I find no clear dependency of the solar\nmass flux on solar X-ray flux. Instead, the solar mass loss rate is scattered\naround an average value of $2\\cdot10^{-14}\\;M_\\odot\\;yr^{-1}$. This\nindependency of the mass loss rate on level of activity can be explained by the\nfact that the activity level is governed by the large modulations in the solar\nclose magnetic flux, while the mass loss rate is governed by the rather\nconstant open magnetic flux. I derive a simple expression for stellar mass loss\nrates as a function of the stellar ambient weak magnetic field, the stellar\nradius, the stellar escape velocity, and the average height of the Alfv\\'en\nsurface. This expression predicts stellar mass loss rates of\n$10^{-15}-10^{-12}\\;M_\\odot\\;yr^{-1}$ for Sun-like stars.",
+    "pdf_url": "http://arxiv.org/pdf/1107.2275v1",
+    "published": "2011-07-12"
+  },
+  "1607.01380v7": {
+    "title": "Effects of Stellar Rotation in Parker's Hydrodynamic Stellar Wind Model: How Protostars and Strong Rotators Lose their Angular Momentum Fast",
+    "authors": [
+      "B. K. Shivamoggi"
+    ],
+    "summary": "The effects of the stellar rotation and the consequent azimuthal stellar wind\nflow in Parker's [9] hydrodynamic stellar wind model are discussed. Of special\ninterest is the emergence of a whole new hydrodynamic physics via a new\ncritical point in the stellar wind flow, which supersedes the critical point in\nParker's [9] hydrodynamic model. The effect of the stellar rotation is shown to\ncause the new critical point to occur lower in the corona, so the stellar wind\nexperiences a stronger afterburner (as in an aircraft jet engine) action in the\ncorona. For strong rotators, the new critical point is shown to occur at a\nfixed location for a given star, determined only by the basic stellar\nparameters like the mass M and the angular velocity, the variations in the\nstellar wind environment notwithstanding. The stellar rotation leads to\nstronger density fall-off and enhanced acceleration of the stellar wind at\nlarge distances from the star - this effect materializes even close to the\nstar, for strong rotators. The stellar rotation causes the physical throat\nsection of the effective de Laval nozzle associated with the stellar wind flow\nto become narrower, indicative of an enhanced flow acceleration. Thus, the\nstellar rotation leads to tenuous and faster stellar wind flows without change\nin the mass flux, and hence provides an efficient physical mechanism for\nprotostars and strong rotators to lose their angular momentum quickly.",
+    "pdf_url": "http://arxiv.org/pdf/1607.01380v7",
+    "published": "2016-07-05"
+  },
+  "1302.0101v1": {
+    "title": "Rapid Binary Stellar Population Synthesis",
+    "authors": [
+      "Zhongmu Li"
+    ],
+    "summary": "Binary stars are common and it is necessary to model stellar populations\nusing binary stars. We introduce a method to model binary-star stellar\npopulations quickly. The method can also be used to model single-star stellar\npopulations. The method is called rapid stellar population synthesis and it is\nbased on a statistical isochrone database of both single- and bianry-star\nstellar populations. The database can be obtained easily from the CDS (or on\nrequest to the authors) and can be used conveniently for most stellar\npopulation studies and colour-magnitude fits. The main feature of using such a\ntechnique for modeling stellar populations is that it can save much computing\ntime. Comparing to the method which evolves binary-stars using stellar\nevolution codes directly, the rapid stellar population synthesis method takes\nonly one of 200,000 of the computing time. Although we can use the database to\nmodel stellar populations quickly, the involved uncertainties in spectra\nsynthesis is small ($\\sim$ 0.8%). I also introduce the method that uses the\nspectral energy distributions (SEDs) of single stellar populations to model the\nSEDs of composite populations.",
+    "pdf_url": "http://arxiv.org/pdf/1302.0101v1",
+    "published": "2013-02-01"
+  }
+}

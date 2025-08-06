@@ -1,0 +1,27 @@
+{
+  "1505.05601v1": {
+    "title": "Unsupervised Segmentation of Overlapping Cervical Cell Cytoplasm",
+    "authors": [
+      "S L Happy",
+      "Swarnadip Chatterjee",
+      "Debdoot Sheet"
+    ],
+    "summary": "Overlapping of cervical cells and poor contrast of cell cytoplasm are the\nmajor issues in accurate detection and segmentation of cervical cells. An\nunsupervised cell segmentation approach is presented here. Cell clump\nsegmentation was carried out using the extended depth of field (EDF) image\ncreated from the images of different focal planes. A modified Otsu method with\nprior class weights is proposed for accurate segmentation of nuclei from the\ncell clumps. The cell cytoplasm was further segmented from cell clump depending\nupon the number of nucleus detected in that cell clump. Level set model was\nused for cytoplasm segmentation.",
+    "pdf_url": "http://arxiv.org/pdf/1505.05601v1",
+    "published": "2015-05-21"
+  },
+  "2303.11661v1": {
+    "title": "Advanced Multi-Microscopic Views Cell Semi-supervised Segmentation",
+    "authors": [
+      "Fang Hu",
+      "Xuexue Sun",
+      "Ke Qing",
+      "Fenxi Xiao",
+      "Zhi Wang",
+      "Xiaolu Fan"
+    ],
+    "summary": "Although deep learning (DL) shows powerful potential in cell segmentation\ntasks, it suffers from poor generalization as DL-based methods originally\nsimplified cell segmentation in detecting cell membrane boundary, lacking\nprominent cellular structures to position overall differentiating. Moreover,\nthe scarcity of annotated cell images limits the performance of DL models.\nSegmentation limitations of a single category of cell make massive practice\ndifficult, much less, with varied modalities. In this paper, we introduce a\nnovel semi-supervised cell segmentation method called Multi-Microscopic-view\nCell semi-supervised Segmentation (MMCS), which can train cell segmentation\nmodels utilizing less labeled multi-posture cell images with different\nmicroscopy well. Technically, MMCS consists of Nucleus-assisted global\nrecognition, Self-adaptive diameter filter, and Temporal-ensembling models.\nNucleus-assisted global recognition adds additional cell nucleus channel to\nimprove the global distinguishing performance of fuzzy cell membrane boundaries\neven when cells aggregate. Besides, self-adapted cell diameter filter can help\nseparate multi-resolution cells with different morphology properly. It further\nleverages the temporal-ensembling models to improve the semi-supervised\ntraining process, achieving effective training with less labeled data.\nAdditionally, optimizing the weight of unlabeled loss contributed to total loss\nalso improve the model performance. Evaluated on the Tuning Set of NeurIPS 2022\nCell Segmentation Challenge (NeurIPS CellSeg), MMCS achieves an F1-score of\n0.8239 and the running time for all cases is within the time tolerance.",
+    "pdf_url": "http://arxiv.org/pdf/2303.11661v1",
+    "published": "2023-03-21"
+  }
+}

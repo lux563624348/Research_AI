@@ -1,0 +1,37 @@
+{
+  "q-bio/0312039v1": {
+    "title": "RNA Binding Density on X-chromosome Differing from that on 22 Autosomes in Human",
+    "authors": [
+      "Zhanjun Lu",
+      "Ying Lu",
+      "Shuxia Song",
+      "Zhai Yu",
+      "Xiufang Wang"
+    ],
+    "summary": "To test whether X-chromosome has unique genomic characteristics, X-chromosome\nand 22 autosomes were compared for RNA binding density. Nucleotide sequences on\nthe chromosomes were divided into 50kb per segment that was recoded as a set of\nfrequency values of 7-nucleotide (7nt) strings using all possible 7nt strings\n(47=16384). 120 genes highly expressed in tonsil germinal center B cells were\nselected for calculating 7nt string frequency values of all introns (RNAs). The\nbinding density of DNA segments and RNAs was determined by the amount of\ncomplement sequences. It was shown for the first time that gene-poor and low\ngene expression X-chromosome had the lowest percentage of the DNA segments that\ncan highly bind RNAs, whereas gene-rich and high gene expression chromosome 19\nhad the highest percentage of the segments. On the basis of these results, it\nis proposed that the nonrandom properties of distribution of RNA highly binding\nDNA segments on the chromosomes provide strong evidence that lack of RNA highly\nbinding segments may be a cause of X-chromosome inactivation",
+    "pdf_url": "http://arxiv.org/pdf/q-bio/0312039v1",
+    "published": "2003-12-24"
+  },
+  "0710.3948v1": {
+    "title": "RNA sampling and crystallographic refinement using Rappertk",
+    "authors": [
+      "Swanand Gore",
+      "Tom Blundell"
+    ],
+    "summary": "Background. Dramatic increases in RNA structural data have made it possible\nto recognize its conformational preferences much better than a decade ago. This\nhas created an opportunity to use discrete restraint-based conformational\nsampling for modelling RNA and automating its crystallographic refinement.\nResults. All-atom sampling of entire RNA chains, termini and loops is achieved\nusing the Richardson RNA backbone rotamer library and an unbiased distribution\nfor glycosidic dihedral angle. Sampling behaviour of Rappertk on a diverse\ndataset of RNA chains under varying spatial restraints is benchmarked. The\niterative composite crystallographic refinement protocol developed here is\ndemonstrated to outperform CNS-only refinement on parts of tRNA(Asp) structure.\nConclusion. This work opens exciting possibilities for further work in RNA\nmodelling and crystallography.",
+    "pdf_url": "http://arxiv.org/pdf/0710.3948v1",
+    "published": "2007-10-21"
+  },
+  "2303.17281v2": {
+    "title": "Scaling properties of RNA as a randomly branching polymer",
+    "authors": [
+      "Domen Vaupoti\u010d",
+      "Angelo Rosa",
+      "Luca Tubiana",
+      "An\u017ee Bo\u017ei\u010d"
+    ],
+    "summary": "Formation of base pairs between the nucleotides of an RNA sequence gives rise\nto a complex and often highly branched RNA structure. While numerous studies\nhave demonstrated the functional importance of the high degree of RNA branching\n-- for instance, for its spatial compactness or interaction with other\nbiological macromolecules -- RNA branching topology remains largely unexplored.\nHere, we use the theory of randomly branching polymers to explore the scaling\nproperties of RNAs by mapping their secondary structures onto planar tree\ngraphs. Focusing on random RNA sequences of varying lengths, we determine the\ntwo scaling exponents related to their topology of branching. Our results\nindicate that ensembles of RNA secondary structures are characterized by\nannealed random branching and scale similarly to self-avoiding trees in three\ndimensions. We further show that the obtained scaling exponents are robust upon\nchanges in nucleotide composition, tree topology, and folding energy\nparameters. Finally, in order to apply the theory of branching polymers to\nbiological RNAs, whose length cannot be arbitrarily varied, we demonstrate how\nboth scaling exponents can be obtained from the distributions of the related\ntopological quantities of individual RNA molecules with fixed length. In this\nway, we establish a framework to study the branching properties of RNA and\ncompare them to other known classes of branched polymers. By understanding the\nscaling properties of RNA related to its branching structure we aim to improve\nour understanding of the underlying principles and open up the possibility to\ndesign RNA sequences with desired topological properties.",
+    "pdf_url": "http://arxiv.org/pdf/2303.17281v2",
+    "published": "2023-03-30"
+  }
+}

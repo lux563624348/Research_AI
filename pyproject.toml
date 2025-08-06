@@ -1,77 +1,22 @@
 [project]
 name = "research-ai"
-version = "0.0.1"
-description = "Starter template for making a custom Reasoning and Action agent (using tool calling) in LangGraph."
+version = "0.1.0"
+description = "Add your description here"
 readme = "README.md"
-license = { text = "MIT" }
 requires-python = ">=3.11"
 dependencies = [
-    "langgraph>=0.2.6",
-    "langchain-openai>=0.1.22",
-    "langchain-anthropic>=0.1.23",
-    "langchain>=0.2.14",
-    "langchain-fireworks>=0.1.7",
-    "python-dotenv>=1.0.1",
-    "langchain-tavily>=0.1",
-    "mcp[cli]>=1.12.2",
-    "langgraph-cli>=0.3.6",
     "langchain-mcp-adapters>=0.1.9",
-    "nest-asyncio>=1.6.0",
+    "langchain>=0.3.27",
+    "langgraph>=0.6.3",
+    "langchain_openai>=0.3.28",
+    "langgraph-api>=0.2.120",
+    "langgraph-cli>=0.3.6",
+    "langchain_tavily>=0.2.11",
+    "mcp[cli]>=1.12.2",
+    "httpx>=0.28.1",
+    "llvmlite>=0.44.0",
+    "scanpy>=1.11.4",
+    "cellxgene-census>=1.17.0"
+    "fastmcp>=2.11.1",
     "arxiv>=2.2.0",
-    "fastmcp>=2.10.6",
-    "asyncpg>=0.30.0",
-]
-
-
-[project.optional-dependencies]
-dev = ["mypy>=1.11.1", "ruff>=0.6.1"]
-
-[build-system]
-requires = ["setuptools>=73.0.0", "wheel"]
-build-backend = "setuptools.build_meta"
-
-[tool.setuptools]
-packages = ["langgraph.templates.react_agent", "react_agent"]
-[tool.setuptools.package-dir]
-"langgraph.templates.react_agent" = "src/react_agent"
-"react_agent" = "src/react_agent"
-
-
-[tool.setuptools.package-data]
-"*" = ["py.typed"]
-
-[tool.ruff]
-lint.select = [
-    "E",    # pycodestyle
-    "F",    # pyflakes
-    "I",    # isort
-    "D",    # pydocstyle
-    "D401", # First line should be in imperative mood
-    "T201",
-    "UP",
-]
-lint.ignore = [
-    "UP006",
-    "UP007",
-    # We actually do want to import from typing_extensions
-    "UP035",
-    # Relax the convention by _not_ requiring documentation for every function parameter.
-    "D417",
-    "E501",
-]
-[tool.ruff.lint.per-file-ignores]
-"tests/*" = ["D", "UP"]
-[tool.ruff.lint.pydocstyle]
-convention = "google"
-
-[tool.uv.workspace]
-members = [
-    "servers/cellxgene",
-    "servers/cellxgenes",
-]
-
-[dependency-groups]
-dev = [
-    "langgraph-cli[inmem]>=0.1.71",
-    "pytest>=8.3.5",
 ]

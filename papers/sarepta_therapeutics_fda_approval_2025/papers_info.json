@@ -1,0 +1,70 @@
+{
+  "2501.15208v2": {
+    "title": "Advancing Understanding of Long COVID Pathophysiology Through Quantum Walk-Based Network Analysis",
+    "authors": [
+      "Jaesub Park",
+      "Woochang Hwang",
+      "Seokjun Lee",
+      "Hyun Chang Lee",
+      "M\u00e9abh MacMahon",
+      "Matthias Zilbauer",
+      "Namshik Han"
+    ],
+    "summary": "Long COVID is a multisystem condition characterized by persistent symptoms\nsuch as fatigue, cognitive impairment, and systemic inflammation, following\nCOVID-19 infection, yet its mechanisms remain poorly understood. In this study,\nwe applied quantum walk (QW), a computational approach leveraging quantum\ninterference, to explore large-scale SARS-CoV-2-induced protein (SIP) networks.\nCompared to the conventional random walk with restart (RWR) method, QW\ndemonstrated superior capacity to traverse deeper regions of the network,\nuncovering proteins and pathways implicated in Long COVID. Key findings include\nmitochondrial dysfunction, thromboinflammatory responses, and neuronal\ninflammation as central mechanisms. QW uniquely identified the CDGSH\niron-sulfur domain-containing protein family and VDAC1, a mitochondrial calcium\ntransporter, as critical regulators of these processes. VDAC1 emerged as a\npotential biomarker and therapeutic target, supported by FDA-approved compounds\nsuch as cannabidiol. These findings highlight QW as a powerful tool for\nelucidating complex biological systems and identifying novel therapeutic\ntargets for conditions like Long COVID.",
+    "pdf_url": "http://arxiv.org/pdf/2501.15208v2",
+    "published": "2025-01-25"
+  },
+  "2503.10970v1": {
+    "title": "TxAgent: An AI Agent for Therapeutic Reasoning Across a Universe of Tools",
+    "authors": [
+      "Shanghua Gao",
+      "Richard Zhu",
+      "Zhenglun Kong",
+      "Ayush Noori",
+      "Xiaorui Su",
+      "Curtis Ginder",
+      "Theodoros Tsiligkaridis",
+      "Marinka Zitnik"
+    ],
+    "summary": "Precision therapeutics require multimodal adaptive models that generate\npersonalized treatment recommendations. We introduce TxAgent, an AI agent that\nleverages multi-step reasoning and real-time biomedical knowledge retrieval\nacross a toolbox of 211 tools to analyze drug interactions, contraindications,\nand patient-specific treatment strategies. TxAgent evaluates how drugs interact\nat molecular, pharmacokinetic, and clinical levels, identifies\ncontraindications based on patient comorbidities and concurrent medications,\nand tailors treatment strategies to individual patient characteristics. It\nretrieves and synthesizes evidence from multiple biomedical sources, assesses\ninteractions between drugs and patient conditions, and refines treatment\nrecommendations through iterative reasoning. It selects tools based on task\nobjectives and executes structured function calls to solve therapeutic tasks\nthat require clinical reasoning and cross-source validation. The ToolUniverse\nconsolidates 211 tools from trusted sources, including all US FDA-approved\ndrugs since 1939 and validated clinical insights from Open Targets. TxAgent\noutperforms leading LLMs, tool-use models, and reasoning agents across five new\nbenchmarks: DrugPC, BrandPC, GenericPC, TreatmentPC, and DescriptionPC,\ncovering 3,168 drug reasoning tasks and 456 personalized treatment scenarios.\nIt achieves 92.1% accuracy in open-ended drug reasoning tasks, surpassing\nGPT-4o and outperforming DeepSeek-R1 (671B) in structured multi-step reasoning.\nTxAgent generalizes across drug name variants and descriptions. By integrating\nmulti-step inference, real-time knowledge grounding, and tool-assisted\ndecision-making, TxAgent ensures that treatment recommendations align with\nestablished clinical guidelines and real-world evidence, reducing the risk of\nadverse events and improving therapeutic decision-making.",
+    "pdf_url": "http://arxiv.org/pdf/2503.10970v1",
+    "published": "2025-03-14"
+  },
+  "2407.11823v2": {
+    "title": "Harmonizing Safety and Speed: A Human-Algorithm Approach to Enhance the FDA's Medical Device Clearance Policy",
+    "authors": [
+      "Mohammad Zhalechian",
+      "Soroush Saghafian",
+      "Omar Robles"
+    ],
+    "summary": "The United States Food and Drug Administration's (FDA's) Premarket\nNotification 510(k) pathway allows manufacturers to gain approval for a medical\ndevice by demonstrating its substantial equivalence to another legally marketed\ndevice. However, the inherent ambiguity of this regulatory procedure has led to\nhigh recall rates for many devices cleared through this pathway. This trend has\nraised significant concerns regarding the efficacy of the FDA's current\napproach, prompting a reassessment of the 510(k) regulatory framework. In this\npaper, we develop a combined human-algorithm approach to assist the FDA in\nimproving its 510(k) medical device clearance process by reducing the risk of\nrecalls and the workload imposed on the FDA. We first develop machine learning\nmethods to estimate the risk of recall of 510(k) medical devices based on the\ninformation available at submission time. We then propose a data-driven\nclearance policy that recommends acceptance, rejection, or deferral to FDA's\ncommittees for in-depth evaluation. We conduct an empirical study using a\nunique large-scale dataset of over 31,000 medical devices that we assembled\nbased on data sources from the FDA and Centers for Medicare and Medicaid\nService (CMS). A conservative evaluation of our proposed policy based on this\ndata shows a 32.9% improvement in the recall rate and a 40.5% reduction in the\nFDA's workload. Our analyses also indicate that implementing our policy could\nresult in significant annual cost savings of $1.7 billion, which highlights the\nvalue of using a holistic and data-driven approach to improve the FDA's current\n510(k) medical device evaluation pathway.",
+    "pdf_url": "http://arxiv.org/pdf/2407.11823v2",
+    "published": "2024-07-16"
+  },
+  "2005.07856v2": {
+    "title": "Identification of Repurposable Drugs and Adverse Drug Reactions for Various Courses of COVID-19 Based on Single-Cell RNA Sequencing Data",
+    "authors": [
+      "Zhihan Wang",
+      "Kai Guo",
+      "Pan Gao",
+      "Qinqin Pu",
+      "Min Wu",
+      "Changlong Li",
+      "Junguk Hur"
+    ],
+    "summary": "Coronavirus disease 2019 (COVID-19) has impacted almost every part of human\nlife worldwide, posing a massive threat to human health. There is no specific\ndrug for COVID-19, highlighting the urgent need for the development of\neffective therapeutics. To identify potentially repurposable drugs, we employed\na systematic approach to mine candidates from U.S. FDA-approved drugs and\npreclinical small-molecule compounds by integrating the gene expression\nperturbation data for chemicals from the Library of Integrated Network-Based\nCellular Signatures project with a publicly available single-cell RNA\nsequencing dataset from mild and severe COVID-19 patients. We identified 281\nFDA-approved drugs that have the potential to be effective against SARS-CoV-2\ninfection, 16 of which are currently undergoing clinical trials to evaluate\ntheir efficacy against COVID-19. We experimentally tested the inhibitory\neffects of tyrphostin-AG-1478 and brefeldin-a on the replication of the\nsingle-stranded ribonucleic acid (ssRNA) virus influenza A virus. In\nconclusion, we have identified a list of repurposable anti-SARS-CoV-2 drugs\nusing a systems biology approach.",
+    "pdf_url": "http://arxiv.org/pdf/2005.07856v2",
+    "published": "2020-05-16"
+  },
+  "2502.17628v1": {
+    "title": "Characterizing the Conformational States of G Protein Coupled Receptors Generated with AlphaFold",
+    "authors": [
+      "Garima Chib",
+      "Parisa Mollaei",
+      "Amir Barati Farimani"
+    ],
+    "summary": "G-Protein Coupled Receptors (GPCRs) are integral to numerous physiological\nprocesses and are the target of approximately one-third of FDA-approved\ntherapeutics. Despite their significance, only a limited subset of GPCRs has\nbeen successfully targeted, primarily due to challenges in accurately modeling\ntheir structures. AlphaFold, a state-of-the-art deep learning model, has\ndemonstrated remarkable capability in predicting protein structures with high\naccuracy. This study conducts an evaluation of AlphaFold performance in\npredicting GPCR structures and their conformational states by comparing its\npredictions to experimentally determined structures using metrics such as\naverage deformation between alpha carbon atoms and the Helix 3 - Helix 6\n(H3-H6) distance. Our analysis reveals that both AlphaFold 2 (AF2) and\nAlphaFold 3 (AF3) produce more accurate predictions for GPCRs in inactive\nconformations, with lower activity levels correlating with smaller\ndeformations. Conversely, higher activity levels are associated with increased\nvariability in AlphaFold performance due to difficulties with accurately\npredicting conformational changes upon GPCR activation and ligand binding.\nAdditionally, AlphaFold performance varies across different GPCR classes,\ninfluenced by the availability and quality of training data as well as the\nstructural complexity and diversity of the receptors. These findings\ndemonstrate the potential of AlphaFold in advancing drug discovery efforts,\nwhile also highlighting the necessity for continued refinement to enhance\npredictive accuracy for active conformations.",
+    "pdf_url": "http://arxiv.org/pdf/2502.17628v1",
+    "published": "2025-02-24"
+  }
+}

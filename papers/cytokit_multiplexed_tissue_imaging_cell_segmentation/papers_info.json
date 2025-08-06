@@ -1,0 +1,47 @@
+{
+  "2412.08828v1": {
+    "title": "A Two-Stage Approach for Segmenting Spatial Point Patterns Applied to Multiplex Imaging",
+    "authors": [
+      "Alvin Sheng",
+      "Brian J. Reich",
+      "Ana-Maria Staicu",
+      "Santhoshi N. Krishnan",
+      "Arvind Rao",
+      "Timothy L. Frankel"
+    ],
+    "summary": "Recent advances in multiplex imaging have enabled researchers to locate\ndifferent types of cells within a tissue sample. This is especially relevant\nfor tumor immunology, as clinical regimes corresponding to different stages of\ndisease or responses to treatment may manifest as different spatial\narrangements of tumor and immune cells. Spatial point pattern modeling can be\nused to partition multiplex tissue images according to these regimes. To this\nend, we propose a two-stage approach: first, local intensities and pair\ncorrelation functions are estimated from the spatial point pattern of cells\nwithin each image, and the pair correlation functions are reduced in dimension\nvia spectral decomposition of the covariance function. Second, the estimates\nare clustered in a Bayesian hierarchical model with spatially-dependent cluster\nlabels. The clusters correspond to regimes of interest that are present across\nsubjects; the cluster labels segment the spatial point patterns according to\nthose regimes. Through Markov Chain Monte Carlo sampling, we jointly estimate\nand quantify uncertainty in the cluster assignment and spatial characteristics\nof each cluster. Simulations demonstrate the performance of the method, and it\nis applied to a set of multiplex immunofluorescence images of diseased\npancreatic tissue.",
+    "pdf_url": "http://arxiv.org/pdf/2412.08828v1",
+    "published": "2024-12-12"
+  },
+  "2411.00948v1": {
+    "title": "Multiplex Imaging Analysis in Pathology: a Comprehensive Review on Analytical Approaches and Digital Toolkits",
+    "authors": [
+      "Mohamed Omar",
+      "Giuseppe Nicolo Fanelli",
+      "Fabio Socciarelli",
+      "Varun Ullanat",
+      "Sreekar Reddy Puchala",
+      "James Wen",
+      "Alex Chowdhury",
+      "Itzel Valencia",
+      "Cristian Scatena",
+      "Luigi Marchionni",
+      "Renato Umeton",
+      "Massimo Loda"
+    ],
+    "summary": "Conventional histopathology has long been essential for disease diagnosis,\nrelying on visual inspection of tissue sections. Immunohistochemistry aids in\ndetecting specific biomarkers but is limited by its single-marker approach,\nrestricting its ability to capture the full tissue environment. The advent of\nmultiplexed imaging technologies, like multiplexed immunofluorescence and\nspatial transcriptomics, allows for simultaneous visualization of multiple\nbiomarkers in a single section, enhancing morphological data with molecular and\nspatial information. This provides a more comprehensive view of the tissue\nmicroenvironment, cellular interactions, and disease mechanisms - crucial for\nunderstanding disease progression, prognosis, and treatment response. However,\nthe extensive data from multiplexed imaging necessitates sophisticated\ncomputational methods for preprocessing, segmentation, feature extraction, and\nspatial analysis. These tools are vital for managing large, multidimensional\ndatasets, converting raw imaging data into actionable insights. By automating\nlabor-intensive tasks and enhancing reproducibility and accuracy, computational\ntools are pivotal in diagnostics and research. This review explores the current\nlandscape of multiplexed imaging in pathology, detailing workflows and key\ntechnologies like PathML, an AI-powered platform that streamlines image\nanalysis, making complex dataset interpretation accessible for clinical and\nresearch settings.",
+    "pdf_url": "http://arxiv.org/pdf/2411.00948v1",
+    "published": "2024-11-01"
+  },
+  "2103.04617v1": {
+    "title": "Synplex: A synthetic simulator of highly multiplexed histological images",
+    "authors": [
+      "Daniel Jim\u00e9nez-S\u00e1nchez",
+      "Mikel Ariz",
+      "Carlos Ortiz-de-Sol\u00f3rzano"
+    ],
+    "summary": "Multiplex tissue immunostaining is a technology of growing relevance as it\ncan capture in situ the complex interactions existing between the elements of\nthe tumor microenvironment. The existence and availability of large, annotated\nimage datasets is key for the objective development and benchmarking of\nbioimage analysis algorithms. Manual annotation of multiplex images, is\nhowever, laborious, often impracticable. In this paper, we present Synplex, a\nsimulation system able to generate multiplex immunostained in situ tissue\nimages based on user-defined parameters. This includes the specification of\nstructural attributes, such as the number of cell phenotypes, the number and\nlevel of expression of cellular markers, or the cell morphology. Synplex\nconsists of three sequential modules, each being responsible for a separate\ntask: modeling of cellular neighborhoods, modeling of cell phenotypes, and\nsynthesis of realistic cell/tissue textures. Synplex flexibility and accuracy\nare demonstrated qualitatively and quantitatively by generating synthetic\ntissues that simulate disease paradigms found in the real scenarios. Synplex is\npublicly available for scientific purposes, and we believe it will become a\nvaluable tool for the training and/or validation of multiplex image analysis\nalgorithms.",
+    "pdf_url": "http://arxiv.org/pdf/2103.04617v1",
+    "published": "2021-03-08"
+  }
+}

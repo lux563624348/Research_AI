@@ -27,7 +27,6 @@ def structured_response(data=None, message="success", status="success"):
 def filter_by_organ(df, organ="heart"):
     return df[df['origin_samples_unique_mapped_organs'].str.contains(organ, case=False, na=False)]
     
-
 def build_dataset_descriptions(df):
     """
     Build a list of dicts with HuBMAP dataset URLs and descriptions from selected columns.

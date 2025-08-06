@@ -1,0 +1,43 @@
+{
+  "1701.04729v1": {
+    "title": "A Long-Term Decrease of the Mid-Size Segmentation Lengths Observed in the HeII 30.4 nm Solar EUV Emission",
+    "authors": [
+      "Leonid Didkovsky",
+      "Seth Wieman",
+      "Elena Korogodina"
+    ],
+    "summary": "Power spectra of segmentation-cell length (a dominant length scale of EUV\nemission in the transition region) from full-disk HeII extreme ultraviolet\n(EUV) images observed by the Extreme ultraviolet Imaging Telescope (EIT)\nonboard the Solar and Heliospheric Observatory (SOHO) and the Atmospheric\nImaging Assembly (AIA) onboard the Solar Dynamics Observatory (SDO) during\nperiods of quiet Sun conditions for a time interval from 1996 to 2015 were\nanalyzed. The spatial power as a function of the spatial frequency from about\n0.04 to 0.27 (EIT) or up to 0.48 (AIA) 1/Mm depends on the distribution of the\nobserved segmentation-cell dimensions, -- a structure of the solar EUV network.\nThe temporal variations of the spatial power reported by Didkovsky and Gurman\n(Solar Phys., 289, 153) were suggested as decreases at the mid-spatial\nfrequencies for the compared spectra when the power curves at the highest\nspatial frequencies of 0.5 1/pix were adjusted to match each other. That\napproach has been extended in this work to compare spectral ratios at high\nspatial frequencies expressed in the solar spatial frequency units of 1/Mm.\nBased on this approach we represent these ratio changes as a long-term network\ntransformation which may be interpreted as a continuous dissipation of mid-size\nnetwork structures to the smaller-size structures in the transition region. In\ncontrast to expected cycling of the segmentation-cell dimension structures and\nassociated spatial power in the spectra with the solar cycle, the spectra\ndemonstrate a significant and steady change of the EUV network. The temporal\ntrend across these structural spectra is not critically sensitive to any\nlong-term instrumental changes, e.g. degradation of sensitivity, but to the\nchange of the segmentation-cell dimensions of the EUV network structure.",
+    "pdf_url": "http://arxiv.org/pdf/1701.04729v1",
+    "published": "2017-01-16"
+  },
+  "2102.10377v1": {
+    "title": "CellTrack R-CNN: A Novel End-To-End Deep Neural Network for Cell Segmentation and Tracking in Microscopy Images",
+    "authors": [
+      "Yuqian Chen",
+      "Yang Song",
+      "Chaoyi Zhang",
+      "Fan Zhang",
+      "Lauren O'Donnell",
+      "Wojciech Chrzanowski",
+      "Weidong Cai"
+    ],
+    "summary": "Cell segmentation and tracking in microscopy images are of great significance\nto new discoveries in biology and medicine. In this study, we propose a novel\napproach to combine cell segmentation and cell tracking into a unified\nend-to-end deep learning based framework, where cell detection and segmentation\nare performed with a current instance segmentation pipeline and cell tracking\nis implemented by integrating Siamese Network with the pipeline. Besides,\ntracking performance is improved by incorporating spatial information into the\nnetwork and fusing spatial and visual prediction. Our approach was evaluated on\nthe DeepCell benchmark dataset. Despite being simple and efficient, our method\noutperforms state-of-the-art algorithms in terms of both cell segmentation and\ncell tracking accuracies.",
+    "pdf_url": "http://arxiv.org/pdf/2102.10377v1",
+    "published": "2021-02-20"
+  },
+  "1505.00325v1": {
+    "title": "Two-dimensional segmentation of small convective patterns in radiation hydrodynamics simulations",
+    "authors": [
+      "B. Lemmerer",
+      "D. Utz",
+      "A. Hanslmeier",
+      "A. Veronig",
+      "S. Thonhofer",
+      "H. Grimm-Strele",
+      "R. Kariyappa"
+    ],
+    "summary": "Recent results from high-resolution solar granulation observations indicate\nthe existence of a population of small granular cells that are smaller than 600\nkm in diameter. These small convective cells strongly contribute to the total\narea of granules and are located in the intergranular lanes, where they form\nclusters and chains. We study high-resolution radiation hydrodynamics\nsimulations of the upper convection zone and photosphere to detect small\ngranular cells, define their spatial alignment, and analyze their physical\nproperties. We developed an automated image-segmentation algorithm specifically\nadapted to high-resolution simulations to identify granules. The resulting\nsegmentation masks were applied to physical quantities, such as intensity and\nvertical velocity profiles, provided by the simulation. A new clustering\nalgorithm was developed to study the alignment of small granular cells. This\nstudy shows that small granules make a distinct contribution to the total area\nof granules and form clusters of chain-like alignments. The simulation profiles\ndemonstrate a different nature for small granular cells because they exhibit on\naverage lower intensities, lower horizontal velocities, and are located deeper\ninside of convective layers than regular granules. Their intensity distribution\ndeviates from a normal distribution as known for larger granules, and follows a\nWeibull distribution.",
+    "pdf_url": "http://arxiv.org/pdf/1505.00325v1",
+    "published": "2015-05-02"
+  }
+}

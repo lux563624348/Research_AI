@@ -1,0 +1,36 @@
+{
+  "hep-ph/0304202v2": {
+    "title": "Explicit Quark-Hadron Duality Violations in B-Meson Decays",
+    "authors": [
+      "Benjamin Grinstein",
+      "Michael Savrov"
+    ],
+    "summary": "Duality is not violated at order Delta/M once j=3/2 and j=1/2+ states are\nproperly accounted for.",
+    "pdf_url": "http://arxiv.org/pdf/hep-ph/0304202v2",
+    "published": "2003-04-22"
+  },
+  "0810.3967v1": {
+    "title": "Hyperbolic structures on closed spacelike manifolds",
+    "authors": [
+      "Kun Zhang"
+    ],
+    "summary": "In this paper, we study the intrinsic mean curvature flow on certain closed\nspacelike manifolds, and prove the existence of hyperbolic structures on them.",
+    "pdf_url": "http://arxiv.org/pdf/0810.3967v1",
+    "published": "2008-10-22"
+  },
+  "2305.14597v2": {
+    "title": "Voices of Her: Analyzing Gender Differences in the AI Publication World",
+    "authors": [
+      "Yiwen Ding",
+      "Jiarui Liu",
+      "Zhiheng Lyu",
+      "Kun Zhang",
+      "Bernhard Schoelkopf",
+      "Zhijing Jin",
+      "Rada Mihalcea"
+    ],
+    "summary": "While several previous studies have analyzed gender bias in research, we are\nstill missing a comprehensive analysis of gender differences in the AI\ncommunity, covering diverse topics and different development trends. Using the\nAI Scholar dataset of 78K researchers in the field of AI, we identify several\ngender differences: (1) Although female researchers tend to have fewer overall\ncitations than males, this citation difference does not hold for all\nacademic-age groups; (2) There exist large gender homophily in co-authorship on\nAI papers; (3) Female first-authored papers show distinct linguistic styles,\nsuch as longer text, more positive emotion words, and more catchy titles than\nmale first-authored papers. Our analysis provides a window into the current\ndemographic trends in our AI community, and encourages more gender equality and\ndiversity in the future. Our code and data are at\nhttps://github.com/causalNLP/ai-scholar-gender.",
+    "pdf_url": "http://arxiv.org/pdf/2305.14597v2",
+    "published": "2023-05-24"
+  }
+}

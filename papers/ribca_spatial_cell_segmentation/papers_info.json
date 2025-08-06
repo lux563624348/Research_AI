@@ -1,0 +1,37 @@
+{
+  "2102.10377v1": {
+    "title": "CellTrack R-CNN: A Novel End-To-End Deep Neural Network for Cell Segmentation and Tracking in Microscopy Images",
+    "authors": [
+      "Yuqian Chen",
+      "Yang Song",
+      "Chaoyi Zhang",
+      "Fan Zhang",
+      "Lauren O'Donnell",
+      "Wojciech Chrzanowski",
+      "Weidong Cai"
+    ],
+    "summary": "Cell segmentation and tracking in microscopy images are of great significance\nto new discoveries in biology and medicine. In this study, we propose a novel\napproach to combine cell segmentation and cell tracking into a unified\nend-to-end deep learning based framework, where cell detection and segmentation\nare performed with a current instance segmentation pipeline and cell tracking\nis implemented by integrating Siamese Network with the pipeline. Besides,\ntracking performance is improved by incorporating spatial information into the\nnetwork and fusing spatial and visual prediction. Our approach was evaluated on\nthe DeepCell benchmark dataset. Despite being simple and efficient, our method\noutperforms state-of-the-art algorithms in terms of both cell segmentation and\ncell tracking accuracies.",
+    "pdf_url": "http://arxiv.org/pdf/2102.10377v1",
+    "published": "2021-02-20"
+  },
+  "1805.11247v2": {
+    "title": "Microscopy Cell Segmentation via Convolutional LSTM Networks",
+    "authors": [
+      "Assaf Arbelle",
+      "Tammy Riklin Raviv"
+    ],
+    "summary": "Live cell microscopy sequences exhibit complex spatial structures and\ncomplicated temporal behaviour, making their analysis a challenging task.\nConsidering cell segmentation problem, which plays a significant role in the\nanalysis, the spatial properties of the data can be captured using\nConvolutional Neural Networks (CNNs). Recent approaches show promising\nsegmentation results using convolutional encoder-decoders such as the U-Net.\nNevertheless, these methods are limited by their inability to incorporate\ntemporal information, that can facilitate segmentation of individual touching\ncells or of cells that are partially visible. In order to exploit cell dynamics\nwe propose a novel segmentation architecture which integrates Convolutional\nLong Short Term Memory (C-LSTM) with the U-Net. The network's unique\narchitecture allows it to capture multi-scale, compact, spatio-temporal\nencoding in the C-LSTMs memory units. The method was evaluated on the Cell\nTracking Challenge and achieved state-of-the-art results (1st on Fluo-N2DH-SIM+\nand 2nd on DIC-C2DL-HeLa datasets) The code is freely available at:\nhttps://github.com/arbellea/LSTM-UNet.git",
+    "pdf_url": "http://arxiv.org/pdf/1805.11247v2",
+    "published": "2018-05-29"
+  },
+  "2204.03014v2": {
+    "title": "EfficientCellSeg: Efficient Volumetric Cell Segmentation Using Context Aware Pseudocoloring",
+    "authors": [
+      "Royden Wagner",
+      "Karl Rohr"
+    ],
+    "summary": "Volumetric cell segmentation in fluorescence microscopy images is important\nto study a wide variety of cellular processes. Applications range from the\nanalysis of cancer cells to behavioral studies of cells in the embryonic stage.\nLike in other computer vision fields, most recent methods use either large\nconvolutional neural networks (CNNs) or vision transformer models (ViTs). Since\nthe number of available 3D microscopy images is typically limited in\napplications, we take a different approach and introduce a small CNN for\nvolumetric cell segmentation. Compared to previous CNN models for cell\nsegmentation, our model is efficient and has an asymmetric encoder-decoder\nstructure with very few parameters in the decoder. Training efficiency is\nfurther improved via transfer learning. In addition, we introduce Context Aware\nPseudocoloring to exploit spatial context in z-direction of 3D images while\nperforming volumetric cell segmentation slice-wise. We evaluated our method\nusing different 3D datasets from the Cell Segmentation Benchmark of the Cell\nTracking Challenge. Our segmentation method achieves top-ranking results, while\nour CNN model has an up to 25x lower number of parameters than other\ntop-ranking methods. Code and pretrained models are available at:\nhttps://github.com/roydenwa/efficient-cell-seg",
+    "pdf_url": "http://arxiv.org/pdf/2204.03014v2",
+    "published": "2022-04-06"
+  }
+}

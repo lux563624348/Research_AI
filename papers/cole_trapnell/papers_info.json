@@ -1,0 +1,68 @@
+{
+  "2110.15400v4": {
+    "title": "An optimized protocol for single cell transcriptional profiling by combinatorial indexing",
+    "authors": [
+      "Beth K. Martin",
+      "Chengxiang Qiu",
+      "Eva Nichols",
+      "Melissa Phung",
+      "Rula Green-Gladden",
+      "Sanjay Srivatsan",
+      "Ronnie Blecher-Gonen",
+      "Brian J. Beliveau",
+      "Cole Trapnell",
+      "Junyue Cao",
+      "Jay Shendure"
+    ],
+    "summary": "Single cell combinatorial indexing RNA sequencing (sci-RNA-seq) is a powerful\nmethod for recovering gene expression data from an exponentially scalable\nnumber of individual cells or nuclei. However, sci-RNA-seq is a complex\nprotocol that has historically exhibited variable performance on different\ntissues, as well as lower sensitivity than alternative methods. Here we report\na simplified, optimized version of the three-level sci-RNA-seq protocol that is\nfaster, higher yield, more robust, and more sensitive, than the original\nsci-RNA-seq3 protocol, with reagent costs on the order of 1 cent per cell or\nless. We showcase the optimized protocol via whole organism analysis of an\nE16.5 mouse embryo, profiling ~380,000 nuclei in a single experiment. Finally,\nwe introduce a \"tiny sci-*\" protocol for experiments where input is extremely\nlimited.",
+    "pdf_url": "http://arxiv.org/pdf/2110.15400v4",
+    "published": "2021-10-28"
+  },
+  "2411.15309v1": {
+    "title": "An improved, high yield method for isolating nuclei from individual zebrafish embryos for single-nucleus RNA sequencing",
+    "authors": [
+      "Clifford Rostomily",
+      "Heidi Lee",
+      "Amy Tresenrider",
+      "Riza Daza",
+      "Andrew Mullen",
+      "Jay Shendure",
+      "David Kimelman",
+      "Cole Trapnell"
+    ],
+    "summary": "Zebrafish are an ideal system to study the effect(s) of chemical, genetic,\nand environmental perturbations on development due to their high fecundity and\nfast growth. Recently, single cell sequencing has emerged as a powerful tool to\nmeasure the effect of these perturbations at a whole embryo scale. These types\nof experiments rely on the ability to isolate nuclei from a large number of\nindividually barcoded zebrafish embryos in parallel. Here we report a method\nfor efficiently isolating high-quality nuclei from zebrafish embryos in a\n96-well plate format by bead homogenization in a lysis buffer. Through\nhead-to-head sciPlex-RNA-seq experiments, we demonstrate that this method\nrepresents a substantial improvement over enzymatic dissociation and that it is\ncompatible with a wide range of developmental stages.",
+    "pdf_url": "http://arxiv.org/pdf/2411.15309v1",
+    "published": "2024-11-22"
+  },
+  "1901.09051v1": {
+    "title": "Hopf-Cole transformation via generalized Schr\u00f6dinger bridge problem",
+    "authors": [
+      "Flavien L\u00e9ger",
+      "Wuchen Li"
+    ],
+    "summary": "We study generalized Hopf-Cole transformations motivated by the Schr\\\"odinger\nbridge problem, which can be seen as a boundary value Hamiltonian system on the\nWasserstein space. We prove that generalized Hopf-Cole transformations are\nsymplectic submersions in the Wasserstein symplectic geometry. Many examples,\nincluding a Hopf-Cole transformation for the shallow water equations, are\ngiven. Based on this transformation, energy splitting inequalities are\nprovided.",
+    "pdf_url": "http://arxiv.org/pdf/1901.09051v1",
+    "published": "2019-01-25"
+  },
+  "cond-mat/0507678v1": {
+    "title": "Identification of the vortex glass phase by harmonics of the AC magnetic susceptibility",
+    "authors": [
+      "M. G. Adesso*",
+      "M. Polichetti",
+      "S. Pace"
+    ],
+    "summary": "We compared the AC magnetic susceptibility behaviour for the vortex glass\nphase and for the creep phenomena with an inhomogeneous pinning potential. The\ntemperature dependence of the harmonics of the susceptibility have been\nnumerically simulated with these two models, and we studied them as a function\nof the frequency, in terms of Cole-Cole plots. From our analysis we show that\nit is possible to distinguish between the two different phases, because of\ntheir clear differences in the Cole-Cole plots behaviour with the frequency.",
+    "pdf_url": "http://arxiv.org/pdf/cond-mat/0507678v1",
+    "published": "2005-07-28"
+  },
+  "nlin/0409062v1": {
+    "title": "Light propagation in a Cole-Cole nonlinear medium via Burgers-Hopf equation",
+    "authors": [
+      "Boris Konopelchenko",
+      "Antonio Moro"
+    ],
+    "summary": "Recently, a new model of propagation of the light through the so-called\nweakly three-dimensional Cole-Cole nonlinear medium with short-range\nnonlocality has been proposed. In particular, it has been shown that in the\ngeometrical optics limit, the model is integrable and it is governed by the\ndispersionless Veselov-Novikov (dVN) equation.\n  Burgers-Hopf equation can be obtained as 1+1-dimensional reduction of dVN\nequation. We discuss its properties in the specific context of nonlinear\ngeometrical optics. An illustrative explicit example is considered.",
+    "pdf_url": "http://arxiv.org/pdf/nlin/0409062v1",
+    "published": "2004-09-30"
+  }
+}

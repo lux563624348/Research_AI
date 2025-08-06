@@ -1,0 +1,56 @@
+{
+  "2011.10372v4": {
+    "title": "Transcriptome profiling research in urothelial cell carcinoma",
+    "authors": [
+      "Umar Ahmad",
+      "Buhari Ibrahim",
+      "Mustapha Mohammed",
+      "Ahmed Faris Aldoghachi",
+      "Mahmood Usman",
+      "Abdulbasit Haliru Yakubu",
+      "Abubakar Sadiq Tanko",
+      "Khadijat Abubakar Bobbo",
+      "Usman Adamu Garkuwa",
+      "Abdullahi Adamu Faggo",
+      "Sagir Mustapha",
+      "Mahmoud Al-Masaeed",
+      "Syahril Abdullah",
+      "Yong Yoke Keong",
+      "Abhi Veerakumarasivam"
+    ],
+    "summary": "Urothelial cell carcinoma (UCC) is the ninth most common cancer that accounts\nfor 4.7% of all the new cancer cases globally. UCC development and progression\nare due to complex and stochastic genetic programmes. To study the cascades of\nmolecular events underlying the poor prognosis that may lead to limited\ntreatment options for advanced disease and resistance to conventional therapies\nin UCC, transcriptomics technology (RNA-Seq), a method of analysing the RNA\ncontent of a sample using modern high-throughput sequencing platforms has been\nemployed. Here we review the principles of RNA-Seq technology and summarize\nrecent studies on human bladder cancer that employed this technique to unravel\nthe pathogenesis of the disease, identify biomarkers, discover pathways and\nclassify the disease state. We list the commonly used computational platforms\nand software that are publicly available for RNA-Seq analysis. Moreover, we\ndiscussed the future perspectives for RNA-Seq studies on bladder cancer and\nrecommend the application of new technology called single cell sequencing\n(scRNA-Seq) to further understand the disease. Keywords: Transcriptome\nprofiling, RNA-sequencing, genomics, bioinformatics, bladder cancer",
+    "pdf_url": "http://arxiv.org/pdf/2011.10372v4",
+    "published": "2020-11-20"
+  },
+  "2206.06145v1": {
+    "title": "Identification of cancer-keeping genes as therapeutic targets by finding network control hubs",
+    "authors": [
+      "Xizhe Zhang",
+      "Chunyu Pan",
+      "Xinru Wei",
+      "Meng Yu",
+      "Shuangjie Liu",
+      "Jun An",
+      "Jieping Yang",
+      "Baojun Wei",
+      "Wenjun Hao",
+      "Yang Yao",
+      "Yuyan Zhu",
+      "Weixiong Zhang"
+    ],
+    "summary": "Finding cancer driver genes has been a focal theme of cancer research and\nclinical studies. One of the recent approaches is based on network structural\ncontrollability that focuses on finding a control scheme and driver genes that\ncan steer the cell from an arbitrary state to a designated state. While\ntheoretically sound, this approach is impractical for many reasons, e.g., the\ncontrol scheme is often not unique and half of the nodes may be driver genes\nfor the cell. We developed a novel approach that transcends structural\ncontrollability. Instead of considering driver genes for one control scheme, we\nconsidered control hub genes that reside in the middle of a control path of\nevery control scheme. Control hubs are the most vulnerable spots for\ncontrolling the cell and exogenous stimuli on them may render the cell\nuncontrollable. We adopted control hubs as cancer-keep genes (CKGs) and applied\nthem to a gene regulatory network of bladder cancer (BLCA). All the genes on\nthe cell cycle and p53 singling pathways in BLCA are CKGs, confirming the\nimportance of these genes and the two pathways in cancer. A smaller set of 35\nsensitive CKGs (sCKGs) for BLCA was identified by removing network links. Six\nsCKGs (RPS6KA3, FGFR3, N-cadherin (CDH2), EP300, caspase-1, and FN1) were\nsubjected to small-interferencing-RNA knockdown in four cell lines to validate\ntheir effects on the proliferation or migration of cancer cells. Knocking down\nRPS6KA3 in a mouse model of BLCA significantly inhibited the growth of tumor\nxenografts in the mouse model. Combined, our results demonstrated the value of\nCKGs as therapeutic targets for cancer therapy and the potential of CKGs as an\neffective means for studying and characterizing cancer etiology.",
+    "pdf_url": "http://arxiv.org/pdf/2206.06145v1",
+    "published": "2022-06-13"
+  },
+  "2307.15084v1": {
+    "title": "Mathematical Modeling of BCG-based Bladder Cancer Treatment Using Socio-Demographics",
+    "authors": [
+      "Elizaveta Savchenko",
+      "Ariel Rosenfeld",
+      "Svetlana Bunimovich-Mendrazitsky"
+    ],
+    "summary": "Cancer is one of the most widespread diseases around the world with millions\nof new patients each year. Bladder cancer is one of the most prevalent types of\ncancer affecting all individuals alike with no obvious prototypical patient.\nThe current standard treatment for BC follows a routine weekly Bacillus\nCalmette-Guerin (BCG) immunotherapy-based therapy protocol which is applied to\nall patients alike. The clinical outcomes associated with BCG treatment vary\nsignificantly among patients due to the biological and clinical complexity of\nthe interaction between the immune system, treatments, and cancer cells. In\nthis study, we take advantage of the patient's socio-demographics to offer a\npersonalized mathematical model that describes the clinical dynamics associated\nwith BCG-based treatment. To this end, we adopt a well-established BCG\ntreatment model and integrate a machine learning component to temporally adjust\nand reconfigure key parameters within the model thus promoting its\npersonalization. Using real clinical data, we show that our personalized model\nfavorably compares with the original one in predicting the number of cancer\ncells at the end of the treatment, with 14.8% improvement, on average.",
+    "pdf_url": "http://arxiv.org/pdf/2307.15084v1",
+    "published": "2023-07-26"
+  }
+}

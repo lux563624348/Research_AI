@@ -1,0 +1,40 @@
+{
+  "2212.00519v1": {
+    "title": "Corvo: Visualizing CellxGene Single-Cell Datasets in Virtual Reality",
+    "authors": [
+      "Luke Hyman",
+      "Ivo F. Sbalzarini",
+      "Stephen Quake",
+      "Ulrik G\u00fcnther"
+    ],
+    "summary": "The CellxGene project has enabled access to single-cell data in the\nscientific community, providing tools for browsed-based no-code analysis of\nmore than 500 annotated datasets. However, single-cell data requires\ndimensional reduction to visualize, and 2D embedding does not take full\nadvantage of three-dimensional human spatial understanding and cognition.\nCompared to a 2D visualization that could potentially hide gene expression\npatterns, 3D Virtual Reality may enable researchers to make better use of the\ninformation contained within the datasets. For this purpose, we present\n\\emph{Corvo}, a fully free and open-source software tool that takes the\nvisualization and analysis of CellxGene single-cell datasets to 3D Virtual\nReality. Similar to CellxGene, Corvo takes a no-code approach for the end user,\nbut also offers multimodal user input to facilitate fast navigation and\nanalysis, and is interoperable with the existing Python data science ecosystem.\nIn this paper, we explain the design goals of Corvo, detail its approach to the\nVirtual Reality visualization and analysis of single-cell data, and briefly\ndiscuss limitations and future extensions.",
+    "pdf_url": "http://arxiv.org/pdf/2212.00519v1",
+    "published": "2022-12-01"
+  },
+  "2104.04368v1": {
+    "title": "Characterization of Frequency-Dependent Material Properties of Human Liver and its Pathologies Using an Impact Hammer",
+    "authors": [
+      "M. Umut Ozcan",
+      "Sina Ocal",
+      "Cagatay Basdogan",
+      "Gulen Dogusoy",
+      "Yaman Tokat"
+    ],
+    "summary": "The current methods for characterization of frequency-dependent material\nproperties of human liver are very limited. In fact, there is almost no data\navailable in the literature showing the variation in dynamic elastic modulus of\nhealthy or diseased human liver as a function of excitation frequency. We show\nthat frequency-dependent dynamic material properties of a whole human liver can\nbe easily and efficiently characterized by an impact hammer. The procedure only\ninvolves a light impact force applied to the tested liver by a hand-held\nhammer. The results of our experiments conducted with 15 human livers harvested\nfrom the patients having some form of liver disease show that the proposed\napproach can successfully differentiate the level of fibrosis in human liver.\nWe found that the storage moduli of the livers having no fibrosis (F0) and that\nof the cirrhotic livers (F4) varied from 10 to 20 kPa and 20 to 50 kPa for the\nfrequency range of 0 to 80 Hz, respectively.",
+    "pdf_url": "http://arxiv.org/pdf/2104.04368v1",
+    "published": "2021-04-09"
+  },
+  "2102.12056v3": {
+    "title": "Multi-Slice Low-Rank Tensor Decomposition Based Multi-Atlas Segmentation: Application to Automatic Pathological Liver CT Segmentation",
+    "authors": [
+      "Changfa Shi",
+      "Min Xian",
+      "Xiancheng Zhou",
+      "Haotian Wang",
+      "Heng-Da Cheng"
+    ],
+    "summary": "Liver segmentation from abdominal CT images is an essential step for liver\ncancer computer-aided diagnosis and surgical planning. However, both the\naccuracy and robustness of existing liver segmentation methods cannot meet the\nrequirements of clinical applications. In particular, for the common clinical\ncases where the liver tissue contains major pathology, current segmentation\nmethods show poor performance. In this paper, we propose a novel low-rank\ntensor decomposition (LRTD) based multi-atlas segmentation (MAS) framework that\nachieves accurate and robust pathological liver segmentation of CT images.\nFirstly, we propose a multi-slice LRTD scheme to recover the underlying\nlow-rank structure embedded in 3D medical images. It performs the LRTD on small\nimage segments consisting of multiple consecutive image slices. Then, we\npresent an LRTD-based atlas construction method to generate tumor-free liver\natlases that mitigates the performance degradation of liver segmentation due to\nthe presence of tumors. Finally, we introduce an LRTD-based MAS algorithm to\nderive patient-specific liver atlases for each test image, and to achieve\naccurate pairwise image registration and label propagation. Extensive\nexperiments on three public databases of pathological liver cases validate the\neffectiveness of the proposed method. Both qualitative and quantitative results\ndemonstrate that, in the presence of major pathology, the proposed method is\nmore accurate and robust than state-of-the-art methods.",
+    "pdf_url": "http://arxiv.org/pdf/2102.12056v3",
+    "published": "2021-02-24"
+  }
+}

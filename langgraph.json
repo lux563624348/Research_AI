@@ -1,7 +1,15 @@
 {
-  "dependencies": ["."],
-  "graphs": {
-    "agent": "./src/react_agent/graph.py:graph"
-  },
-  "env": ".env"
+    "dockerfile_lines": [],
+    "graphs": {
+        "agent": "memory_agent/Research_AI.py:graph"
+    },
+    "env": ".env",
+    "python_version": "3.11",
+    "dependencies": ["."],
+    "store": {
+        "index": {
+            "dims": 1536,
+            "embed": "openai:text-embedding-3-small"
+        }
+    }
 }

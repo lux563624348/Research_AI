@@ -1,0 +1,39 @@
+{
+  "1711.00885v1": {
+    "title": "Using Deep Learning to Examine the Association between the Built Environment and Neighborhood Adult Obesity Prevalence",
+    "authors": [
+      "Adyasha Maharana",
+      "Elaine O. Nsoesie"
+    ],
+    "summary": "More than one-third of the adult population in the United States is obese.\nObesity has been linked to factors such as, genetics, diet, physical activity\nand the environment. However, evidence indicating associations between the\nbuilt environment and obesity has varied across studies and geographical\ncontexts. Here, we used deep learning and approximately 150,000 high resolution\nsatellite images to extract features of the built environment. We then\ndeveloped linear regression models to consistently quantify the association\nbetween the extracted features and obesity prevalence at the census tract level\nfor six cities in the United States. The extracted features of the built\nenvironment explained 72% to 90% of the variation in obesity prevalence across\ncities. Outof-sample predictions were considerably high with correlations\ngreater than 80% between predicted and true obesity prevalence across all\ncensus tracts. This study supports a strong association between the built\nenvironment and obesity prevalence. Additionally, it also illustrates that\nfeatures of the built environment extracted from satellite images can be useful\nfor studying health indicators, such as obesity. Understanding the association\nbetween specific features of the built environment and obesity prevalence can\nlead to structural changes that could encourage physical activity and decreases\nin obesity prevalence.",
+    "pdf_url": "http://arxiv.org/pdf/1711.00885v1",
+    "published": "2017-11-02"
+  },
+  "1010.4479v1": {
+    "title": "Radio-continuum detections of Galactic Planetary Nebulae I. MASH PNe detected in large-scale radio surveys",
+    "authors": [
+      "I. S. Bojicic",
+      "Q. A. Parker",
+      "M. D. Filipovic",
+      "D. J. Frew"
+    ],
+    "summary": "We present an updated and newly compiled radio-continuum data-base for MASH\nPNe detected in the extant large scale \"blind\" radio-continuum surveys (NVSS,\nSUMSS/MGPS-2 and PMN) and, for a small number of MASH PNe, observed and\ndetected in targeted radio-continuum observations. We found radio counterparts\nfor approximately 250 MASH PNe. In comparison with the percentage of previously\nknown Galactic PNe detected in the NVSS and MGPS-2 radio-continuum surveys and\naccording to their position on the flux density-angular diameter and the radio\nbrightness temperature evolutionary diagrams we conclude, unsurprisingly, that\nthe MASH sample presents the radio-faint end of the known Galactic PNe\npopulation. Also, we present radio-continuum spectral properties of a small\nsub-sample of MASH PNe located in the strip between declinations -30arcdeg and\n-40arcdeg, that are detected in both the NVSS and MGPS-2 radio surveys.",
+    "pdf_url": "http://arxiv.org/pdf/1010.4479v1",
+    "published": "2010-10-21"
+  },
+  "2504.09149v3": {
+    "title": "MASH: Masked Anchored SpHerical Distances for 3D Shape Representation and Generation",
+    "authors": [
+      "Changhao Li",
+      "Yu Xin",
+      "Xiaowei Zhou",
+      "Ariel Shamir",
+      "Hao Zhang",
+      "Ligang Liu",
+      "Ruizhen Hu"
+    ],
+    "summary": "We introduce Masked Anchored SpHerical Distances (MASH), a novel multi-view\nand parametrized representation of 3D shapes. Inspired by multi-view geometry\nand motivated by the importance of perceptual shape understanding for learning\n3D shapes, MASH represents a 3D shape as a collection of observable local\nsurface patches, each defined by a spherical distance function emanating from\nan anchor point. We further leverage the compactness of spherical harmonics to\nencode the MASH functions, combined with a generalized view cone with a\nparameterized base that masks the spatial extent of the spherical function to\nattain locality. We develop a differentiable optimization algorithm capable of\nconverting any point cloud into a MASH representation accurately approximating\nground-truth surfaces with arbitrary geometry and topology. Extensive\nexperiments demonstrate that MASH is versatile for multiple applications\nincluding surface reconstruction, shape generation, completion, and blending,\nachieving superior performance thanks to its unique representation encompassing\nboth implicit and explicit features.",
+    "pdf_url": "http://arxiv.org/pdf/2504.09149v3",
+    "published": "2025-04-12"
+  }
+}

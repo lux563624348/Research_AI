@@ -1,0 +1,35 @@
+{
+  "1604.06783v2": {
+    "title": "PyPanda: a Python Package for Gene Regulatory Network Reconstruction",
+    "authors": [
+      "David G. P. van IJzendoorn",
+      "Kimberly Glass",
+      "John Quackenbush",
+      "Marieke L. Kuijjer"
+    ],
+    "summary": "PANDA (Passing Attributes between Networks for Data Assimilation) is a gene\nregulatory network inference method that uses message-passing to integrate\nmultiple sources of 'omics data. PANDA was originally coded in C++. In this\napplication note we describe PyPanda, the Python version of PANDA. PyPanda runs\nconsiderably faster than the C++ version and includes additional features for\nnetwork analysis. Availability: The open source PyPanda Python package is\nfreely available at https://github.com/davidvi/pypanda. Contact: d.g.p.van\nijzendoorn@lumc.nl",
+    "pdf_url": "http://arxiv.org/pdf/1604.06783v2",
+    "published": "2016-04-22"
+  },
+  "2405.14120v2": {
+    "title": "DendroPy 5: a mature Python library for phylogenetic computing",
+    "authors": [
+      "Matthew Andres Moreno",
+      "Mark T. Holder",
+      "Jeet Sukumaran"
+    ],
+    "summary": "Contemporary bioinformatics has seen in profound new visibility into the\ncomposition, structure, and history of the natural world around us. Arguably,\nthe central pillar of bioinformatics is phylogenetics -- the study of\nhereditary relatedness among organisms. Insight from phylogenetic analysis has\ntouched nearly every corner of biology. Examples range across natural history,\npopulation genetics and phylogeography, conservation biology, public health,\nmedicine, in vivo and in silico experimental evolution, application-oriented\nevolutionary algorithms, and beyond. High-throughput genetic and phenotypic\ndata has realized groundbreaking results, in large part, through conjunction\nwith open-source software used to process and analyze it. Indeed, the preceding\ndecades have ushered in a flourishing ecosystem of bioinformatics software\napplications and libraries. Over the course of its nearly fifteen-year history,\nthe DendroPy library for phylogenetic computation in Python has established a\ngeneralist niche in serving the bioinformatics community. Here, we report on\nthe recent major release of the library, DendroPy version 5. The software\nrelease represents a major milestone in transitioning the library to a\nsustainable long-term development and maintenance trajectory. As such, this\nwork positions DendroPy to continue fulfilling a key supporting role in\nphyloinformatics infrastructure.",
+    "pdf_url": "http://arxiv.org/pdf/2405.14120v2",
+    "published": "2024-05-23"
+  },
+  "2505.11385v1": {
+    "title": "Compendium Manager: a tool for coordination of workflow management instances for bulk data processing in Python",
+    "authors": [
+      "Richard J. Abdill",
+      "Ran Blekhman"
+    ],
+    "summary": "Compendium Manager is a command-line tool written in Python to automate the\nprovisioning, launch, and evaluation of bioinformatics pipelines. Although\nworkflow management tools such as Snakemake and Nextflow enable users to\nautomate the processing of samples within a single sequencing project,\nintegrating many datasets in bulk requires launching and monitoring hundreds or\nthousands of pipelines. We present the Compendium Manager, a lightweight\ncommand-line tool to enable launching and monitoring analysis pipelines at\nscale. The tool can gauge progress through a list of projects, load results\ninto a shared database, and record detailed processing metrics for later\nevaluation and reproducibility.",
+    "pdf_url": "http://arxiv.org/pdf/2505.11385v1",
+    "published": "2025-05-16"
+  }
+}

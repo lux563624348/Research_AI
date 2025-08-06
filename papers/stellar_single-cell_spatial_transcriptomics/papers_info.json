@@ -1,0 +1,37 @@
+{
+  "2301.08436v1": {
+    "title": "SpaceTx: A Roadmap for Benchmarking Spatial Transcriptomics Exploration of the Brain",
+    "authors": [
+      "Brian Long",
+      "Jeremy Miller",
+      "The SpaceTx Consortium"
+    ],
+    "summary": "Mapping spatial distributions of transcriptomic cell types is essential to\nunderstanding the brain, with its exceptional cellular heterogeneity and the\nfunctional significance of its spatial organization. Spatial transcriptomics\ntechniques are hoped to accomplish these measurements, but each method uses\ndifferent experimental and computational protocols, with different trade-offs\nand optimizations. In 2017, the SpaceTx Consortium was formed to compare these\nmethods and determine their suitability for large-scale spatial transcriptomic\natlases. SpaceTx work included progress in tissue processing, taxonomy\ndevelopment, gene selection, image processing and data standardization, cell\nsegmentation, cell type assignments, and visualization. Although the landscape\nof experimental methods has changed dramatically since the beginning of\nSpaceTx, the need for quantitative and detailed benchmarking of spatial\ntranscriptomics methods in the brain is still unmet. Here, we summarize the\nwork of SpaceTx and highlight outstanding challenges as spatial transcriptomics\ngrows into a mature field. We also discuss how our progress provides a roadmap\nfor benchmarking spatial transcriptomics methods in the future. Data and\nanalyses from this consortium, along with code and methods are publicly\navailable at https://spacetx.github.io/.",
+    "pdf_url": "http://arxiv.org/pdf/2301.08436v1",
+    "published": "2023-01-20"
+  },
+  "2403.10863v1": {
+    "title": "stMCDI: Masked Conditional Diffusion Model with Graph Neural Network for Spatial Transcriptomics Data Imputation",
+    "authors": [
+      "Xiaoyu Li",
+      "Wenwen Min",
+      "Shunfang Wang",
+      "Changmiao Wang",
+      "Taosheng Xu"
+    ],
+    "summary": "Spatially resolved transcriptomics represents a significant advancement in\nsingle-cell analysis by offering both gene expression data and their\ncorresponding physical locations. However, this high degree of spatial\nresolution entails a drawback, as the resulting spatial transcriptomic data at\nthe cellular level is notably plagued by a high incidence of missing values.\nFurthermore, most existing imputation methods either overlook the spatial\ninformation between spots or compromise the overall gene expression data\ndistribution. To address these challenges, our primary focus is on effectively\nutilizing the spatial location information within spatial transcriptomic data\nto impute missing values, while preserving the overall data distribution. We\nintroduce \\textbf{stMCDI}, a novel conditional diffusion model for spatial\ntranscriptomics data imputation, which employs a denoising network trained\nusing randomly masked data portions as guidance, with the unmasked data serving\nas conditions. Additionally, it utilizes a GNN encoder to integrate the spatial\nposition information, thereby enhancing model performance. The results obtained\nfrom spatial transcriptomics datasets elucidate the performance of our methods\nrelative to existing approaches.",
+    "pdf_url": "http://arxiv.org/pdf/2403.10863v1",
+    "published": "2024-03-16"
+  },
+  "2502.09574v1": {
+    "title": "Spatial Transcriptomics Iterative Hierarchical Clustering (stIHC): A Novel Method for Identifying Spatial Gene Co-Expression Modules",
+    "authors": [
+      "Catherine Higgins",
+      "Jingyi Jessica Li",
+      "Michelle Carey"
+    ],
+    "summary": "Recent advancements in spatial transcriptomics technologies allow researchers\nto simultaneously measure RNA expression levels for hundreds to thousands of\ngenes while preserving spatial information within tissues, providing critical\ninsights into spatial gene expression patterns, tissue organization, and gene\nfunctionality. However, existing methods for clustering spatially variable\ngenes (SVGs) into co-expression modules often fail to detect rare or unique\nspatial expression patterns. To address this, we present spatial\ntranscriptomics iterative hierarchical clustering (stIHC), a novel method for\nclustering SVGs into co-expression modules, representing groups of genes with\nshared spatial expression patterns. Through three simulations and applications\nto spatial transcriptomics datasets from technologies such as 10x Visium, 10x\nXenium, and Spatial Transcriptomics, stIHC outperforms clustering approaches\nused by popular SVG detection methods, including SPARK, SPARK-X, MERINGUE, and\nSpatialDE. Gene Ontology enrichment analysis confirms that genes within each\nmodule share consistent biological functions, supporting the functional\nrelevance of spatial co-expression. Robust across technologies with varying\ngene numbers and spatial resolution, stIHC provides a powerful tool for\ndecoding the spatial organization of gene expression and the functional\nstructure of complex tissues.",
+    "pdf_url": "http://arxiv.org/pdf/2502.09574v1",
+    "published": "2025-02-13"
+  }
+}

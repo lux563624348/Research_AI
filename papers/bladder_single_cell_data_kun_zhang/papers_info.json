@@ -1,0 +1,56 @@
+{
+  "2403.06792v1": {
+    "title": "Study of the mechanism of electroacupuncture regulating ferroptosis, inhibiting bladder neck fibrosis, and improving bladder urination function after suprasacral spinal cord injury using proteomics",
+    "authors": [
+      "Jin-Can Liu",
+      "Li-Ya Tang",
+      "Xiao-Ying Sun",
+      "Qi-Rui Qu",
+      "Qiong Liu",
+      "Lu Zhou",
+      "Hong Zhang",
+      "Bruce Song",
+      "Ming Xu",
+      "Kun Ai"
+    ],
+    "summary": "Purpose The aim of this study was to explore whether electroacupuncture\nregulates phenotypic transformation of smooth muscle cells by inhibiting\nferroptosis and inhibiting fibrosis, thereby improving bladder urination\nfunction after suprasacral spinal cord injury (SSCI). Methods The experiment\nwas divided into sham, model, and electroacupuncture group. After 10 days of\nelectroacupuncture intervention, urodynamic examination was performed, and\nbladder neck was taken for HE staining, tandem mass tag (TMT)-based\nquantitative proteomics analysis, Western blot(WB) detection, ferrous ion\nconcentration detection and Masson staining. Conclusion Electroacupuncture may\nprevent the phenotype of bladder neck smooth muscle cells from transforming\nfrom contraction type to synthesis type by inhibiting ferroptosis, inhibit\nbladder neck fibrosis, improve bladder neck compliance, and thus improve\nbladder urination function after SSCI.",
+    "pdf_url": "http://arxiv.org/pdf/2403.06792v1",
+    "published": "2024-03-11"
+  },
+  "2503.06123v1": {
+    "title": "Mechanism of Electricacupuncture Treating Detrusor Bladder Neck Dyscoordination After Suprasacral Spinal Cord Injury by Proteomics",
+    "authors": [
+      "Liya Tang",
+      "Qirui Qu",
+      "Yiying Long",
+      "Xia Wu",
+      "Jincan Liu",
+      "Ming Xu",
+      "Hong Zhang",
+      "Lu Zhou",
+      "Qiong Liu",
+      "Kun Ai"
+    ],
+    "summary": "Objectives This study aimed to elucidate the potential mechanisms of\nelectroacupuncture (EA) in restoring detrusor-bladder neck dyssynergesia (DBND)\nfollowing suprasacral spinal cord injury.\n  Methods A total of 52 adult female Sprague-Dawley rats were randomly assigned\nto either a sham group (n=12) or a spinal cord injury model group (n=40). In\nthe model group, DBND was induced in 40 rats through Hassan Shaker spinal cord\ntransection, with 24 rats surviving spinal shock and subsequently randomized\ninto two groups: a model-only group (DBND, n=12) and an EA intervention group\n(DBND+EA, n=12). DBND+EA was administered at Ciliao (BL32), Zhongji (RN3), and\nSanyinjiao (SP6) acupoints, for 20 minutes per session, once daily for 10\nconsecutive days. On day 29 post-injury, all rats underwent urodynamic\nassessments, followed by hematoxylin and eosin (HE) staining, tandem mass tag\n(TMT) proteomics, and Western blot (WB) analysis of the detrusor and bladder\nneck tissues.\n  Results Urodynamic evaluation demonstrated that EA intervention enhanced\nbladder function in DBND rats. HE staining indicated reduced fibroplasia in the\ndetrusor muscle and alleviated inflammation in the bladder neck following EA.\nTMT proteomic analysis revealed 30 differentially expressed proteins (DEPs) in\nthe detrusor and 59 DEPs in the bladder neck post-EA treatment. WB results\ncorroborated these TMT findings.\n  Conclusion EA effectively promotes synergy between the detrusor muscle and\nbladder neck in DBND, likely by enhancing detrusor contractility and\nfacilitating bladder neck relaxation during urination. This study provides\nmechanistic insights into the therapeutic role of EA in managing DBND.",
+    "pdf_url": "http://arxiv.org/pdf/2503.06123v1",
+    "published": "2025-03-08"
+  },
+  "2505.07865v1": {
+    "title": "CellVerse: Do Large Language Models Really Understand Cell Biology?",
+    "authors": [
+      "Fan Zhang",
+      "Tianyu Liu",
+      "Zhihong Zhu",
+      "Hao Wu",
+      "Haixin Wang",
+      "Donghao Zhou",
+      "Yefeng Zheng",
+      "Kun Wang",
+      "Xian Wu",
+      "Pheng-Ann Heng"
+    ],
+    "summary": "Recent studies have demonstrated the feasibility of modeling single-cell data\nas natural languages and the potential of leveraging powerful large language\nmodels (LLMs) for understanding cell biology. However, a comprehensive\nevaluation of LLMs' performance on language-driven single-cell analysis tasks\nstill remains unexplored. Motivated by this challenge, we introduce CellVerse,\na unified language-centric question-answering benchmark that integrates four\ntypes of single-cell multi-omics data and encompasses three hierarchical levels\nof single-cell analysis tasks: cell type annotation (cell-level), drug response\nprediction (drug-level), and perturbation analysis (gene-level). Going beyond\nthis, we systematically evaluate the performance across 14 open-source and\nclosed-source LLMs ranging from 160M to 671B on CellVerse. Remarkably, the\nexperimental results reveal: (1) Existing specialist models (C2S-Pythia) fail\nto make reasonable decisions across all sub-tasks within CellVerse, while\ngeneralist models such as Qwen, Llama, GPT, and DeepSeek family models exhibit\npreliminary understanding capabilities within the realm of cell biology. (2)\nThe performance of current LLMs falls short of expectations and has substantial\nroom for improvement. Notably, in the widely studied drug response prediction\ntask, none of the evaluated LLMs demonstrate significant performance\nimprovement over random guessing. CellVerse offers the first large-scale\nempirical demonstration that significant challenges still remain in applying\nLLMs to cell biology. By introducing CellVerse, we lay the foundation for\nadvancing cell biology through natural languages and hope this paradigm could\nfacilitate next-generation single-cell analysis.",
+    "pdf_url": "http://arxiv.org/pdf/2505.07865v1",
+    "published": "2025-05-09"
+  }
+}

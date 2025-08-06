@@ -2,7 +2,8 @@ import os, json
 import httpx
 from dotenv import load_dotenv
 from fastmcp import FastMCP, Context
-from anthropic import AsyncAnthropic
+from openai import AsyncOpenAI
+#from anthropic import AsyncAnthropic
 from datetime import datetime
 
 # Load environment variables
@@ -49,6 +50,26 @@ async def make_twitter_endpoint_request(endpoint: str, query_param: dict(), ctx:
             await ctx.error(f"❌ Twitter API request failed: {e}")
         return None
 
+async def _extract_with_openai(llm_text: str, api_key: str, ctx: Context | None = None) -> str:
+    client = AsyncOpenAI(api_key=api_key)
+
+    try:
+        response = await client.messages.create(
+            model=model,
+            max_tokens=1024,
+            messages=[
+                {
+                    "role": "user",
+                    "content": f"You are a helpful assistant that converts natural language to TwitterAPI.Io advanced search queries. Only return the query string.\n\nExtract query: {llm_text}"
+                }
+            ]
+        )
+        return response.choices[0].message.content[0].text.strip()
+    except Exception as e:
+        if ctx:
+            await ctx.error(f"Anthropic extraction failed: {e}")
+        raise
+
 async def _extract_with_anthropic(llm_text: str, api_key: str, ctx: Context | None = None) -> str:
     client = AsyncAnthropic(api_key=api_key)
 
@@ -70,11 +91,11 @@ async def _extract_with_anthropic(llm_text: str, api_key: str, ctx: Context | No
         raise
 
 async def extract_search_query_from_llm_text(llm_text: str, ctx: Context | None = None) -> str:
-    llm_key = os.getenv("ANTHROPIC_API_KEY")
+    llm_key = os.getenv("OPENAI_API_KEY")
 
     if llm_key:
         try:
-            return await _extract_with_anthropic(llm_text, llm_key, ctx)
+            return await _extract_with_openai(llm_text, llm_key, ctx)
         except Exception:
             pass  # Fallback to rule-based
     else:

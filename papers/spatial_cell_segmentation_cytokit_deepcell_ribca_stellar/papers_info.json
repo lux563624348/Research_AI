@@ -1,0 +1,78 @@
+{
+  "2102.10377v1": {
+    "title": "CellTrack R-CNN: A Novel End-To-End Deep Neural Network for Cell Segmentation and Tracking in Microscopy Images",
+    "authors": [
+      "Yuqian Chen",
+      "Yang Song",
+      "Chaoyi Zhang",
+      "Fan Zhang",
+      "Lauren O'Donnell",
+      "Wojciech Chrzanowski",
+      "Weidong Cai"
+    ],
+    "summary": "Cell segmentation and tracking in microscopy images are of great significance\nto new discoveries in biology and medicine. In this study, we propose a novel\napproach to combine cell segmentation and cell tracking into a unified\nend-to-end deep learning based framework, where cell detection and segmentation\nare performed with a current instance segmentation pipeline and cell tracking\nis implemented by integrating Siamese Network with the pipeline. Besides,\ntracking performance is improved by incorporating spatial information into the\nnetwork and fusing spatial and visual prediction. Our approach was evaluated on\nthe DeepCell benchmark dataset. Despite being simple and efficient, our method\noutperforms state-of-the-art algorithms in terms of both cell segmentation and\ncell tracking accuracies.",
+    "pdf_url": "http://arxiv.org/pdf/2102.10377v1",
+    "published": "2021-02-20"
+  },
+  "2311.11004v1": {
+    "title": "A Foundation Model for Cell Segmentation",
+    "authors": [
+      "Uriah Israel",
+      "Markus Marks",
+      "Rohit Dilip",
+      "Qilin Li",
+      "Morgan Schwartz",
+      "Elora Pradhan",
+      "Edward Pao",
+      "Shenyi Li",
+      "Alexander Pearson-Goulart",
+      "Pietro Perona",
+      "Georgia Gkioxari",
+      "Ross Barnowski",
+      "Yisong Yue",
+      "David Van Valen"
+    ],
+    "summary": "Cells are the fundamental unit of biological organization, and identifying\nthem in imaging data - cell segmentation - is a critical task for various\ncellular imaging experiments. While deep learning methods have led to\nsubstantial progress on this problem, models that have seen wide use are\nspecialist models that work well for specific domains. Methods that have\nlearned the general notion of \"what is a cell\" and can identify them across\ndifferent domains of cellular imaging data have proven elusive. In this work,\nwe present CellSAM, a foundation model for cell segmentation that generalizes\nacross diverse cellular imaging data. CellSAM builds on top of the Segment\nAnything Model (SAM) by developing a prompt engineering approach to mask\ngeneration. We train an object detector, CellFinder, to automatically detect\ncells and prompt SAM to generate segmentations. We show that this approach\nallows a single model to achieve state-of-the-art performance for segmenting\nimages of mammalian cells (in tissues and cell culture), yeast, and bacteria\ncollected with various imaging modalities. To enable accessibility, we\nintegrate CellSAM into DeepCell Label to further accelerate human-in-the-loop\nlabeling strategies for cellular imaging data. A deployed version of CellSAM is\navailable at https://label-dev.deepcell.org/.",
+    "pdf_url": "http://arxiv.org/pdf/2311.11004v1",
+    "published": "2023-11-18"
+  },
+  "2407.16927v1": {
+    "title": "DeepCell: A Ubiquitous Accurate Provider-side Cellular-based Localization",
+    "authors": [
+      "Ahmed Shokry",
+      "Moustafa Youssef"
+    ],
+    "summary": "Although outdoor localization is already available to the general public and\nbusinesses through the wide spread use of the GPS, it is not supported by\nlow-end phones, requires a direct line of sight to satellites and can drain\nphone battery quickly. The current fingerprinting solutions can provide\nhigh-accuracy localization but are based on the client side. This limits their\nubiquitous deployment and accuracy. In this paper, we introduce DeepCell: a\nprovider-side fingerprinting localization system that can provide high accuracy\nlocalization for any cell phone. To build its fingerprint, DeepCell leverages\nthe unlabeled cellular measurements recorded by the cellular provider while\nopportunistically synchronizing with selected client devices to get location\nlabels. The fingerprint is then used to train a deep neural network model that\nis harnessed for localization. To achieve this goal, DeepCell need to address a\nnumber of challenges including using unlabeled data from the provider side,\nhandling noise and sparsity, scaling the data to large areas, and finally\nproviding enough data that is required for training deep models without\noverhead. Evaluation of DeepCell in a typical realistic environment shows that\nit can achieve a consistent median accuracy of 29m. This accuracy outperforms\nthe state-of-the-art client-based cellular-based systems by more than 75.4%. In\naddition, the same accuracy is extended to low-end phones.",
+    "pdf_url": "http://arxiv.org/pdf/2407.16927v1",
+    "published": "2024-07-24"
+  },
+  "1701.04729v1": {
+    "title": "A Long-Term Decrease of the Mid-Size Segmentation Lengths Observed in the HeII 30.4 nm Solar EUV Emission",
+    "authors": [
+      "Leonid Didkovsky",
+      "Seth Wieman",
+      "Elena Korogodina"
+    ],
+    "summary": "Power spectra of segmentation-cell length (a dominant length scale of EUV\nemission in the transition region) from full-disk HeII extreme ultraviolet\n(EUV) images observed by the Extreme ultraviolet Imaging Telescope (EIT)\nonboard the Solar and Heliospheric Observatory (SOHO) and the Atmospheric\nImaging Assembly (AIA) onboard the Solar Dynamics Observatory (SDO) during\nperiods of quiet Sun conditions for a time interval from 1996 to 2015 were\nanalyzed. The spatial power as a function of the spatial frequency from about\n0.04 to 0.27 (EIT) or up to 0.48 (AIA) 1/Mm depends on the distribution of the\nobserved segmentation-cell dimensions, -- a structure of the solar EUV network.\nThe temporal variations of the spatial power reported by Didkovsky and Gurman\n(Solar Phys., 289, 153) were suggested as decreases at the mid-spatial\nfrequencies for the compared spectra when the power curves at the highest\nspatial frequencies of 0.5 1/pix were adjusted to match each other. That\napproach has been extended in this work to compare spectral ratios at high\nspatial frequencies expressed in the solar spatial frequency units of 1/Mm.\nBased on this approach we represent these ratio changes as a long-term network\ntransformation which may be interpreted as a continuous dissipation of mid-size\nnetwork structures to the smaller-size structures in the transition region. In\ncontrast to expected cycling of the segmentation-cell dimension structures and\nassociated spatial power in the spectra with the solar cycle, the spectra\ndemonstrate a significant and steady change of the EUV network. The temporal\ntrend across these structural spectra is not critically sensitive to any\nlong-term instrumental changes, e.g. degradation of sensitivity, but to the\nchange of the segmentation-cell dimensions of the EUV network structure.",
+    "pdf_url": "http://arxiv.org/pdf/1701.04729v1",
+    "published": "2017-01-16"
+  },
+  "2502.06816v2": {
+    "title": "DeepCell: Self-Supervised Multiview Fusion for Circuit Representation Learning",
+    "authors": [
+      "Zhengyuan Shi",
+      "Chengyu Ma",
+      "Ziyang Zheng",
+      "Lingfeng Zhou",
+      "Hongyang Pan",
+      "Wentao Jiang",
+      "Fan Yang",
+      "Xiaoyan Yang",
+      "Zhufei Chu",
+      "Qiang Xu"
+    ],
+    "summary": "We introduce DeepCell, a novel circuit representation learning framework that\neffectively integrates multiview information from both And-Inverter Graphs\n(AIGs) and Post-Mapping (PM) netlists. At its core, DeepCell employs a\nself-supervised Mask Circuit Modeling (MCM) strategy, inspired by masked\nlanguage modeling, to fuse complementary circuit representations from different\ndesign stages into unified and rich embeddings. To our knowledge, DeepCell is\nthe first framework explicitly designed for PM netlist representation learning,\nsetting new benchmarks in both predictive accuracy and reconstruction quality.\nWe demonstrate the practical efficacy of DeepCell by applying it to critical\nEDA tasks such as functional Engineering Change Orders (ECO) and technology\nmapping. Extensive experimental results show that DeepCell significantly\nsurpasses state-of-the-art open-source EDA tools in efficiency and performance.",
+    "pdf_url": "http://arxiv.org/pdf/2502.06816v2",
+    "published": "2025-02-05"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "2005.03994v1": {
+    "title": "Cell Type Identification from Single-Cell Transcriptomic Data via Semi-supervised Learning",
+    "authors": [
+      "Xishuang Dong",
+      "Shanta Chowdhury",
+      "Uboho Victor",
+      "Xiangfang Li",
+      "Lijun Qian"
+    ],
+    "summary": "Cell type identification from single-cell transcriptomic data is a common\ngoal of single-cell RNA sequencing (scRNAseq) data analysis. Neural networks\nhave been employed to identify cell types from scRNAseq data with high\nperformance. However, it requires a large mount of individual cells with\naccurate and unbiased annotated types to build the identification models.\nUnfortunately, labeling the scRNAseq data is cumbersome and time-consuming as\nit involves manual inspection of marker genes. To overcome this challenge, we\npropose a semi-supervised learning model to use unlabeled scRNAseq cells and\nlimited amount of labeled scRNAseq cells to implement cell identification.\nFirstly, we transform the scRNAseq cells to \"gene sentences\", which is inspired\nby similarities between natural language system and gene system. Then genes in\nthese sentences are represented as gene embeddings to reduce data sparsity.\nWith these embeddings, we implement a semi-supervised learning model based on\nrecurrent convolutional neural networks (RCNN), which includes a shared\nnetwork, a supervised network and an unsupervised network. The proposed model\nis evaluated on macosko2015, a large scale single-cell transcriptomic dataset\nwith ground truth of individual cell types. It is observed that the proposed\nmodel is able to achieve encouraging performance by learning on very limited\namount of labeled scRNAseq cells together with a large number of unlabeled\nscRNAseq cells.",
+    "pdf_url": "http://arxiv.org/pdf/2005.03994v1",
+    "published": "2020-05-06"
+  },
+  "2108.05039v1": {
+    "title": "Predicting Molecular Phenotypes with Single Cell RNA Sequencing Data: an Assessment of Unsupervised Machine Learning Models",
+    "authors": [
+      "Anastasia Dunca",
+      "Frederick R. Adler"
+    ],
+    "summary": "According to the National Cancer Institute, there were 9.5 million\ncancer-related deaths in 2018. A challenge in improving treatment is resistance\nin genetically unstable cells. The purpose of this study is to evaluate\nunsupervised machine learning on classifying treatment-resistant phenotypes in\nheterogeneous tumors through analysis of single cell RNA sequencing(scRNAseq)\ndata with a pipeline and evaluation metrics. scRNAseq quantifies mRNA in cells\nand characterizes cell phenotypes. One scRNAseq dataset was analyzed\n(tumor/non-tumor cells of different molecular subtypes and patient\nidentifications). The pipeline consisted of data filtering, dimensionality\nreduction with Principal Component Analysis, projection with Uniform Manifold\nApproximation and Projection, clustering with nine approaches (Ward, BIRCH,\nGaussian Mixture Model, DBSCAN, Spectral, Affinity Propagation, Agglomerative\nClustering, Mean Shift, and K-Means), and evaluation. Seven models divided\ntumor versus non-tumor cells and molecular subtype while six models classified\ndifferent patient identification (13 of which were presented in the dataset);\nK-Means, Ward, and BIRCH often ranked highest with ~80% accuracy on the tumor\nversus non-tumor task and ~60% for molecular subtype and patient ID. An\noptimized classification pipeline using K-Means, Ward, and BIRCH models was\nevaluated to be most effective for further analysis. In clinical research where\nthere is currently no standard protocol for scRNAseq analysis, clusters\ngenerated from this pipeline can be used to understand cancer cell behavior and\nmalignant growth, directly affecting the success of treatment.",
+    "pdf_url": "http://arxiv.org/pdf/2108.05039v1",
+    "published": "2021-08-11"
+  },
+  "2206.04047v1": {
+    "title": "N-ACT: An Interpretable Deep Learning Model for Automatic Cell Type and Salient Gene Identification",
+    "authors": [
+      "A. Ali Heydari",
+      "Oscar A. Davalos",
+      "Katrina K. Hoyer",
+      "Suzanne S. Sindi"
+    ],
+    "summary": "Single-cell RNA sequencing (scRNAseq) is rapidly advancing our understanding\nof cellular composition within complex tissues and organisms. A major\nlimitation in most scRNAseq analysis pipelines is the reliance on manual\nannotations to determine cell identities, which are time consuming, subjective,\nand require expertise. Given the surge in cell sequencing, supervised\nmethods-especially deep learning models-have been developed for automatic cell\ntype identification (ACTI), which achieve high accuracy and scalability.\nHowever, all existing deep learning frameworks for ACTI lack interpretability\nand are used as \"black-box\" models. We present N-ACT (Neural-Attention for Cell\nType identification): the first-of-its-kind interpretable deep neural network\nfor ACTI utilizing neural-attention to detect salient genes for use in\ncell-type identification. We compare N-ACT to conventional annotation methods\non two previously manually annotated data sets, demonstrating that N-ACT\naccurately identifies marker genes and cell types in an unsupervised manner,\nwhile performing comparably on multiple data sets to current state-of-the-art\nmodel in traditional supervised ACTI.",
+    "pdf_url": "http://arxiv.org/pdf/2206.04047v1",
+    "published": "2022-05-08"
+  }
+}

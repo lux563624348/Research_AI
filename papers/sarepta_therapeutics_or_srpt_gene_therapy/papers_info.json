@@ -1,0 +1,54 @@
+{
+  "1111.1360v1": {
+    "title": "Magnetic Field-Assisted Gene Delivery: Achievements and Therapeutic Potential",
+    "authors": [
+      "Jos\u00e9 I. Schwerdt",
+      "Gerardo F. Goya",
+      "Pilar Calatayud",
+      "Claudia B. Here\u00f1\u00fa",
+      "Paula C. Reggiani",
+      "Rodolfo G. Goya"
+    ],
+    "summary": "The discovery in the early 2000's that magnetic nanoparticles (MNPs)\ncomplexed to nonviral or viral vectors can, in the presence of an external\nmagnetic field, greatly enhance gene transfer into cells has raised much\ninterest. This technique, called magnetofection, was initially developed mainly\nto improve gene transfer in cell cultures, a simpler and more easily\ncontrollable scenario than in vivo models. These studies provided evidence for\nsome unique capabilities of magnetofection. Progressively, the interest in\nmagnetofection expanded to its application in animal models and led to the\nassociation of this technique with another technology, magnetic drug targeting\n(MDT). This combination offers the possibility to develop more efficient and\nless invasive gene therapy strategies for a number of major pathologies like\ncancer, neurodegeneration and myocardial infarction. The goal of MDT is to\nconcentrate MNPs functionalized with therapeutic drugs, in target areas of the\nbody by means of properly focused external magnetic fields. The availability of\nstable, nontoxic MNP-gene vector complexes now offers the opportunity to\ndevelop magnetic gene targeting (MGT), a variant of MDT in which the gene\ncoding for a therapeutic molecule, rather than the molecule itself, is\ndelivered to a therapeutic target area in the body. This article will first\noutline the principle of magnetofection, subsequently describing the properties\nof the magnetic fields and MNPs used in this technique. Next, it will review\nthe results achieved by magnetofection in cell cultures. Last, the potential of\nMGT for implementing minimally invasive gene therapy will be discussed.",
+    "pdf_url": "http://arxiv.org/pdf/1111.1360v1",
+    "published": "2011-11-05"
+  },
+  "1902.00728v1": {
+    "title": "New combinational therapies for cancer using modern statistical mechanics",
+    "authors": [
+      "Jorge A. Gonz\u00e1lez",
+      "M. Acanda",
+      "Z. Akhtar",
+      "D. Andrews",
+      "J. I. Azqueta",
+      "E. Bass",
+      "A. Bellor\u00edn",
+      "J. Couso",
+      "M\u00f3nica A. Garc\u00eda-\u00d1ustes",
+      "Y. Infante",
+      "S. Jim\u00e9nez",
+      "L. Lester",
+      "L. Maldonado",
+      "Juan F. Mar\u00edn",
+      "L. Pineda",
+      "I. Rodr\u00edguez",
+      "C. C. Tamayo",
+      "D. Valdes",
+      "L. V\u00e1zquez"
+    ],
+    "summary": "We investigate a new dynamical system that describes tumor-host interaction.\nThe equation that describes the untreated tumor growth is based on\nnon-extensive statistical mechanics. Recently, this model has been shown to fit\nsuccessfully exponential, Gompertz, logistic, and power-law tumor growths. We\nhave been able to include as many hallmarks of cancer as possible. We study\nalso the dynamic response of cancer under therapy. Using our model, we can make\npredictions about the different outcomes when we change the parameters, and/or\nthe initial conditions. We can determine the importance of different factors to\ninfluence tumor growth. We discover synergistic therapeutic effects of\ndifferent treatments and drugs. Cancer is generally untreatable using\nconventional monotherapy. We consider conventional therapies, oncogene-targeted\ntherapies, tumor-suppressors gene-targeted therapies, immunotherapies,\nanti-angiogenesis therapies, virotherapy, among others. We need therapies with\nthe potential to target both tumor cells and the tumors' microenvironment.\nDrugs that target oncogenes and tumor-suppressor genes can be effective in the\ntreatment of some cancers. However, most tumors do reoccur. We have found that\nthe success of the new therapeutic agents can be seen when used in combination\nwith other cancer-cell-killing therapies. Our results have allowed us to design\na combinational therapy that can lead to the complete eradication of cancer.",
+    "pdf_url": "http://arxiv.org/pdf/1902.00728v1",
+    "published": "2019-02-02"
+  },
+  "1707.04586v1": {
+    "title": "Discovery of new drug therapeutic indications from gene mutation information for hepatocellular carcinoma",
+    "authors": [
+      "Liang Yu",
+      "Fengdan Xu",
+      "Lin Gao"
+    ],
+    "summary": "Hepatocellular carcinoma (HCC) is the most common primary liver malignancy\nand is a leading cause of cancer-related death worldwide. However, cure is not\npossible with currently used therapies, and there is not so much approved\ntargeted therapy for HCC despite numerous attempts and clinical trials. So, it\nis essential to identify additional therapeutic strategies to block the growth\nof HCC tumors. As a cancer disease, it is associated with aberrant genomic and\ntranscriptional landscapes. We sought to use a systematic drug repositioning\nbioinformatics approach to identify novel candidate drugs to treat HCC, which\nconsiders not only aberrant genomic information, but also the changes of\ntranscriptional landscapes. First, we screen the collection of HCC feature\ngenes that frequently mutated in most samples of HCC based on human mutation\ndata. Then, the gene expression data of HCC in TCGA are combined to classify\nthe kernel genes of HCC. Finally, the therapeutic score (TS) of each drug is\ncalculated based on the kolmogorov-smirnov statistical method. Using this\nstrategy, we identified five drugs that associated with HCC, including three\ndrugs that could treat HCC and two drugs that might have side-effect on HCC. In\naddition, we also make Connectivity Map (CMap) profiles similarity analysis and\nKEGG enrichment analysis on drug targets. All these findings suggest that our\napproach is effective for accurate discovering novel therapeutic options for\nHCC and easily to be extended to other tumors.",
+    "pdf_url": "http://arxiv.org/pdf/1707.04586v1",
+    "published": "2017-07-14"
+  }
+}

@@ -57,7 +57,14 @@ async def cellxgene_dataset_summary(
     max_rows: int = 3
 ) -> List[Dict[str, Any]]:
     """
-    List available datasets in the CELLxGENE Census, filtered by tissue.
+    Search CELLxGENE Census dataset metadata for a given tissue and return summaries with URLs and descriptions.
+
+    Args:
+        df (pd.DataFrame): HuBMAP metadata dataframe, must include specific columns.
+        tissue (str): Substring to search in 'dataset_title'.
+    
+    Returns:
+        List[Dict]: List of dataset descriptions with URL and summary.
     """
     census_version: str = "latest"
     with cellxgene_census.open_soma(census_version=census_version) as census:

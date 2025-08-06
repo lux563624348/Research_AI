@@ -1,0 +1,38 @@
+{
+  "2211.08084v3": {
+    "title": "Inferring cell-specific lncRNA regulation with single-cell RNA-sequencing data in the developing human neocortex",
+    "authors": [
+      "Meng Huang",
+      "Jiangtao Ma",
+      "Changzhou Long",
+      "Junpeng Zhang",
+      "Xiucai Ye",
+      "Tetsuya Sakurai"
+    ],
+    "summary": "Long non-coding RNAs (lncRNAs) are important regulators to modulate gene\nexpression and cell proliferation in the developing human brain. Previous\nmethods mainly use bulk lncRNA and mRNA expression data to study lncRNA\nregulation. However, to analyze lncRNA regulation regarding individual cells,\nwe focus on single-cell RNA-sequencing (scRNA-seq) data instead of bulk data.\nRecent advance in scRNA-seq has provided a way to investigate lncRNA regulation\nat single-cell level. We will propose a novel computational method, CSlncR\n(cell-specific lncRNA regulation), which combines putative lncRNA-mRNA binding\ninformation with scRNA-seq data including lncRNAs and mRNAs to identify\ncell-specific lncRNA-mRNA regulation networks at individual cells. To\nunderstand lncRNA regulation at different development stages, we apply CSlncR\nto the scRNA-seq data of human neocortex. Network analysis shows that the\nlncRNA regulation is unique in each cell from the different human neocortex\ndevelopment stages. The comparison results indicate that CSlncR is also an\neffective tool for predicting cell-specific lncRNA targets and clustering\nsingle cells, which helps understand cell-cell communication.",
+    "pdf_url": "http://arxiv.org/pdf/2211.08084v3",
+    "published": "2022-11-15"
+  },
+  "1909.02492v1": {
+    "title": "Reply to \"Issues arising from benchmarking single-cell RNA sequencing imputation methods\"",
+    "authors": [
+      "Mo Huang",
+      "Nancy R. Zhang"
+    ],
+    "summary": "In our Brief Communication (DOI: 10.1038/s41592-018-0033-z), we presented the\nmethod SAVER for recovering true gene expression levels in noisy single cell\nRNA sequencing data. We evaluated the performance of SAVER, along with\ncomparable methods MAGIC and scImpute, in an RNA FISH validation experiment and\na data downsampling experiment. In a Comment [arXiv:1908.07084v1], Li & Li were\nconcerned with the use of the downsampled datasets, specifically focusing on\nclustering results obtained from the Zeisel et al. data. Here, we will address\nthese comments and, furthermore, amend the data downsampling experiment to\ndemonstrate that the findings from the data downsampling experiment in our\nBrief Communication are valid.",
+    "pdf_url": "http://arxiv.org/pdf/1909.02492v1",
+    "published": "2019-09-05"
+  },
+  "2501.03501v1": {
+    "title": "Modeling Cell Type Developmental Trajectory using Multinomial Unbalanced Optimal Transport",
+    "authors": [
+      "Junhao Zhu",
+      "Kevin Zhang",
+      "Zhaolei Zhang",
+      "Dehan Kong"
+    ],
+    "summary": "Single-cell trajectory analysis aims to reconstruct the biological\ndevelopmental processes of cells as they evolve over time, leveraging temporal\ncorrelations in gene expression. During cellular development, gene expression\npatterns typically change and vary across different cell types. A significant\nchallenge in this analysis is that RNA sequencing destroys the cell, making it\nimpossible to track gene expression across multiple stages for the same cell.\nRecent advances have introduced the use of optimal transport tools to model the\ntrajectory of individual cells. In this paper, our focus shifts to a question\nof greater practical importance: we examine the differentiation of cell types\nover time. Specifically, we propose a novel method based on discrete unbalanced\noptimal transport to model the developmental trajectory of cell types. Our\nmethod detects biological changes in cell types and infers their transitions to\ndifferent states by analyzing the transport matrix. We validated our method\nusing single-cell RNA sequencing data from mouse embryonic fibroblasts. The\nresults accurately identified major developmental changes in cell types, which\nwere corroborated by experimental evidence. Furthermore, the inferred\ntransition probabilities between cell types are highly congruent to biological\nground truth.",
+    "pdf_url": "http://arxiv.org/pdf/2501.03501v1",
+    "published": "2025-01-07"
+  }
+}
