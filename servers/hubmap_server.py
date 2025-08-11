@@ -26,7 +26,10 @@ def structured_response(data=None, message="success", status="success"):
 
 def filter_by_organ(df, organ="heart"):
     return df[df['origin_samples_unique_mapped_organs'].str.contains(organ, case=False, na=False)]
-    
+
+def filter_by_variable(df, variable, key_word):
+    return df[df[variable].str.contains(key_word, case=False, na=False)]
+     
 def build_dataset_descriptions(df):
     """
     Build a list of dicts with HuBMAP dataset URLs and descriptions from selected columns.
@@ -66,28 +69,33 @@ def build_dataset_descriptions(df):
 async def hubmap_dataset_summary(
     number: int = 5,
     author: str = True,
-    organ: str = "heart",
+    organ: str = "", #heart
+    assay_type: str = "", #codex
 ) -> dict:
     """
-    Search HuBMAP dataset metadata for a given organ and return summaries with URLs and descriptions.
+    Search HuBMAP dataset metadata for given attributes and return summaries with URLs and descriptions.
 
     Args:
         df (pd.DataFrame): HuBMAP metadata dataframe, must include specific columns.
         organ (str): Substring to search in 'origin_samples_unique_mapped_organs'.
+        assay_type (str): Substring to search in 'assay_type'. like codex
     
     Returns:
         List[Dict]: List of dataset descriptions with URL and summary.
     """
-    Path_csv = "/home/xli_p14/github/Research_AI/servers/hubmap-datasets-metadata-2025-08-03_13-39-35.tsv"
+    Path_csv = "servers/hubmap-datasets-metadata-2025-08-03_13-39-35.tsv"
     df_tem = pd.read_csv(Path_csv, sep='\t')
 
     if author:
         # 1. Remove rows where 'pi' is NaN
         df_tem = df_tem.dropna(subset=['pi'])
+    if organ:
+        df_tem = filter_by_organ(df_tem, organ)
+    if assay_type:
+        df_tem = filter_by_variable(df_tem, 'assay_type', assay_type)
 
-    filter_df = filter_by_organ(df_tem, organ).head(number)
     # Generate result
-    data = build_dataset_descriptions(filter_df)
+    data = build_dataset_descriptions(df_tem.head(number))
 
     return structured_response(data)
 
