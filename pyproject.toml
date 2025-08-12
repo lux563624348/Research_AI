@@ -12,6 +12,7 @@ dependencies = [
     "langgraph-api>=0.2.120",
     "langgraph-cli>=0.3.6",
     "langchain_tavily>=0.2.11",
+    "langchain-community>=0.3.27",
     "mcp[cli]>=1.12.2",
     "httpx>=0.28.1",
     "llvmlite>=0.44.0",

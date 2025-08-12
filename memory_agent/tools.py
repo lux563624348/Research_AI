@@ -78,6 +78,11 @@ def load_mcptools() -> List:
                     "args": ["./servers/pubmed_server.py"],
                     "transport": "stdio",
                 }
+                "PDF": {
+                    "command": "python",
+                    "args": ["./servers/pdf_server.py"],
+                    "transport": "stdio",
+                },
             }
         )
         tools = asyncio.run(client.get_tools())

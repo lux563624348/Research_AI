@@ -1,0 +1,34 @@
+{
+  "1112.5868v1": {
+    "title": "Infinity norm bounds for the inverse of Nekrasov matrices",
+    "authors": [
+      "Ljiljana Cvetkovic",
+      "Ping-Fan Dai",
+      "Ksenija Doroslovacki",
+      "Yao-Tang Li"
+    ],
+    "summary": "From the application point of view, it is important to have a good upper\nbound for the maximum norm of the inverse of a given matrix A. In this paper we\nwill give two simple and practical upper bounds for the maximum norm of the\ninverse of a Nekrasov matrix.",
+    "pdf_url": "http://arxiv.org/pdf/1112.5868v1",
+    "published": "2011-12-26"
+  },
+  "1803.04524v1": {
+    "title": "A note on non-inclusion \"interval\" root solvers",
+    "authors": [
+      "Miodrag S. Petkovi\u0107",
+      "Ljiljana D. Petkovi\u0107"
+    ],
+    "summary": "In this note we give comments on recent interval extensions of the\nKing-Ostrowski multipoint methods for solving nonlinear equations published in\nat least five scientific journals offering faulty \"self-validated\" methods. We\nshow that they do not possess essential feature of genuine interval methods --\ninclusion property.",
+    "pdf_url": "http://arxiv.org/pdf/1803.04524v1",
+    "published": "2018-03-06"
+  },
+  "0901.2949v1": {
+    "title": "Hyperbolic Volume of Link Families",
+    "authors": [
+      "Slavik Jablan",
+      "Ljiljana Radovic"
+    ],
+    "summary": "For families of knots and links given in Conway notation we compute lower\nmaximal and upper minimal bound of hyperbolic volume by using source links and\naugmented links.",
+    "pdf_url": "http://arxiv.org/pdf/0901.2949v1",
+    "published": "2009-01-20"
+  }
+}
