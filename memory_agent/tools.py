@@ -67,16 +67,17 @@ def load_mcptools() -> List:
                     "args": ["./servers/cellxgene_server.py"],
                     "transport": "stdio",
                 },
-                "twitter": {
-                    "command": "python",
-                    "args": ["./servers/twitter_server_lite.py"],
-                    "transport": "stdio",
-                },
                 "research": {
                     "command": "python",
                     "args": ["./servers/research_server.py"],
                     "transport": "stdio",
                 },
+                "pubmed":
+                {
+                    "command": "python",
+                    "args": ["./servers/pubmed_server.py"],
+                    "transport": "stdio",
+                }
             }
         )
         tools = asyncio.run(client.get_tools())

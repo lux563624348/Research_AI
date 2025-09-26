@@ -1,15 +1,124 @@
-"""
-MCP server implementation for PubMed integration using FastMCP SDK.
-"""
+"""MCP server implementation for PubMed integration using FastMCP SDK."""
 import os
 import json
 import logging
-from typing import Optional, Dict, Any, Tuple
+import http.client
+import xml.etree.ElementTree as ET
+from typing import Optional, Dict, Any, List
 
 from dotenv import load_dotenv
 from fastmcp import FastMCP
-from pubmed_client import PubMedClient
+from Bio import Entrez
 #from fulltext_client import FullTextClient
+
+
+class PubMedClient:
+    """Client for interacting with PubMed/Entrez API."""
+
+    def __init__(self, email: str, tool: str, api_key: Optional[str] = None):
+        self.email = email
+        self.tool = tool
+        self.api_key = api_key
+
+        Entrez.email = email
+        Entrez.tool = tool
+        if api_key:
+            Entrez.api_key = api_key
+
+        self._logger = logging.getLogger("pubmed-client")
+
+    async def search_articles(self, query: str, max_results: int = 10) -> List[Dict[str, Any]]:
+        try:
+            self._logger.info("Searching PubMed with query: %s", query)
+            results: List[Dict[str, Any]] = []
+
+            handle = Entrez.esearch(db="pubmed", term=query, retmax=str(max_results))
+            if not handle:
+                self._logger.error("Got None handle from esearch")
+                return []
+
+            if isinstance(handle, http.client.HTTPResponse):
+                xml_content = handle.read()
+                handle.close()
+
+                root = ET.fromstring(xml_content)
+                id_list = root.findall(".//Id")
+
+                if not id_list:
+                    self._logger.info("No results found")
+                    return []
+
+                pmids = [id_elem.text for id_elem in id_list]
+                self._logger.info("Found %d articles", len(pmids))
+
+                for pmid in pmids:
+                    article = await self.get_article_details(pmid)
+                    if article:
+                        results.append(article)
+
+            return results
+
+        except Exception as exc:  # pragma: no cover - logging path
+            self._logger.exception("Error in search_articles: %s", exc)
+            raise
+
+    async def get_article_details(self, pmid: str) -> Optional[Dict[str, Any]]:
+        try:
+            self._logger.info("Fetching details for PMID %s", pmid)
+            detail_handle = Entrez.efetch(db="pubmed", id=pmid, rettype="xml")
+
+            if detail_handle and isinstance(detail_handle, http.client.HTTPResponse):
+                article_xml = detail_handle.read()
+                detail_handle.close()
+
+                article_root = ET.fromstring(article_xml)
+
+                article: Dict[str, Any] = {
+                    "pmid": pmid,
+                    "title": self._get_xml_text(article_root, ".//ArticleTitle") or "No title",
+                    "abstract": self._get_xml_text(article_root, ".//Abstract/AbstractText")
+                    or "No abstract available",
+                    "journal": self._get_xml_text(article_root, ".//Journal/Title") or "",
+                    "authors": [],
+                }
+
+                author_list = article_root.findall(".//Author")
+                for author in author_list:
+                    last_name = self._get_xml_text(author, "LastName") or ""
+                    fore_name = self._get_xml_text(author, "ForeName") or ""
+                    if last_name or fore_name:
+                        article["authors"].append(f"{last_name} {fore_name}".strip())
+
+                pub_date = article_root.find(".//PubDate")
+                if pub_date is not None:
+                    year = self._get_xml_text(pub_date, "Year")
+                    month = self._get_xml_text(pub_date, "Month")
+                    day = self._get_xml_text(pub_date, "Day")
+                    article["publication_date"] = {
+                        "year": year,
+                        "month": month,
+                        "day": day,
+                    }
+
+                article_id_list = article_root.findall(".//ArticleId")
+                for article_id in article_id_list:
+                    if article_id.get("IdType") == "doi":
+                        article["doi"] = article_id.text
+                        break
+
+                return article
+
+            return None
+
+        except Exception as exc:  # pragma: no cover - logging path
+            self._logger.exception("Error getting article details for PMID %s: %s", pmid, exc)
+            return None
+
+    def _get_xml_text(self, elem: Optional[ET.Element], xpath: str) -> Optional[str]:
+        if elem is None:
+            return None
+        found = elem.find(xpath)
+        return found.text if found is not None else None
 
 # Load environment variables
 load_dotenv()
@@ -21,7 +130,7 @@ logger = logging.getLogger("pubmed-server")
 # Initialize FastMCP app
 app = FastMCP("pubmed-server")
 
-def configure_clients() -> Tuple[PubMedClient]:#, FullTextClient]:
+def configure_clients() -> PubMedClient:#, FullTextClient]:
     """Configure PubMed and full text clients with environment settings."""
     email = os.environ.get("PUBMED_EMAIL")
     if not email:

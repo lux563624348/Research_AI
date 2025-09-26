@@ -12,13 +12,9 @@
             "command": "uv",
             "args": ["run", "./servers/research_server.py"]
         },
-        "twittter": {
+        "pubmed": {
             "command": "uv",
-            "args": ["run", "./servers/twitter_server_lite.py"]
-        },
-        "database": {
-            "command": "uv",
-            "args": ["run", "./servers/postgres_server.py"]
+            "args": ["run", "./servers/pubmed_server.py"]
         }
     }
 }
