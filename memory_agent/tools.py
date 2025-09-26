@@ -72,12 +72,11 @@ def load_mcptools() -> List:
                     "args": ["./servers/research_server.py"],
                     "transport": "stdio",
                 },
-                "pubmed":
-                {
+                "pubmed":{
                     "command": "python",
                     "args": ["./servers/pubmed_server.py"],
                     "transport": "stdio",
-                }
+                },
                 "PDF": {
                     "command": "python",
                     "args": ["./servers/pdf_server.py"],
